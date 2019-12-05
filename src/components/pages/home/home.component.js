@@ -1,10 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class HomeComponent extends Component {
-
-  render () {
+export default props => {
     return <div>
-      <h2>Home</h2>
+      <h4>Neozoic</h4>
+      <h2>Anhiliation</h2>
     </div>
-  }
 }

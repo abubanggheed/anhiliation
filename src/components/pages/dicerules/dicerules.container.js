@@ -1,14 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
 import DiceComponent from './dicerules.component'
 import { connect } from 'react-redux'
 
-class DiceContainer extends Component {
-
-  render() {
+const DiceContainer = props => {
     return <>
-      <DiceComponent />
+      <DiceComponent
+        pars={props.paragraphs}
+        dispatch={props.dispatch}
+      />
     </>
-  }
 }
 
-export default connect()(DiceContainer)
+export default connect(({ rulesParReducer }) => ({
+  paragraphs: rulesParReducer.diceRules
+}))(DiceContainer)
