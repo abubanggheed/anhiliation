@@ -5,7 +5,14 @@ const initialState = {
     mdTest: false,
     gAdvantages: false,
     centerings: false,
-    strangeNumbers: false
+    strangeNumbers: false,
+    hthTest: false,
+    nfTest: false,
+    opposingATest: false,
+    theCharTest: false,
+    opposedTests: false,
+    rulesOnCharacterstics: false,
+    zeroEffects: false
   }
 }
 
