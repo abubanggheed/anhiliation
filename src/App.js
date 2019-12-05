@@ -1,15 +1,17 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter } from 'react-router-dom'
+import RootRoutes from './components/browserrouter/rootrouter/rootrouter.component'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <div className="App">
+          <RootRoutes />
+        </div>
+      </BrowserRouter>
+    </>
   );
 }
 
