@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from 'reactstrap'
+import { characteristics } from '../../../data/characteristic'
 
 export default props => {
 
@@ -104,17 +105,10 @@ export default props => {
       <p><b>Characteristic Score</b>: The total value of one of your characteristics.</p>
       <p><b>Base Characteristic Score</b>: The natural value of one of your characteristic ignoring any effects that modify it.</p>
       <p><b>Half Characteristic</b>: Half of your characteristic score rounded down.</p>
-      <p>Characteristics may not be negative. If a characteristic falls to zero, it has a large <Button color="info" onClick={toggleParagraph('zeroEffects')}>debilitating effect</Button>.</p>
-      {props.pars.zeroEffects && <>
-        <p><b>Weapon Skill</b>: Jittering nerves prevent your from holding anything in your hands, or from focusing on a target. You can still move okay.</p>
-        <p><b>Strength</b>: You feel completely and utterly drained, and cannot bring yourself to move except to breathe and speak.</p>
-        <p><b>Toughness</b>: You suffer from a heart attack, or the mechaniform equivalent. If you are treated immediately, you wont die from this.</p>
-        <p><b>Agility</b>: Your peripheral nervous system shuts down, and you become unable to act except to stumble around and slur out nonsense.</p>
-        <p><b>Intelligence</b>: You retreat into a state of infantile cognitive capability, and make no significant decisions until you recover. You keep no memory of this incident.</p>
-        <p><b>Perception</b>: Your senses fail, and although conscious, your only conception of the world is a blur of color and noise.</p>
-        <p><b>Willpower</b>: You fall into a coma.</p>
-        <p><b>Fellowship</b>: You withdraw into a state of complete self focus, with no concept of the existence of other people.</p>
-      </>}
+      <p>Characteristics may not be negative. If a characteristic falls to zero, it has a large <Button color="link" onClick={toggleParagraph('zeroEffects')}>debilitating effect</Button>.</p>
+      {props.pars.zeroEffects && characteristics.map(char => <p key={char.abvr}>
+      <b>{char.name}</b>:{` ${char.zeroEffect}`}
+      </p>)}
       <p>
         Effects that permanently damage characteristics are rare.
         If your characteristic is reduced to zero, you automatically fail any test involving that characteristic, and remain debilitated until the characteristic heals to at least 1.

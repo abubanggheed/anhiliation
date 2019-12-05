@@ -19,6 +19,11 @@ class RulesNav extends Component {
               <Button color="link">Dice Rules</Button>
             </Link>
           </NavItem>
+          <NavItem>
+            <Link to={`${path}/creation`}>
+              <Button color="link">Character Creation</Button>
+            </Link>
+          </NavItem>
         </Nav>
       </Navbar>
     </>
