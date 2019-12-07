@@ -1,4 +1,5 @@
-import {characteristics } from './characteristic'
+import { characteristics } from './characteristic'
+import { aptitudes } from './aptitude'
 
 export class Species {
 
@@ -41,5 +42,5 @@ export const species = [
   new Species('Uven', characteristics[4], characteristics[5], 'Night Fighter', uvenDescription),
   new Species('Gyl', characteristics[1], characteristics[2], 'Gyl may hold their breath for T minutes', gylDescription),
   new Species('Kavren', characteristics[3], characteristics[1], 'Catfall', kavrenDescription),
-  new Species('Sentient Mechaniform', characteristics[6], characteristics[7], 'Resistance (radiation)', mechDescription, ', general')
+  new Species('Sentient Mechaniform', characteristics[6], characteristics[7], 'Resistance (radiation)', mechDescription, aptitudes[0])
 ]

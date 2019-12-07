@@ -2,7 +2,9 @@ import React from 'react'
 import { Button } from 'reactstrap'
 import { characteristics } from '../../../data/characteristic'
 import TestTable from '../../test-table/test-table.component'
+import CareerTable from '../../career-table/carrer-table.component'
 import { species } from '../../../data/species'
+import { aptitudes } from '../../../data/aptitude'
 
 export default props => {
 
@@ -14,7 +16,6 @@ export default props => {
   }
 
   return <>
-    {JSON.stringify(props.pars)}
     <h3>Character Creation</h3>
     <h4><Button color="secondary" onClick={toggleParagraph('characteristics')}>Characteristics</Button></h4>
     {props.pars.characteristics && <>
@@ -64,21 +65,88 @@ export default props => {
       {species.map(speis => <div key={speis.name}>
         <h5><Button color="info" onClick={toggleParagraph(speis.name)}>{speis.name}</Button></h5>
         {props.pars[speis.name] && <>
-          <p><b>{speis.name}:</b>{' ' + speis.descr}</p>
+          <p>{speis.descr}</p>
           <p>Bonus Aptitude: {speis.bApt.name}</p>
-          <p>Restricted Aptitude: {speis.rApt.name}{speis.rApt2}</p>
+          <p>Restricted Aptitude: {speis.rApt.name}{speis.rApt2 && `, ${speis.rApt2.name}`}</p>
           <p>Bonus Talent: {speis.bTalent}</p>
         </>}
       </div>)}
     </>}
     <h4><Button color="secondary" onClick={toggleParagraph('careers')}>Careers</Button></h4>
-    {props.pars.careers && <>Ca
+    {props.pars.careers && <>
+      <p>
+        People come from all walks of life. It is time to chose yours.
+      </p>
+      <CareerTable />
+      <p>
+        Choosing a career determines 2 of your non-characteristic attributes.
+        If you are a sentient mechaniform, being an Academic or Agent allows you to chose
+        an additional bonus attribute instead of Tech.
+      </p>
+      <p>
+        In addition to providing attributes, choosing a career will give
+        allow you to train in skills and talent earlier than you would otherwise be able to.
+        Eventually, you will have access to the entire catalog of personal improvements,
+        but your career will steer your early development.
+      </p>
     </>}
     <h4><Button color="secondary" onClick={toggleParagraph('aptitudes')}>Aptitudes</Button></h4>
-    {props.pars.aptitudes && <>A
+    {props.pars.aptitudes && <>
+      <p>
+        We all learn at a different pace. We are all challenged at picking up certain skills.
+        You may consider some ways of being challenged more debilitating than others,
+        but that's just your opinion. To explain our learning strengths, we use aptitudes.
+        For every characteristic, there is a characteristic aptitude.
+        Someone with the Strength aptitude will have an easier time getting buff.
+        Here are the rest:
+      </p>
+      {aptitudes.map(apt => <p key={apt.name}>
+        <b>{apt.name}</b>: {apt.descr}
+      </p>)}
+      <p>
+        After choosing species and career, you may pick two characteristic aptitudes of your choice and one non-characteristic aptitude of your choice to be your aptitudes.
+        You may not pick an aptitude that is restricted by your species.
+        If you are not a sentient mechaniform, you also get the general aptitude for free.
+        If you are, you pick another non-characteristic.
+      </p>
     </>}
     <h4><Button color="secondary" onClick={toggleParagraph('finally')}>Finally</Button></h4>
-    {props.pars.finally && <>F
+    {props.pars.finally && <>
+      <p>
+        Some other things to know. You must have a name, or a serial number, but preferably a name.
+        There are a few other stats to track.
+    </p>
+      <p>
+        Characteristic Points: (ChP) these are for increasing your characteristics.
+        You start with 120 chp.
+    </p>
+      <p>
+        Experience: (Exp) these are for obtaining skills and talents.
+        You start with 120 exp.
+    </p>
+      <p>
+        Rank: your rank affects what you can buy.
+        At any point your rank is the amount of exp spent / 100 rounded down.
+    </p>
+      <p>
+        Wounds: at any given point your wounds are Toughness * (Rank + 5).
+    </p>
+      <p>
+        Insanity Points: (IP) tracks your state of mental degradation.
+        You start at 0. When you reach 100 it's all over.
+    </p>
+      <p>
+        Mental Exhaustion: effects your ability to resist mental trauma, sits at 0 unless otherwise noted.
+        Any Willpower or Intelligence test will be decreased by your mental exhaustion.
+    </p>
+      <p>
+        Physical Exhaustion: a measure of your physical endurance, sits at 0 unless otherwise noted.
+        Any Strength, Agility or Weapon Skill test will be decrease by your physical exhaustion.
+    </p>
+      <p>
+        Reactions: these refresh whenever you get a turn to do something.
+        By default you have 1 reaction per round, but can accumulate more.
+    </p>
     </>}
   </>
 }
