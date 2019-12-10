@@ -1,4 +1,6 @@
 
+import { Asset } from './models'
+
 export class Aptitude {
 
   constructor(n, d) {
@@ -6,19 +8,18 @@ export class Aptitude {
   }
 
   static apply(funcObj, name, descr) {
-    funcObj.name = name
-    funcObj.descr = descr
+    Asset.apply(funcObj, name, descr)
   }
 }
 
 export const aptitudes = [
-  new Aptitude('General', 'Can you eat? How about breathe? Good. You have the general aptitude.'),
-  new Aptitude('Offense', 'Excelling at directing violence as you please.'),
-  new Aptitude('Defense', 'Dealing with the violence directed at you.'),
-  new Aptitude('Finesse', 'The ability to look cool.'),
-  new Aptitude('Tech', 'Though technology is frustrating, some have an inherent understanding of how to get the bits to work.'),
-  new Aptitude('Knowledge', 'A large available pool of memory devoted to academia.'),
-  new Aptitude('Fieldcraft', 'Scrounging a living out of less than favorable surroundings.'),
-  new Aptitude('Empathy', 'A keen awareness of the emotional state of others.'),
-  new Aptitude('Charisma', 'Leading the thoughts of others along your force of personality.')
+  new Aptitude('General', 'Can you eat? How about breathe? Good. You have the general aptitude.'),//0
+  new Aptitude('Offense', 'Excelling at directing violence as you please.'),//1
+  new Aptitude('Defense', 'Dealing with the violence directed at you.'),//2
+  new Aptitude('Finesse', 'The ability to look cool.'),//3
+  new Aptitude('Tech', 'Though technology is frustrating, some have an inherent understanding of how to get the bits to work.'),//4
+  new Aptitude('Knowledge', 'A large available pool of memory devoted to academia.'),//5
+  new Aptitude('Fieldcraft', 'Scrounging a living out of less than favorable surroundings.'),//6
+  new Aptitude('Empathy', 'A keen awareness of the emotional state of others.'),//7
+  new Aptitude('Charisma', 'Leading the thoughts of others along your force of personality.')//8
 ]

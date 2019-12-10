@@ -1,3 +1,4 @@
+import { Asset } from './models'
 
 export class Characteristic {
   constructor(name, abvr, descr, zeroEffect) {
@@ -5,9 +6,8 @@ export class Characteristic {
   }
 
   static apply(funcObj, name, abvr, descr, zeroEffect) {
-    funcObj.name = name
+    Asset.apply(funcObj, name, descr)
     funcObj.abvr = abvr
-    funcObj.descr = descr
     funcObj.zeroEffect = zeroEffect
   }
 }

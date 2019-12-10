@@ -19,7 +19,7 @@ export class Test {
 }
 
 export const tests = [
-  new Test('Infallible', '1d4-4', [4], '2d2-4', [2, 2], '', []),
+  new Test('Infallible', '1d4-4', [4], '2d2-4', [2, 2], '', [1, 1, 1]),
   new Test('Trivial', '1d6-6', [6], '2d3-6', [3, 3], '3d2-6', [2, 2, 2]),
   new Test('Easy', '1d8-8', [8], '2d4-8', [4, 4], '3d3-9', [3, 3, 3]),
   new Test('Common', '1d10-10', [10], '2d5-10', [5, 5], '3d3-9', [3, 3, 3]),

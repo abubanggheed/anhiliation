@@ -1,5 +1,6 @@
 import { characteristics } from './characteristic'
 import { aptitudes } from './aptitude'
+import { Asset } from './models'
 
 export class Species {
 
@@ -8,12 +9,11 @@ export class Species {
   }
 
   static apply(funcObj, name, bApt, rApt, bTalent, descr, rApt2) {
-    funcObj.name = name
+    Asset.apply(funcObj, name, descr)
     funcObj.bApt = bApt
     funcObj.rApt = rApt
     funcObj.rApt2 = rApt2
     funcObj.bTalent = bTalent
-    funcObj.descr = descr
   }
 }
 

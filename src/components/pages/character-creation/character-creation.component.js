@@ -26,7 +26,7 @@ export default props => {
           their inherent abilities come in an awe inspiring distribution that can be summarized by eight easy to understand categories.
         </p>
         {characteristics.map(char => <p key={char.name}>
-          <b>{char.name}:</b>{` (${char.abvr}) ${char.descr}`}
+          <b>{char.name}:</b>{` (${char.abvr}) ${char.desc}`}
         </p>)}
       </>}
       <h5><Button color="info" onClick={toggleParagraph('testingChars')}>Testing Characteristics</Button></h5>
@@ -65,7 +65,7 @@ export default props => {
       {species.map(speis => <div key={speis.name}>
         <h5><Button color="info" onClick={toggleParagraph(speis.name)}>{speis.name}</Button></h5>
         {props.pars[speis.name] && <>
-          <p>{speis.descr}</p>
+          <p>{speis.desc}</p>
           <p>Bonus Aptitude: {speis.bApt.name}</p>
           <p>Restricted Aptitude: {speis.rApt.name}{speis.rApt2 && `, ${speis.rApt2.name}`}</p>
           <p>Bonus Talent: {speis.bTalent}</p>
@@ -101,7 +101,7 @@ export default props => {
         Here are the rest:
       </p>
       {aptitudes.map(apt => <p key={apt.name}>
-        <b>{apt.name}</b>: {apt.descr}
+        <b>{apt.name}</b>: {apt.desc}
       </p>)}
       <p>
         After choosing species and career, you may pick two characteristic aptitudes of your choice and one non-characteristic aptitude of your choice to be your aptitudes.
