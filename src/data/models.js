@@ -1,14 +1,15 @@
 export class Purchasable {
 
-  constructor(apts) {
-    this.constructor.apply(this, apts)
+  constructor(apts, mixedApts) {
+    this.constructor.apply(this, apts, mixedApts)
   }
 
-  static apply(funcObj, apts) {
+  static apply(funcObj, apts, mixedApts) {
     funcObj.apts = apts
     funcObj.apt1 = apts[0]
     funcObj.apt2 = apts[1]
     funcObj.apt3 = apts[2]
+    funcObj.mixedApts = mixedApts
   }
 }
 
