@@ -14,8 +14,9 @@ export class Skill {
   static apply(funcObj, name, desc, apts, type) {
     Asset.apply(funcObj, name, desc)
     Purchasable.apply(funcObj, apts)
-    this.type = type
+    funcObj.type = type
   }
+
 }
 
 export const skills = [

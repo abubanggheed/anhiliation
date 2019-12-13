@@ -33,7 +33,8 @@ const leadLove = new Talent(
   'You may use heavy weapons in melee',
   'You may use heavy weapons in melee as if they were pistols.',
   [characteristics[0], aptitudes[1]],
-  3
+  3,
+  []
 )
 
 export const tier3Talents = [
@@ -170,8 +171,8 @@ export const tier3Talents = [
   ),
   new Talent(// 19|76
     'Sound of Mind',
-    'Ignore ill effects of insanity points',
-    'You ignore all negative effects of insanity points or from gaining insanity points with the exception of terminal insanity.',
+    'Ignore ill effects of insanity',
+    'You ignore all negative effects of insanity or from gaining insanity with the exception of terminal insanity.',
     [characteristics[6], aptitudes[2]],
     3,
     [[{ ...tier1Talents[22], name: tier1Talents[22].name + ' (x10)'}]]

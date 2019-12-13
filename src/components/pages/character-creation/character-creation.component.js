@@ -15,11 +15,19 @@ export default props => {
     })
   }
 
+  const makeHeader = (par, text) => <h4>
+    <Button color="secondary" onClick={toggleParagraph(par)}>{text}</Button>
+  </h4>
+
+  const makeArticle = (par, text) => <h5>
+    <Button color="info" onClick={toggleParagraph(par)}>{text}</Button>
+  </h5>
+
   return <>
     <h3>Character Creation</h3>
-    <h4><Button color="secondary" onClick={toggleParagraph('characteristics')}>Characteristics</Button></h4>
+    {makeHeader('characteristics', 'Characteristics')}
     {props.pars.characteristics && <>
-      <h5><Button color="info" onClick={toggleParagraph('categories')}>Characteristic</Button></h5>
+      {makeArticle('categories', 'Characteristic')}
       {props.pars.categories && <>
         <p>
           People are a varied lot. Even before training and adventuring,
@@ -29,7 +37,7 @@ export default props => {
           <b>{char.name}:</b>{` (${char.abvr}) ${char.desc}`}
         </p>)}
       </>}
-      <h5><Button color="info" onClick={toggleParagraph('testingChars')}>Testing Characteristics</Button></h5>
+      {makeArticle('testingChars', 'Testing Characteristics')}
       {props.pars.testingChars && <>
         <p>
           Testing your metal will amount to testing one of these characteristics.
@@ -44,6 +52,7 @@ export default props => {
         </p>
       </>}
       <h5><Button color="info" onClick={toggleParagraph('testsExtended')}>Tests Extended</Button></h5>
+      {makeArticle('testsExtended', 'Tests Extended')}
       {props.pars.testsExtended && <>
         <p>
           Tests can be organized into categories of difficulty and variance.
@@ -60,10 +69,10 @@ export default props => {
         </p>
       </>}
     </>}
-    <h4><Button color="secondary" onClick={toggleParagraph('species')}>Species</Button></h4>
+    {makeHeader('species', 'Species')}
     {props.pars.species && <>
       {species.map(speis => <div key={speis.name}>
-        <h5><Button color="info" onClick={toggleParagraph(speis.name)}>{speis.name}</Button></h5>
+        {makeArticle(speis.name, speis.name)}
         {props.pars[speis.name] && <>
           <p>{speis.desc}</p>
           <p>Bonus Aptitude: {speis.bApt.name}</p>
@@ -72,7 +81,7 @@ export default props => {
         </>}
       </div>)}
     </>}
-    <h4><Button color="secondary" onClick={toggleParagraph('careers')}>Careers</Button></h4>
+    {makeHeader('careers', 'Careers')}
     {props.pars.careers && <>
       <p>
         People come from all walks of life. It is time to chose yours.
@@ -90,7 +99,7 @@ export default props => {
         but your career will steer your early development.
       </p>
     </>}
-    <h4><Button color="secondary" onClick={toggleParagraph('aptitudes')}>Aptitudes</Button></h4>
+    {makeHeader('aptitudes', 'Aptitudes')}
     {props.pars.aptitudes && <>
       <p>
         We all learn at a different pace. We are all challenged at picking up certain skills.
@@ -110,7 +119,7 @@ export default props => {
         If you are, you pick another non-characteristic.
       </p>
     </>}
-    <h4><Button color="secondary" onClick={toggleParagraph('finally')}>Finally</Button></h4>
+    {makeHeader('finally', 'Finally')}
     {props.pars.finally && <>
       <p>
         Some other things to know. You must have a name, or a serial number, but preferably a name.
@@ -132,7 +141,7 @@ export default props => {
         Wounds: at any given point your wounds are Toughness * (Rank + 5).
     </p>
       <p>
-        Insanity Points: (IP) tracks your state of mental degradation.
+        Insanity: (I) tracks your state of mental degradation.
         You start at 0. When you reach 100 it's all over.
     </p>
       <p>

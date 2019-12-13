@@ -11,23 +11,31 @@ export default props => {
     })
   }
 
+  const makeHeader = (par, text) => <h4>
+    <Button color="secondary" onClick={toggleParagraph(par)}>{text}</Button>
+  </h4>
+
+  const makeArticle = (par, text) => <h5>
+    <Button color="info" onClick={toggleParagraph(par)}>{text}</Button>
+  </h5>
+
   return <>
     <h3>Dice Rules</h3>
-    <h4><Button color="secondary" onClick={toggleParagraph('theCharTest')}>Characteristic Tests</Button></h4>
+    {makeHeader('theCharTest', 'Characteristic Tests')}
     {props.pars.theCharTest && <>
-      <h5><Button color="info" onClick={toggleParagraph('charTest')}>The Characteristic Test</Button></h5>
+      {makeArticle('charTest', 'The Characteristic Test')}
       {props.pars.charTest && <p>
         All characteristic tests include a roll.
         These are usually straightforward, e.g. 2d8 – 16 + WS + 6.
         Here the + 6 is a basic modifier on the tests.
         These straight modifiers are the most common things to see in a characteristic test, but there are a few other ways to modify a test.
         </p>}
-      <h5><Button color="info" onClick={toggleParagraph('mdTest')}>Mixed Dice Tests</Button></h5>
+      {makeArticle('mdTest', 'Mixed Dice Tests')}
       {props.pars.mdTest && <p>
         Some tests involve more than one type of die in the roll.
         This would look like 2d6{'&'}1d10 – 22, that is roll 2 d6s and 1 d10 and add the results.
       </p>}
-      <h5><Button color="info" onClick={toggleParagraph('gAdvantages')}>General Advantages and Disadvantages</Button></h5>
+      {makeArticle('gAdvantages', 'General Advantages')}
       {props.pars.gAdvantages && <p>
         You will be asked on a regular basis to roll more than the usual amount of dice, then drop some of results.
         If you see 3d6+ - 18, that means roll 4d6 then remove the d6 with the lowest result from the pile before subtracting 18.
@@ -37,7 +45,7 @@ export default props => {
         Adding a general advantage or disadvantage to a mixed dice test means choosing one of the types of dice and adding the modifier to that set of dice.
         If the rules don't specify on which set of dice the advantage or disadvantage would go, the character who causes the effect gets to chose.
       </p>}
-      <h5><Button color="info" onClick={toggleParagraph('centerings')}>Centerings</Button></h5>
+      {makeArticle('centerings', 'Centerings')}
       {props.pars.centerings && <p>
         It is not impossible for a roll to have both an advantage and a disadvantage.
         This is called a centering. That is, 1 centering is a +- modifier on a test.
@@ -47,7 +55,7 @@ export default props => {
         Usually, advantages and disadvantages cancel each other out.
         Note that 1 centering means 2 extra dice.
       </p>}
-      <h5><Button color="info" onClick={toggleParagraph('strangeNumbers')}>Strange Numbers</Button></h5>
+      {makeArticle('strangeNumbers', 'Strange Numbers')}
       {props.pars.strangeNumbers && <>
         <p>
           There are calls for dice rolls for numbers that are not available in physical dice.
@@ -69,13 +77,13 @@ export default props => {
       </p>
       </>}
     </>}
-    <h4><Button color="secondary" onClick={toggleParagraph('opposedTests')}>Opposed Tests</Button></h4>
+    {makeHeader('opposedTests', 'Opposed Tests')}
     {props.pars.opposedTests && <>
       <p>
         The opposed test is where two or more characters make a characteristic test, then compare their results.
         These fall into 2 categories.
       </p>
-      <h5><Button color="info" onClick={toggleParagraph('hthTest')}>Head-To-Head (hth)</Button></h5>
+      {makeArticle('hthTest', 'Heat-To-Head (hth)')}
       {props.pars.hthTest && <p>
         In hth opposed tests, the final result of the test is the difference between the contender's results.
         If you get a result of -2 and your opponent gets -5, you have succeeded by 3 and your opponent has failed by this.
@@ -84,13 +92,13 @@ export default props => {
         Sometimes, the best course of action is to do nothing.
         If you forgo a hth test, but win anyway, you cannot take advantage of any counter-attack or other bonus that is related to that test.
         </p>}
-      <h5><Button color="info" onClick={toggleParagraph('nfTest')}>No Fault (nf)</Button></h5>
+      {makeArticle('nfTest', 'No Fault (nf)')}
       {props.pars.nfTest && <p>
         In nf opposed tests, someone cannot make a situation worse than it already is.
         In a nf test you cannot get a result less than -1.
         Otherwise, it is the same as an hth test.
           </p>}
-      <h5><Button color="info" onClick={toggleParagraph('opposingATest')}>Opposing a Test</Button></h5>
+      {makeArticle('opposingATest', 'Opposing A Test')}
       {props.pars.opposingATest && <p>
         In most opposed test, there is an initiator and a responder.
         The initiator makes (and passes) a test that the responder may oppose.
@@ -99,7 +107,7 @@ export default props => {
         In other scenarios, the two parties make their tests at the same time.
           </p>}
     </>}
-    <h4><Button color="secondary" onClick={toggleParagraph('rulesOnCharacterstics')}>Rules On Characteristics</Button></h4>
+    {makeHeader('rulesOnCharacterstics', 'Rules On Characteristics')}
     {props.pars.rulesOnCharacterstics && <>
       <p>Here are some rules on terms related to characteristics:</p>
       <p><b>Characteristic Score</b>: The total value of one of your characteristics.</p>
@@ -107,7 +115,7 @@ export default props => {
       <p><b>Half Characteristic</b>: Half of your characteristic score rounded down.</p>
       <p>Characteristics may not be negative. If a characteristic falls to zero, it has a large <Button color="link" onClick={toggleParagraph('zeroEffects')}>debilitating effect</Button>.</p>
       {props.pars.zeroEffects && characteristics.map(char => <p key={char.abvr}>
-      <b>{char.name}</b>:{` ${char.zeroEffect}`}
+        <b>{char.name}</b>:{` ${char.zeroEffect}`}
       </p>)}
       <p>
         Effects that permanently damage characteristics are rare.

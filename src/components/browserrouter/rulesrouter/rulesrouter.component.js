@@ -5,6 +5,7 @@ import Introduction from '../../pages/introduction/introduction.container'
 import DiceRules from '../../pages/dicerules/dicerules.container'
 import RulesNav from '../navs/rulesnav.component'
 import CharacterCreation from '../../pages/character-creation/character-creation.container'
+import SelfImprovement from '../../pages/self-improvement/self-improvement.container'
 
 class RulesRouterComponent extends Component {
 
@@ -23,6 +24,10 @@ class RulesRouterComponent extends Component {
               <Route
                 path={`${path}/creation`}
                 component={CharacterCreation}
+              />
+              <Route
+                path={`${path}/selfimprovement`}
+                component={SelfImprovement}
               />
               <Route
                 path={`${path}/`}

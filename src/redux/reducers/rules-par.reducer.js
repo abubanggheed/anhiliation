@@ -29,6 +29,16 @@ const initialState = {
     aptitudes: false,
     nonCharApts: false,
     finally: false
+  },
+  selfImprovement: {
+    eBazaar: false,
+    chpCosts: false,
+    expCosts: false,
+    skills: false,
+    tier0: false,
+    tier1: false,
+    tier2: false,
+    tier3: false
   }
 }
 
@@ -48,6 +58,14 @@ export default (state = initialState, action) => {
         charCreation: {
           ...state.charCreation,
           [action.payload]: !state.charCreation[action.payload]
+        }
+      }
+    case 'RULES_IMPROVEMENT':
+      return {
+        ...state,
+        selfImprovement: {
+          ...state.selfImprovement,
+          [action.payload]: !state.selfImprovement[action.payload]
         }
       }
     default:
