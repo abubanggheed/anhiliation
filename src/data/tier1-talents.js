@@ -4,13 +4,14 @@ import { characteristics } from './characteristic'
 import { aptitudes } from './aptitude'
 import { skills } from './skill'
 import { tier0Talents } from './tier0-talents'
+import { supportFromAffar, improvisedFighter, enterTheImprovised } from './inverted-talents'
 
 export const tier1Costs = [26, 22, 18, 14]
 
 const coveringGround = new Talent(
   'Covering Ground',
   'May reload while running or charging',
-  '',
+  'While taking a run, full move or charge, you may reload your readied weapon by ½ action worth of reloading.',
   [characteristics[0], aptitudes[3]],
   1,
   []
@@ -48,7 +49,7 @@ export const tier1Talents = [
   new Talent(// 3|12
     'Dirty Fighting',
     'Compromise reactions in brawler hits',
-    '',
+    'Whenever you land an attack made from the brawler talent, exhaust a reaction from your opponent for every 2 successes you have on that attack. If you would exhaust their reactions below 0, they can take no actions the next round.',
     [characteristics[3], aptitudes[3]],
     1,
     [[tier0Talents[1]]]
@@ -56,7 +57,7 @@ export const tier1Talents = [
   new Talent(// 4|13
     'Dodge Counter',
     'May counter attack after dodging',
-    '',
+    'You may use a counter attack after dodging a melee attack.',
     [characteristics[3], aptitudes[3]],
     1,
     [[counterAttack]]
@@ -64,7 +65,7 @@ export const tier1Talents = [
   new Talent(// 5|14
     'Dog Pile',
     'May immediately enter other people\'s grapples',
-    '',
+    'When a grapple is initiated successfully, if you within your half agility of meters, you may spend a reaction to dive into the grapple on behalf of either the aggressor or defender. You must role a grapple attempt to join the grapple. If joining on behalf of the aggressor, you enter as an assistor. If joining on behalf of the defender, the aggressor may oppose  with a reaction, but that takes them out of grapple. If so, you would become the aggressor if you manage to grapple them. If they do not react, you enter the grapple as an intervener.',
     [characteristics[1], aptitudes[1]],
     1,
     []
@@ -72,7 +73,7 @@ export const tier1Talents = [
   new Talent(// 6|15
     'Flexed',
     'Gain concussive property on all out attacks',
-    '',
+    'Your all out attacks gain the Concussive (0) ability. If that weapon is already concussive, increase its concussive value by 1.',
     [characteristics[1], aptitudes[1]],
     1,
     []
@@ -80,7 +81,7 @@ export const tier1Talents = [
   new Talent(// 7|16
     'Flimsical',
     'Use sleight of hand to slip free',
-    '',
+    'When attempting to slip free from grapple or a mosh pit, you may use a sleight of hand test instead of the usual Agi test.',
     [characteristics[3], aptitudes[3]],
     1,
     [[{...skills[23], training: 'Professional'}]]
@@ -88,15 +89,15 @@ export const tier1Talents = [
   new Talent(// 8|17
     'Gun Fu',
     'You may reload your ranged weapon while using it as a melee weapon',
-    '',
+    'You may gain up to a half action worth or reloading on a round where your use your ranged weapon as a melee weapon.',
     [characteristics[0], aptitudes[3]],
     1,
-    [[coveringGround]]//pending
+    [[coveringGround], [enterTheImprovised]]
   ),
   new Talent(// 9|18
     'Hard Target',
     'Increase difficulty to hit you when running',
-    '',
+    'When you run, charge, counter charge, ride, or dive for cover, increase the difficulty of all ranged attack made against you by one step until your next round.',
     [characteristics[3], aptitudes[2]],
     1,
     []
@@ -104,42 +105,35 @@ export const tier1Talents = [
   new Talent(// 10|19
     'Quick Draw',
     'Draw weapons as a free action',
-    '',
+    'You may draw your weapon as a free action so long as that weapon is a melee, pistol, infantry, or improvised type weapon. (If your plan is to beat down with unarmed damage you do not need to draw your “weapons”.) You may draw a number of weapons freely equal to your half WS score.',
     [characteristics[0], aptitudes[3]],
     1,
     []
   ),
-  new Talent(// 11|20
-    'Improvised Fighter',
-    'Improvised Weapons do more damage and can be used to parry normally',
-    '',
-    [characteristics[0], aptitudes[1]],
-    1,
-    [[{ ...tier0Talents[8], name: tier0Talents[8].name + ' (Improvised)'}]]
-  ),
+  improvisedFighter,// 11|20
   new Talent(// 12|21
     'Inspector',
     'Determine armor special rules at a glance',
-    '',
+    'You can determine all of the special rules regarding one or more suits of armor by seeing them in action.',
     [characteristics[5], aptitudes[4]],
     1,
     [[
-      { ...skills[8], name: skills[8].name + ' (war)'},
-      { ...skills[28], name: skills[28].name + ' (Armorer)'}
+      { ...skills[8], name: skills[8].name + ' (war)', training: 'Basic'},
+      { ...skills[28], name: skills[28].name + ' (Armorer)', training: 'Basic'}
     ]]
   ),
   new Talent(// 13|22
     'Lent Shot',
     'Shot into another melee when engaged in your own',
-    '',
+    'You may shoot outside of your current melee without conceding your ability to react to your melee opponent\'s attacks.',
     [characteristics[0], aptitudes[3]],
     1,
-    []//pending
+    [[supportFromAffar]]
   ),
   new Talent(// 14|23
     'Overwatch',
     'May use overwatch action',
-    '',
+    'You may use the overwatch action.',
     [characteristics[0], aptitudes[2]],
     1,
     []
@@ -147,7 +141,7 @@ export const tier1Talents = [
   new Talent(// 15|24
     'Primed',
     'Gain advantage on personal initiative',
-    '',
+    'You gain a general advantage on all personal initiative tests.',
     [characteristics[5], aptitudes[3]],
     1,
     []
@@ -155,7 +149,7 @@ export const tier1Talents = [
   new Talent(// 16|25
     'Razor\'s Edge',
     'May dodge after parrying',
-    '',
+    'After making a parry test, you may spend an additional reaction to make a dodge test.',
     [characteristics[3], aptitudes[3]],
     1,
     [[stayFrosty]]
@@ -163,7 +157,7 @@ export const tier1Talents = [
   new Talent(// 17|26
     'Refocus',
     'Reactions and half moves do not undo your aim bonus',
-    '',
+    'You can retain an aim bonus through making a reaction or half move. Other kinds of movements still disrupt your aim bonus. With this talent, you can complete an aim action over the course of 2 turns while doing 1 or 2 half moves.',
     [characteristics[0], aptitudes[3]],
     1,
     []
@@ -171,7 +165,7 @@ export const tier1Talents = [
   new Talent(// 18|27
     'Rippling Frame',
     'No more need to brace',
-    '',
+    'You automatically count as braced when using your weapons.',
     [characteristics[1], aptitudes[0]],
     1,
     []
@@ -179,7 +173,7 @@ export const tier1Talents = [
   new Talent(// 19|28
     'Semi Auto',
     'May perform the semi-auto burst attack',
-    '',
+    'You may use the semi-auto burst attack.',
     [characteristics[0], aptitudes[1]],
     1,
     []
@@ -188,7 +182,7 @@ export const tier1Talents = [
   new Talent(// 21|30
     'Suppressing Fire',
     'May perform the suppressing fire attack',
-    '',
+    'You may use the suppressing fire attack.',
     [characteristics[0], aptitudes[2]],
     1,
     []
@@ -196,7 +190,7 @@ export const tier1Talents = [
   new Talent(// 22|31
     'Therapy',
     'Reduce your total insanity by 5',
-    '',
+    'Reduce your total insanity points by 5. You may take this talent any number of times.',
     [characteristics[6], aptitudes[0]],
     1,
     [[{name: '5 Insanity'}]]
@@ -204,15 +198,31 @@ export const tier1Talents = [
   new Talent(// 23|32
     'The Slip',
     'May exit grapple when losing control of it',
-    '',
+    'If you are in control of grapple and an opponent is about to gain control, you may spend a reaction to exit that grapple.',
     [characteristics[1], aptitudes[3]],
     1,
     []
   ),
   new Talent(// 24|33
+    'Tracer',
+    'Determine identity of other software users',
+    'Whenever you make opposed security tests, if you succeed with a result of at least 3, you may gain information about your opponent. The amount of information gained increases based on your success.',
+    [characteristics[4], aptitudes[4]],
+    1,
+    [[{ ...skills[22], training: 'Basic' }]]
+  ),
+  new Talent(// 25|34
+    'Unarmed Fighter',
+    'You fisticuffs do additional damage',
+    'Your unarmed attacks now do 1d8 damage.',
+    [characteristics[0], aptitudes[1]],
+    1,
+    [[ { ...tier0Talents[8], name: tier0Talents[8].name + ' (Unarmed)'} ]]
+  ),
+  new Talent(// 26|35
     'Unhinged',
     'Gain bonus to intimidate and blather from insanity points',
-    '',
+    'Whenever you make an intimidate or blather test, you gain a basic bonus of 1 for every 10 insanity points you have.',
     [characteristics[7], aptitudes[8]],
     1,
     []
