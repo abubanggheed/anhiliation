@@ -1,7 +1,7 @@
 
-import { skills } from './skill'
-import { talents } from './all-talents'
-import { nameAddOn, prereqAddOn } from '../util/skillmaker'
+import { skills } from '../skill'
+import { talents } from '../all-talents'
+import { nameAddOn, prereqAddOn } from '../../util/skillmaker'
 
 export const academicPath = [
   [//0
