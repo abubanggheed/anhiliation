@@ -21,7 +21,7 @@ export const tier2Talents = [
   new Talent(// 1|37
     'Cleave',
     'Hit multiple enemies with all out attacks',
-    'When you make an all out attack, you may hit a number of target in melee with you equal to your half WS score. You use the same attack roll for all of them.',
+    'When you make an all out attack, you may hit a number of target in melee with you equal to your half Acc score. You use the same attack roll for all of them.',
     [characteristics[1], aptitudes[1]],
     2,
     []
@@ -56,7 +56,7 @@ export const tier2Talents = [
     'When you make a counter attack, you may make a counter attack against any opponent you are in melee with, not just the original attacker. This counter attack must be caused by an enemy\'s attack.',
     [characteristics[0], aptitudes[3]],
     2,
-    []
+    [[tier1Talents[2]]]
   ),
   new Talent(// 6|42
     'Dual Wield',
@@ -64,7 +64,7 @@ export const tier2Talents = [
     'You may use two one handed weapons. You may make attacks with both at the same time. This only works with attack actions, not attack reactions.',
     [characteristics[0], aptitudes[1]],
     2,
-    [[tier1Talents[2]]]
+    []
   ),
   new Talent(// 7|43
     'Fanatic',

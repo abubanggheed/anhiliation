@@ -17,7 +17,7 @@ export const tier0Talents = [
   new Talent(// 1|1
     'Brawler',
     'May be able to do an unarmed attack on parry',
-    'Whether on the offense or defense, whenever an opposed melee attack is defended exactly (totaling -1 for the attacker) by an evasion, you may make a free unarmed melee attack that can not be evaded. If your opponent also has brawler, you make a hth opposed WS test of 2d8-16 to determine who gets to attempt the attack.',
+    'Whether on the offense or defense, whenever an opposed melee attack is defended exactly (totaling -1 for the attacker) by an evasion, you may make a free unarmed melee attack that can not be evaded. If your opponent also has brawler, you make a hth opposed Acc test of 2d8-16 to determine who gets to attempt the attack.',
     [characteristics[0], aptitudes[1], aptitudes[2]],
     0,
     []

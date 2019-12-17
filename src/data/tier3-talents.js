@@ -34,7 +34,7 @@ const leadLove = new Talent(
   'You may use heavy weapons in melee as if they were pistols.',
   [characteristics[0], aptitudes[1]],
   3,
-  []
+  [[tier2Talents[11]]]
 )
 
 export const tier3Talents = [
@@ -69,7 +69,7 @@ export const tier3Talents = [
     'You are considered trained in every common lore skill. If you are already trained in that lore, you instead gain a +1 basic bonus to it.',
     [characteristics[4], aptitudes[0]],
     3,
-    [[{ ...skills[8], name: skills[8] + ' (x4)', training: 'Basic' }]]
+    [[{ ...skills[8], name: skills[8].name + ' (x4)', training: 'Basic' }]]
   ),
   goodGuyWithAGun,// 5|62
   new Talent(// 6|63
@@ -116,7 +116,7 @@ export const tier3Talents = [
   new Talent(// 12|69
     'Leap Back',
     'You may jump back after making a melee attack',
-    'After making a melee attack, success or not, you may make an acrobatics test at 2d8 – 16. If you succeed, you may leap back a number of meters equal to your half Agi score.',
+    'After making a melee attack, success or not, you may make an acrobatics test at 2d8 – 16. If you succeed, you may leap back a number of meters equal to your half Ref score.',
     [characteristics[3], aptitudes[6]],
     3,
     [[{ ...skills[0], training: 'Professional' }]]
@@ -155,8 +155,8 @@ export const tier3Talents = [
   ),
   new Talent(// 17|74
     'Slasher',
-    'Gain half WS score bonus to damage',
-    'You gain a basic bonus of your half WS score to all your damage rolls.',
+    'Gain half Acc score bonus to damage',
+    'You gain a basic bonus of your half Acc score to all your damage rolls.',
     [characteristics[0], aptitudes[1]],
     3,
     []
@@ -164,7 +164,7 @@ export const tier3Talents = [
   new Talent(// 18|75
     'Slippery Bastard',
     'You gain scale-able reactions',
-    'Instead of having a fixed number of reactions per round, you have reactions equal to the average of your WS and Agi scores rounded up.',
+    'Instead of having a fixed number of reactions per round, you have reactions equal to the average of your Acc and Ref scores rounded up.',
     [characteristics[0], characteristics[3], aptitudes[2]],
     3,
     [[tier2Talents[16]]]

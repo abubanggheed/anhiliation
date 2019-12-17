@@ -5,7 +5,12 @@ export class Purchasable {
   }
 
   static printApts(funcObj) {
-    return () => funcObj.apts.map(apt => apt.abvr ? apt.abvr: apt.name).join(', ')
+    return () => (
+      funcObj.apts.map(apt => apt.abvr ? apt.abvr : apt.name).join(', ')
+      + (funcObj.mixedApts && funcObj.mixedApts.length ? ', ' + funcObj.mixedApts.map(
+        options => options.map(option => option.abvr ? option.abvr : option.name).join(' | ')
+      ).join(', ') : ''
+      ))
   }
 
   static apply(funcObj, apts, mixedApts) {

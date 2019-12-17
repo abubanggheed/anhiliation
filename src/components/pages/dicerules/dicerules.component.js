@@ -26,7 +26,7 @@ export default props => {
       {makeArticle('charTest', 'The Characteristic Test')}
       {props.pars.charTest && <p>
         All characteristic tests include a roll.
-        These are usually straightforward, e.g. 2d8 – 16 + WS + 6.
+        These are usually straightforward, e.g. 2d8 – 16 + Acc + 6.
         Here the + 6 is a basic modifier on the tests.
         These straight modifiers are the most common things to see in a characteristic test, but there are a few other ways to modify a test.
         </p>}

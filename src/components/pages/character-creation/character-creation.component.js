@@ -42,7 +42,7 @@ export default props => {
         <p>
           Testing your metal will amount to testing one of these characteristics.
           This amounts to adding your characteristic to a modifier that depends on a dice roll and the general difficulty of the task.
-          E.g, a test to shoot an elk can be given as WS + 2d8 – 16. If you meet 0, you succeed.
+          E.g, a test to shoot an elk can be given as Acc + 2d8 – 16. If you meet 0, you succeed.
           Thus in that case if your Weapon Skill was 6, you would need to roll a result at least 10 on the 2d8 to make the shot.
         </p>
         <p>
@@ -150,7 +150,7 @@ export default props => {
     </p>
       <p>
         Physical Exhaustion: a measure of your physical endurance, sits at 0 unless otherwise noted.
-        Any Strength, Agility or Weapon Skill test will be decrease by your physical exhaustion.
+        Any Strength, Refleces or Accuacy test will be decrease by your physical exhaustion.
     </p>
       <p>
         Reactions: these refresh whenever you get a turn to do something.

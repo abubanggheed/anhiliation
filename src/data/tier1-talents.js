@@ -81,7 +81,7 @@ export const tier1Talents = [
   new Talent(// 7|16
     'Flimsical',
     'Use sleight of hand to slip free',
-    'When attempting to slip free from grapple or a mosh pit, you may use a sleight of hand test instead of the usual Agi test.',
+    'When attempting to slip free from grapple or a mosh pit, you may use a sleight of hand test instead of the usual Ref test.',
     [characteristics[3], aptitudes[3]],
     1,
     [[{...skills[23], training: 'Professional'}]]
@@ -105,7 +105,7 @@ export const tier1Talents = [
   new Talent(// 10|19
     'Quick Draw',
     'Draw weapons as a free action',
-    'You may draw your weapon as a free action so long as that weapon is a melee, pistol, infantry, or improvised type weapon. (If your plan is to beat down with unarmed damage you do not need to draw your “weapons”.) You may draw a number of weapons freely equal to your half WS score.',
+    'You may draw your weapon as a free action so long as that weapon is a melee, pistol, infantry, or improvised type weapon. (If your plan is to beat down with unarmed damage you do not need to draw your “weapons”.) You may draw a number of weapons freely equal to your half Acc score.',
     [characteristics[0], aptitudes[3]],
     1,
     []
@@ -118,7 +118,7 @@ export const tier1Talents = [
     [characteristics[5], aptitudes[4]],
     1,
     [[
-      { ...skills[8], name: skills[8].name + ' (war)', training: 'Basic'},
+      { ...skills[8], name: skills[8].name + ' (War)', training: 'Basic'},
       { ...skills[28], name: skills[28].name + ' (Armorer)', training: 'Basic'}
     ]]
   ),
