@@ -45,7 +45,7 @@ export const hooliganPath = [
   ],
   [//3
     skills[1],
-    prereqAddOn[skills[3]],
+    prereqAddOn(skills[3]),
     skills[7],
     talents[11],
     talents[10],

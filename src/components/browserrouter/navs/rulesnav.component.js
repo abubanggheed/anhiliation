@@ -29,6 +29,11 @@ class RulesNav extends Component {
               <Button color="link">Self Improvement</Button>
             </Link>
           </NavItem>
+          <NavItem>
+            <Link to={`${path}/careerpaths`}>
+              <Button color="link">Career Paths</Button>
+            </Link>
+          </NavItem>
         </Nav>
       </Navbar>
     </>

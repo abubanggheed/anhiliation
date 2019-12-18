@@ -47,38 +47,38 @@ export const celebrityPath = [
     talents[13],
     prereqAddOn(skills[18], 4, ' (2nd)'),
     skills[24],
-    prereqAddOn([skills[27]])
+    prereqAddOn(skills[27])
   ],
   [//5
-    prereqAddOn([skills[0]]),
-    prereqAddOn([skills[1]]),
+    prereqAddOn(skills[0]),
+    prereqAddOn(skills[1]),
     talents[45],
     talents[52],
     talents[28],
-    prereqAddOn([skills[24]])
+    prereqAddOn(skills[24])
   ],
   [//6
-    prereqAddOn([skills[0]], 4),
-    prereqAddOn([skills[4]], 4),
+    prereqAddOn(skills[0], 4),
+    prereqAddOn(skills[4], 4),
     talents[9],
     talents[42],
     talents[67],
     talents[23],
     talents[25],
-    prereqAddOn([skills[19]]),
+    prereqAddOn(skills[19]),
     talents[57]
   ],
   [//7
-    prereqAddOn([skills[1]], 4),
+    prereqAddOn(skills[1], 4),
     talents[41],
     talents[16],
     talents[48]
   ],
   [//8
     talents[40],
-    prereqAddOn([skills[19]], 4),
+    prereqAddOn(skills[19], 4),
     talents[64],
     talents[75],
-    prereqAddOn([skills[24]], 4)
+    prereqAddOn(skills[24], 4)
   ]
 ]

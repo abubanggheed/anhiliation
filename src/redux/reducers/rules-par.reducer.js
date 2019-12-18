@@ -39,6 +39,19 @@ const initialState = {
     tier1: false,
     tier2: false,
     tier3: false
+  },
+  careerPaths: {
+    Academic: false,
+    Agent: false,
+    Bum: false,
+    Celebrity: false,
+    Explorer: false,
+    Goon: false,
+    Hooligan: false,
+    Lobbyist: false,
+    Prospector: false,
+    Zealot: false,
+    Universal: false
   }
 }
 
@@ -66,6 +79,14 @@ export default (state = initialState, action) => {
         selfImprovement: {
           ...state.selfImprovement,
           [action.payload]: !state.selfImprovement[action.payload]
+        }
+      }
+    case 'RULES_PATHS':
+      return {
+        ...state,
+        careerPaths: {
+          ...state.careerPaths,
+          [action.payload]: !state.careerPaths[action.payload]
         }
       }
     default:
