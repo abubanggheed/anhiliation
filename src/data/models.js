@@ -34,3 +34,15 @@ export class Asset {
     funcObj.desc = desc
   }
 }
+
+export class Test {
+
+  constructor(char, variance) {
+    this.constructor.apply(this, char, variance)
+  }
+
+  static apply(funcObj, char, variance) {
+    funcObj.char = char
+    funcObj.variance = variance
+  }
+}

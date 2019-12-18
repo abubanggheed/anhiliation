@@ -115,22 +115,32 @@ export default props => {
         Advanced skills require some amount of training to attempt.
       </p>
       <SkillsTable />
+      <p><b>Social Skill Breakdown</b></p>
+      <p>
+        It is sometimes difficult to pin down which social skill to use, or for that matter which social skill you are using.
+        Here is an example of the differences between the various social skills.
+      </p>
+      <p>Charm: “Do this for me. I need you.”</p>
+      <p>Command: “Do it! Now!”</p>
+      <p>Commerce: “Do this for me an I will make it up to you.”</p>
+      <p>Deceive: “Doing this for me is in your best interests.”</p>
+      <p>Intimidate: “Do this for me or deal with the consequences.”</p>
     </>}
     {makeHeader('tier0', 'Talents (Tier 0)')}
     {props.pars.tier0 && <>
-      <Tier0Table/>
+      <Tier0Table />
     </>}
     {makeHeader('tier1', 'Talents (Tier 1)')}
     {props.pars.tier1 && <>
-      <Tier1Table/>
+      <Tier1Table />
     </>}
     {makeHeader('tier2', 'Talents (Tier 2)')}
     {props.pars.tier2 && <>
-      <Tier2Table/>
+      <Tier2Table />
     </>}
     {makeHeader('tier3', 'Talents (Tier 3)')}
     {props.pars.tier3 && <>
-      <Tier3Table/>
+      <Tier3Table />
     </>}
   </>
 }

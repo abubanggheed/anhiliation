@@ -42,7 +42,7 @@ export default props => {
         <b>Shield Volatile</b>: Same as volatile, but is only in effect when an energy shield is equipped.
       </p>
       <p>
-        <b>SuperCharged</b>: Shields equipped to this armor recharge at double the rate.
+        <b>Super Charged</b>: Shields equipped to this armor recharge at double the rate.
       </p>
       <p>
         <b>Extra Battery</b>: Shields equipped to this armor have twice the capacity.
