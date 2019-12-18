@@ -34,7 +34,7 @@ export const lobbyistPath = [
   [//3
     prereqAddOn(skills[4]),
     prereqAddOn(skills[5], 4),
-    talents[72],
+    talents[73],
     prereqAddOn(skills[20], 2, ' (Markets)'),
     nameAddOn(talents[31], ' x3')
   ],
@@ -49,7 +49,7 @@ export const lobbyistPath = [
     prereqAddOn(skills[3], 4),
     prereqAddOn(skills[7]),
     prereqAddOn(skills[8], 2, ' (History)'),
-    talents[61],
+    talents[62],
     prereqAddOn(skills[20], 4, ' (Law)')
   ],
   [//6
@@ -65,7 +65,7 @@ export const lobbyistPath = [
     talents[32]
   ],
   [//8
-    talents[58],
+    talents[59],
     prereqAddOn(skills[12], 4),
     talents[51],
     prereqAddOn(skills[20], 4, ' (Crime)')

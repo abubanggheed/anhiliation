@@ -12,6 +12,7 @@ export const zealotPath = [
     nameAddOn(talents[5], ' (Fear)'),
     nameAddOn(talents[5], ' (Mind Control)'),
     talents[28],
+    nameAddOn(talents[8], ' (Improvised)'),
     nameAddOn(talents[8], ' (Melee)'),
     nameAddOn(talents[8], ' (Infantry)')
   ],
@@ -40,7 +41,7 @@ export const zealotPath = [
     prereqAddOn(skills[8], 2, ' (Religion)'),
     talents[40],
     talents[41],
-    talents[63],
+    talents[64],
     prereqAddOn(skills[12]),
     skills[19]
   ],
@@ -57,27 +58,27 @@ export const zealotPath = [
     prereqAddOn(skills[6], 4),
     prereqAddOn(skills[8], 4, ' (Religion)'),
     talents[43],
-    talents[68],
+    talents[69],
     talents[52],
     talents[24],
     prereqAddOn(skills[21])
   ],
   [//6
-    talents[59],
+    talents[60],
     prereqAddOn(skills[12], 4),
     talents[50],
-    talents[73],
+    talents[74],
     prereqAddOn(skills[24], 4),
     talents[34]
   ],
   [//7
-    talents[65],
+    talents[66],
     prereqAddOn(skills[11], 4),
-    talents[79]
+    talents[80]
   ],
   [//8
-    talents[70],
-    talents[74],
-    talents[78]
+    talents[71],
+    talents[75],
+    talents[79]
   ]
 ]

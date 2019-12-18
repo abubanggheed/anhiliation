@@ -81,7 +81,7 @@ export const prospectorPath = [
   ],
   [//6
     prereqAddOn(skills[8], 4, ' (Creatures)'),
-    talents[58],
+    talents[59],
     talents[49],
     prereqAddOn(skills[16]),
     talents[57],
@@ -96,9 +96,9 @@ export const prospectorPath = [
   ],
   [//8
     prereqAddOn(skills[1], 4),
-    talents[61],
-    talents[69],
+    talents[62],
+    talents[70],
     prereqAddOn(skills[15], 4),
-    talents[75]
+    talents[76]
   ]
 ]

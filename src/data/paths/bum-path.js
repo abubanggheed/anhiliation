@@ -29,8 +29,8 @@ export const bumPath = [
   [//2
     prereqAddOn(skills[4], 4),
     skills[5],
-    talents[59],
-    talents[63],
+    talents[60],
+    talents[64],
     talents[20],
     skills[19],
     prereqAddOn(skills[26]),
@@ -54,7 +54,7 @@ export const bumPath = [
     talents[32]
   ],
   [//5
-    talents[64],
+    talents[65],
     talents[19],
     talents[39],
     talents[28],
@@ -68,12 +68,12 @@ export const bumPath = [
   ],
   [//7
     talents[37],
-    talents[60],
+    talents[61],
     prereqAddOn(skills[10], 4)
   ],
   [//8
     prereqAddOn(skills[5], 4),
-    talents[61],
+    talents[62],
     talents[52],
     prereqAddOn(skills[17], 4, ' (Any)'),
   ]

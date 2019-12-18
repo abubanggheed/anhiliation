@@ -49,7 +49,7 @@ export const goonPath = [
   ],
   [//4
     prereqAddOn(skills[4]),
-    talents[63],
+    talents[64],
     talents[24],
     nameAddOn(talents[5], ' (Mind Control)'),
     prereqAddOn(skills[19]),
@@ -62,7 +62,7 @@ export const goonPath = [
     talents[40],
     talents[13],
     prereqAddOn(skills[12]),
-    talents[68],
+    talents[69],
     talents[22],
     talents[52]
   ],
@@ -70,26 +70,26 @@ export const goonPath = [
     talents[36],
     prereqAddOn(skills[6]),
     prereqAddOn(skills[8], 2, ' (War)'),
-    talents[58],
+    talents[59],
     talents[41],
     talents[48],
     talents[50]
   ],
   [//7
     prereqAddOn(skills[4], 4),
-    talents[65],
+    talents[66],
     prereqAddOn(skills[12], 4),
     talents[46],
-    talents[70],
+    talents[71],
     talents[32],
-    talents[78]
+    talents[79]
   ],
   [//8
     talents[38],
     prereqAddOn(skills[8], 4, ' (War)'),
-    talents[59],
-    talents[64],
+    talents[60],
+    talents[65],
     prereqAddOn(skills[19], 4),
-    talents[74]
+    talents[75]
   ]
 ]

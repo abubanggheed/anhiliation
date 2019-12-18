@@ -62,7 +62,7 @@ export const celebrityPath = [
     prereqAddOn(skills[4], 4),
     talents[9],
     talents[42],
-    talents[67],
+    talents[68],
     talents[23],
     talents[25],
     prereqAddOn(skills[19]),
@@ -77,8 +77,8 @@ export const celebrityPath = [
   [//8
     talents[40],
     prereqAddOn(skills[19], 4),
-    talents[64],
-    talents[75],
+    talents[65],
+    talents[76],
     prereqAddOn(skills[24], 4)
   ]
 ]

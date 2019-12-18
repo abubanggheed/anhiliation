@@ -45,7 +45,7 @@ export const academicPath = [
   [//3
     skills[5],
     prereqAddOn(skills[8], 4, ' (History)'),
-    talents[61],
+    talents[62],
     prereqAddOn(skills[15]),
     nameAddOn(talents[5], ' (Feedback)'),
     prereqAddOn(skills[20], 4, ' (Magic Theory)'),
@@ -65,7 +65,7 @@ export const academicPath = [
     prereqAddOn(skills[24], 4)
   ],
   [//5
-    prereqAddOn(skills[8], 4, ' (Relogion)'),
+    prereqAddOn(skills[8], 4, ' (Religion)'),
     talents[28],
     talents[29],
     prereqAddOn(skills[27]),
@@ -84,13 +84,13 @@ export const academicPath = [
     talents[49],
     prereqAddOn(skills[16], 4),
     talents[33],
-    talents[76],
+    talents[77],
     prereqAddOn(skills[20], 4, ' (Ecology)'),
     prereqAddOn(skills[22], 4)
   ],
   [//8
     talents[45],
-    talents[73],
+    talents[74],
     talents[56],
     prereqAddOn(skills[27], 4)
   ]

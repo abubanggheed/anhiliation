@@ -63,7 +63,7 @@ export const hooliganPath = [
     prereqAddOn(skills[2]),
     prereqAddOn(skills[4]),
     talents[9],
-    talents[60],
+    talents[61],
     talents[50],
     talents[52],
     talents[24],
@@ -82,7 +82,7 @@ export const hooliganPath = [
     talents[53],
     prereqAddOn(skills[21]),
     prereqAddOn(skills[23], 4),
-    talents[77]
+    talents[78]
   ],
   [//6
     prereqAddOn(skills[2], 4),
@@ -90,28 +90,28 @@ export const hooliganPath = [
     prereqAddOn(skills[5]),
     talents[44],
     talents[17],
-    talents[66],
-    talents[70],
+    talents[67],
+    talents[71],
     prereqAddOn(skills[22]),
-    talents[75],
+    talents[76],
     talents[35]
   ],
   [//7
     prereqAddOn(skills[0], 4),
     prereqAddOn(skills[17], 4, ' (Urban)'),
     talents[45],
-    talents[67],
-    talents[71],
+    talents[68],
+    talents[72],
     talents[55],
     prereqAddOn(skills[19], 4)
   ],
   [//8,
     prereqAddOn(skills[4], 4),
-    talents[65],
-    talents[68],
+    talents[66],
     talents[69],
+    talents[70],
     prereqAddOn(skills[20], 4, ' (Crime)'),
-    talents[74],
+    talents[75],
     talents[56]
   ]
 ]

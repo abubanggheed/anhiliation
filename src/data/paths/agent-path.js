@@ -67,7 +67,7 @@ export const agentPath = [
     talents[13],
     talents[42],
     prereqAddOn(skills[11]),
-    talents[69],
+    talents[70],
     talents[52],
     talents[56],
     talents[34]
@@ -79,7 +79,7 @@ export const agentPath = [
     talents[44],
     talents[45],
     prereqAddOn(skills[12]),
-    talents[67],
+    talents[68],
     talents[55],
     prereqAddOn(skills[20], 2, ' (Crime)'),
     prereqAddOn(skills[24]),
@@ -89,9 +89,9 @@ export const agentPath = [
     prereqAddOn(skills[3]),
     prereqAddOn(skills[8], 4, ' (Geography)'),
     prereqAddOn(skills[8], 2, ' (War)'),
-    talents[58],
+    talents[59],
     talents[22],
-    talents[71],
+    talents[72],
     prereqAddOn(skills[15]),
     talents[23],
     prereqAddOn(skills[23]),
@@ -105,17 +105,17 @@ export const agentPath = [
     talents[16],
     prereqAddOn(skills[10], 4),
     talents[47],
-    talents[75],
+    talents[76],
     prereqAddOn(skills[24], 4),
     prereqAddOn(skills[27], 4)
   ],
   [//8
     prereqAddOn(skills[11], 4),
-    talents[66],
-    talents[73],
+    talents[67],
+    talents[74],
     prereqAddOn(skills[21], 4),
     prereqAddOn(skills[23], 4),
     prereqAddOn(skills[25], 4),
-    talents[77]
+    talents[78]
   ]
 ]

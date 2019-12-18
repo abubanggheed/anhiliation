@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from 'reactstrap'
+import { Button, Table } from 'reactstrap'
 import RankTable from '../../career-rank-table/rank-table.component'
 
 export default props => {
@@ -17,5 +17,28 @@ export default props => {
         </div>)}
       </>}
     </div>)}
+    <h4>
+      <Button color="secondary" onClick={props.toggleParagraph("Universal")}>The Universal Path</Button>
+    </h4>
+    {props.pars.Universal && <>
+      <p>
+        Regardless of which career, you have chosen, a high ranking person will be able to pick up all sorts of skills and talents as they branch from their original inclinations.
+        The table below shows when skills and talents become available regardless of career.
+      </p>
+      <Table dark>
+        <thead>
+          <tr>
+            <th>Advances</th>
+            <th>Rank</th>
+          </tr>
+        </thead>
+        <tbody>
+          {props.uPath.map((advances, index) => <tr key={index}>
+            <td>{advances}</td>
+            <td>{index}</td>
+          </tr>)}
+        </tbody>
+      </Table>
+    </>}
   </>
 }
