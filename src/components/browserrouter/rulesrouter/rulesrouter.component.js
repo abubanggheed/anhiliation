@@ -7,6 +7,7 @@ import RulesNav from '../navs/rulesnav.component'
 import CharacterCreation from '../../pages/character-creation/character-creation.container'
 import SelfImprovement from '../../pages/self-improvement/self-improvement.container'
 import CareerPaths from '../../pages/careers/careers-page.container'
+import MaterialPossessions from '../../pages/material-possessions/possessions.container'
 
 class RulesRouterComponent extends Component {
 
@@ -33,6 +34,10 @@ class RulesRouterComponent extends Component {
               <Route
                 path={`${path}/careerpaths`}
                 component={CareerPaths}
+              />
+              <Route
+                path={`${path}/possessions`}
+                component={MaterialPossessions}
               />
               <Route
                 path={`${path}/`}

@@ -52,6 +52,11 @@ const initialState = {
     Prospector: false,
     Zealot: false,
     Universal: false
+  },
+  possessions: {
+    armor: false,
+    melee: false,
+    ranged: false
   }
 }
 
@@ -87,6 +92,14 @@ export default (state = initialState, action) => {
         careerPaths: {
           ...state.careerPaths,
           [action.payload]: !state.careerPaths[action.payload]
+        }
+      }
+    case 'RULES_POSSESSIONS':
+      return {
+        ...state,
+        possessions: {
+          ...state.possessions,
+          [action.payload]: !state.possessions[action.payload]
         }
       }
     default:
