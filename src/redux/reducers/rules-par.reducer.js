@@ -57,6 +57,20 @@ const initialState = {
     armor: false,
     melee: false,
     ranged: false
+  },
+  violence: {
+    time: false,
+    combat: false,
+    grappling: false,
+    moshing: false,
+    modifiers: false,
+    damage: false,
+    ranges: false
+  },
+  magic: {
+    fear: false,
+    spellUse: false,
+    insanity: false
   }
 }
 
@@ -100,6 +114,22 @@ export default (state = initialState, action) => {
         possessions: {
           ...state.possessions,
           [action.payload]: !state.possessions[action.payload]
+        }
+      }
+    case 'RULES_VIOLENCE':
+      return {
+        ...state,
+        violence: {
+          ...state.violence,
+          [action.payload]: !state.violence[action.payload]
+        }
+      }
+    case 'RULES_MAGIC':
+      return {
+        ...state,
+        magic: {
+          ...state.magic,
+          [action.payload]: !state.magic[action.payload]
         }
       }
     default:

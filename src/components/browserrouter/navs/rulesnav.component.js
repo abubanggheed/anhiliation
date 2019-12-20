@@ -39,6 +39,16 @@ class RulesNav extends Component {
               <Button color="link">Material Possessions</Button>
             </Link>
           </NavItem>
+          <NavItem>
+            <Link to={`${path}/violence`}>
+              <Button color="link">Violence</Button>
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link to={`${path}/magic`}>
+              <Button color="link">Magic and Consequences</Button>
+            </Link>
+          </NavItem>
         </Nav>
       </Navbar>
     </>

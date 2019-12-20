@@ -8,6 +8,8 @@ import CharacterCreation from '../../pages/character-creation/character-creation
 import SelfImprovement from '../../pages/self-improvement/self-improvement.container'
 import CareerPaths from '../../pages/careers/careers-page.container'
 import MaterialPossessions from '../../pages/material-possessions/possessions.container'
+import Violence from '../../pages/violence/violence.container'
+import Magic from '../../pages/magic/magic.container'
 
 class RulesRouterComponent extends Component {
 
@@ -38,6 +40,14 @@ class RulesRouterComponent extends Component {
               <Route
                 path={`${path}/possessions`}
                 component={MaterialPossessions}
+              />
+              <Route
+                path={`${path}/violence`}
+                component={Violence}
+              />
+              <Route
+                path={`${path}/magic`}
+                component={Magic}
               />
               <Route
                 path={`${path}/`}
