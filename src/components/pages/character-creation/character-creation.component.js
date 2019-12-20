@@ -51,7 +51,6 @@ export default props => {
           Depending on the situation, the amount by which you succeed or fail also matter.
         </p>
       </>}
-      <h5><Button color="info" onClick={toggleParagraph('testsExtended')}>Tests Extended</Button></h5>
       {makeArticle('testsExtended', 'Tests Extended')}
       {props.pars.testsExtended && <>
         <p>

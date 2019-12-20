@@ -69,7 +69,7 @@ export const tier2Talents = [
   new Talent(// 7|43
     'Fanatic',
     'Gain bonus to command based on insanity',
-    'Whenever you make a command test, you gain a basic bonus of 1 for every 10 insanity points you have.',
+    'Whenever you make a command test, you gain a basic bonus of 1 for every 10 insanity score you have.',
     [characteristics[7], aptitudes[8]],
     2,
     [[tier1Talents[26]]]

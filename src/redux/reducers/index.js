@@ -4,12 +4,14 @@ import createSagaMiddleware from 'redux-saga'
 import logger from 'redux-logger'
 import rootSaga from '../sagas'
 import rulesParReducer from './rules-par.reducer'
+import rulesAssetDesc from './rules-ref.reducer'
 
 const sagaMiddleware = createSagaMiddleware()
 
 const store = createStore(
   combineReducers({
-    rulesParReducer
+    rulesParReducer,
+    rulesAssetDesc
   }),
   applyMiddleware(
     ...(process.env.NODE_ENV === "development" ? [sagaMiddleware, logger] : [sagaMiddleware])

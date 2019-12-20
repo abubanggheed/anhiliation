@@ -1,8 +1,8 @@
 import React from 'react'
 import { Button } from 'reactstrap'
-import CombatActions from '../../combat-table/combat-table.component'
-import GrappleTable from '../../grappling-table/grappling-table.component'
-import MoshTable from '../../moshing-table/moshing-table.component'
+import CombatActions from '../../combat-table/combat-table.container'
+import GrappleTable from '../../grappling-table/grappling-table.container'
+import MoshTable from '../../moshing-table/moshing-table.container'
 import RangeTable from '../../range-table/range-table.component'
 
 export default props => {

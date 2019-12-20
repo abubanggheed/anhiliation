@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Table } from 'reactstrap'
-import RankTable from '../../career-rank-table/rank-table.component'
+import RankTable from '../../career-rank-table/rank-table.container'
 
 export default props => {
 

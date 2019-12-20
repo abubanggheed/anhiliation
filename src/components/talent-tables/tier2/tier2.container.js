@@ -5,12 +5,20 @@ import { connect } from 'react-redux'
 
 const Tier2Table = props => {
 
+  const setDesc = talent => () => {
+    props.dispatch({
+      type: 'SET_ASSET_DESC',
+      assetType: 'talent',
+      payload: talent
+    })
+  }
+
   return <>
     <TalentTable
       talents={tier2Talents}
+      setDesc={setDesc}
     />
   </>
 }
 
-export default connect((redux) => ({
-}))(Tier2Table)
+export default connect()(Tier2Table)

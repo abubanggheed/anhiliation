@@ -12,11 +12,11 @@ export default props => {
           <th>Role</th>
           <th>Difficulty</th>
           <th>Opponent Difficulty</th>
-          <th>Varaince</th>
+          <th>Variance</th>
         </tr>
       </thead>
       <tbody>
-        {props.actions.map(action => <tr key={action.name}>
+        {props.actions.map(action => <tr key={action.name} onClick={props.setDesc(action)}>
           <td>{action.name}</td>
           <td>{action.char ? action.char.abvr : '-'}</td>
           <td>{action.role}</td>

@@ -14,7 +14,9 @@ export default props => {
         </tr>
       </thead>
       <tbody>
-        {props.rank.map((asset, index) => <tr key={index}>
+        {props.rank.map((asset, index) => <tr key={index} onClick={props.setDesc(
+          asset, asset.tier === undefined ? 'skill' : 'talent'
+        )}>
           <td>{asset.name}</td>
           <td>{asset.printApts()}</td>
           <td>{asset.printPrereqs ? asset.printPrereqs() : ''}</td>

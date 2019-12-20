@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Switch, Route, withRouter } from 'react-router-dom'
 import { Container, Row, Col } from 'reactstrap'
+import AssetDesc from '../../asset-desc/asset-desc.container'
 import Introduction from '../../pages/introduction/introduction.container'
 import DiceRules from '../../pages/dicerules/dicerules.container'
 import RulesNav from '../navs/rulesnav.component'
@@ -56,7 +57,7 @@ class RulesRouterComponent extends Component {
             </Switch>
           </Col>
           <Col xs="3">
-            <p>other stuff goes here</p>
+            <AssetDesc />
           </Col>
         </Row>
       </Container>

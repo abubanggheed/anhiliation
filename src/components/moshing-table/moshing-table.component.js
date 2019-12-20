@@ -19,7 +19,7 @@ export default props => {
         </tr>
       </thead>
       <tbody>
-        {props.actions.map(action => <tr key={action.name}>
+        {props.actions.map(action => <tr key={action.name} onClick={props.setDesc(action)}>
           <td>{action.name}</td>
           <td>{action.char ? action.char.abvr : '-'}</td>
           <td>{action.minRatio}</td>

@@ -222,7 +222,7 @@ export const tier1Talents = [
   new Talent(// 26|35
     'Unhinged',
     'Gain bonus to intimidate and blather from insanity points',
-    'Whenever you make an intimidate or blather test, you gain a basic bonus of 1 for every 10 insanity points you have.',
+    'Whenever you make an intimidate or blather test, you gain a basic bonus of 1 for every 10 insanity score you have.',
     [characteristics[7], aptitudes[8]],
     1,
     []
