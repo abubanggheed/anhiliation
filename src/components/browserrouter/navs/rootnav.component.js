@@ -6,7 +6,7 @@ class RootNav extends Component {
 
   render() {
     return <>
-      <Navbar color="dark">
+      <Navbar color="dark" expand="md">
         <Link to="/">
           <Button color="danger">{'|  |'}</Button>
         </Link>
@@ -14,6 +14,11 @@ class RootNav extends Component {
           <NavItem>
             <Link to="/rules">
               <Button color="link">Rules</Button>
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link to="/stats">
+              <Button color="link">Char Input</Button>
             </Link>
           </NavItem>
         </Nav>

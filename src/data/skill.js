@@ -46,7 +46,7 @@ export const skills = [
   ),
   new Skill(//4
     'Carouse',
-    'Use to process and deal with the substances that enter your body. Avoid addiction, win a drinking contest. You may also substitute a carouse test for a toughness test to resist poisons, toxins, and tranquilizers.',
+    'Use to process and deal with the substances that enter your body. Avoid addiction, win a drinking contest. You may also substitute a carouse test for an endurance test to resist poisons, toxins, and tranquilizers.',
     [characteristics[2], aptitudes[8]],
     'Basic'
   ),
@@ -148,7 +148,7 @@ export const skills = [
   ),
   new Skill(//21
     'Scrutiny',
-    'This ability allows you to discern whether or not someone\'s emotional state. Failing this test, unless otherwise stated, leaves you with uncertainty. Npcs, when failing the test, will believe the liar unless they have a good reason not to. If scrutiny is being used on you, you must oppose with a deceive or token deceive test. (Being a good liar can get you into trouble.)',
+    'This ability allows you to discern someone\'s emotional state. Failing this test, unless otherwise stated, leaves you with uncertainty. Npcs, when failing the test, will believe the liar unless they have a good reason not to. If scrutiny is being used on you, you must oppose with a deceive or token deceive test. (Being a good liar can get you into trouble.)',
     [characteristics[5], aptitudes[7]],
     'Basic'
   ),

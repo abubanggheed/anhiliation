@@ -103,7 +103,7 @@ export default props => {
         </tbody>
       </Table>
       <p>
-        Tier 0 talents are those that are either meant to be taken several times over your life, or offer minute and situation bonuses.
+        Tier 0 talents are those that are either meant to be taken several times over your life, or offer minute and situational bonuses.
         As you go up the tiers, you find more powerful talents.
       </p>
     </>}

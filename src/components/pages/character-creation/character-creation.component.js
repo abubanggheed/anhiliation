@@ -88,8 +88,6 @@ export default props => {
       <CareerTable />
       <p>
         Choosing a career determines 2 of your non-characteristic attributes.
-        If you are a sentient mechaniform, being an Academic or Agent allows you to chose
-        an additional bonus attribute instead of Tech.
       </p>
       <p>
         In addition to providing attributes, choosing a career will give
@@ -137,7 +135,7 @@ export default props => {
         At any point your rank is the amount of exp spent / 100 rounded down.
     </p>
       <p>
-        Wounds: at any given point your wounds are Toughness * (Rank + 5).
+        Wounds: at any given point your wounds are Endurance * (Rank + 5).
     </p>
       <p>
         Insanity: (I) tracks your state of mental degradation.
@@ -149,7 +147,7 @@ export default props => {
     </p>
       <p>
         Physical Exhaustion: a measure of your physical endurance, sits at 0 unless otherwise noted.
-        Any Strength, Refleces or Accuacy test will be decrease by your physical exhaustion.
+        Any Strength, Reflexes or Accuracy test will be decrease by your physical exhaustion.
     </p>
       <p>
         Reactions: these refresh whenever you get a turn to do something.

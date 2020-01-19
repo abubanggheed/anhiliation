@@ -65,7 +65,7 @@ export const tier1Talents = [
   new Talent(// 5|14
     'Dog Pile',
     'May immediately enter other people\'s grapples',
-    'When a grapple is initiated successfully, if you within your half agility of meters, you may spend a reaction to dive into the grapple on behalf of either the aggressor or defender. You must role a grapple attempt to join the grapple. If joining on behalf of the aggressor, you enter as an assistor. If joining on behalf of the defender, the aggressor may oppose  with a reaction, but that takes them out of grapple. If so, you would become the aggressor if you manage to grapple them. If they do not react, you enter the grapple as an intervener.',
+    'When a grapple is initiated successfully, if you within your half reflexes score of meters, you may spend a reaction to dive into the grapple on behalf of either the aggressor or defender. You must role a grapple attempt to join the grapple. If joining on behalf of the aggressor, you enter as an assistor. If joining on behalf of the defender, the aggressor may oppose  with a reaction, but that takes them out of grapple. If so, you would become the aggressor if you manage to grapple them. If they do not react, you enter the grapple as an intervener.',
     [characteristics[1], aptitudes[1]],
     1,
     []

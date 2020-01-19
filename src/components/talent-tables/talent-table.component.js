@@ -9,7 +9,7 @@ export default props => {
         <tr>
           <th>Name</th>
           <th>Aptitudes</th>
-          <th>Preprequisites</th>
+          <th>Prerequisites</th>
           <th>Description</th>
         </tr>
       </thead>

@@ -49,7 +49,7 @@ export const tier0Talents = [
   new Talent(// 5|5
     'Resistance',
     'Gain a bonus on resisting ill effects',
-    'You gain a +2 basic bonus on tests to resist negative effect from a specific hazard. You may take this talent any number of times, each time for a different hazard. The common hazards are: fear, mind control, feedback, toxin, radiation, exposure, concussive, and starvation. The relevant characteristic aptitude is T or Will depending whether the hazard inflicts physical or mental trauma.',
+    'You gain a +2 basic bonus on tests to resist negative effect from a specific hazard. You may take this talent any number of times, each time for a different hazard. The common hazards are: fear, mind control, feedback, toxin, radiation, exposure, concussive, and starvation. The relevant characteristic aptitude is E or Will depending whether the hazard inflicts physical or mental trauma.',
     [aptitudes[2]],
     0,
     [],
@@ -58,7 +58,7 @@ export const tier0Talents = [
   new Talent(// 6|6
     'Spell Training',
     'Learn how to guard against feedback from a spell',
-    'You are able to resist feedback for a given spell normally, and only take 1 mental fatigue when you cast it. You may take this talent any number of times, each time specifying a different spell. You must possess the spell in order to train in it. Whenever you take this talent, you gain 1d4 insanity points. From learning how to handle the feedback signature.',
+    'You are able to resist feedback for a given spell normally, and only take 1 mental fatigue when you cast it. You may take this talent any number of times, each time specifying a different spell. You must possess the spell in order to train in it. Whenever you take this talent, you gain 1d4 insanity from learning how to handle the feedback signature.',
     [characteristics[6], aptitudes[4]],
     0,
     []

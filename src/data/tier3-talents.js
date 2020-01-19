@@ -49,7 +49,7 @@ export const tier3Talents = [
   new Talent(// 1|59
     'Counter Shot',
     'Counter ranged attacks with single shots',
-    'After using a dodge counter on a ranged attack if your opponents attack score was reduced to -3 or less, you may spend an additional reaction to make a single shot attack against that opponent.',
+    'After using a dodge on a ranged attack if your opponents attack score was reduced to -3 or less, you may spend an additional reaction to make a single shot attack against that opponent.',
     [characteristics[0], aptitudes[3]],
     3,
     [[tier1Talents[4]]]

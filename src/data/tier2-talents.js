@@ -13,7 +13,7 @@ export const tier2Talents = [
   new Talent(// 0|36
     'Berserker\'s Balance',
     'React after performing all out attacks',
-    'When you make an all out attack, instead of forfeiting your ability to make reactions, you instead spend 1.',
+    'When you make an all out attack, instead of forfeiting your ability to make reactions, you spend 1.',
     [characteristics[1], aptitudes[3]],
     2,
     [[tier1Talents[20]]]

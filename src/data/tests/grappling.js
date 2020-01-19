@@ -29,7 +29,7 @@ export const grappleActions = [
   ),
   new GrappleAction(
     'Flail',
-    'Make a standard attack as unarmed or with a nearby improvised weapon. If your opponent evades this attack, they end the grapple.',
+    'Make a standard attack as unarmed weapon. If your opponent evades this attack, they end the grapple.',
     characteristics[0],
     'High',
     'Grappled',
@@ -137,7 +137,7 @@ export const grappleActions = [
   ),
   new GrappleAction(
     'Wallop',
-    'Make a standard attack as unarmed, or with a 1 handed improvised weapon. Grappled opponents cannot make evasions.',
+    'Make a standard attack as unarmed weapon. Grappled opponents cannot make evasions.',
     characteristics[0],
     'Standard',
     'Grappler',

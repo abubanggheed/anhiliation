@@ -23,7 +23,7 @@ export default props => {
       </p>
       <p>
         <b>Personal Initiative</b>: A personal initiative role is given by 2d8 + your half Ref score.
-        This is a test that reflects the twitchiness of your parallel nervous system is rolled on occasion.
+        This is a test that reflects the twitchiness of your parallel nervous system and is rolled on occasion.
       </p>
       <p>
         <b>Party Initiative</b>: This reflects the general experience of a party, and how well they respond to a sudden threat.

@@ -116,7 +116,7 @@ export default props => {
         Your opponent gains a general disadvantage on all reaction tests to avoid attacks made with this weapon.
       </p>
       <p>
-        <b>Concussive (X)</b>: When you strike someone with this weapon, they make a standard T test with a basic penalty of X.
+        <b>Concussive (X)</b>: When you strike someone with this weapon, they make a standard E test with a basic penalty of X.
         On failure they are stunned for a round, and following rounds for every additional 3 points of failure (starting at -4).
         If they took more than their S score in damage, they are knocked prone.
       </p>
@@ -132,7 +132,7 @@ export default props => {
         If you do, double your penetration for this attack.
       </p>
       <p>
-        <b>Toxic (X)</b>: When you score at least 1 hit against a target, they make a standard T test with a basic penalty of X.
+        <b>Toxic (X)</b>: When you score at least 1 hit against a target, they make a standard E test with a basic penalty of X.
         For each point of failure, they take 1d4 toxic damage that ignores absorption.
         If they survive the encounter, they continue to suffer from narrative toxic effects until treated.
       </p>
@@ -206,7 +206,7 @@ export default props => {
         When doing an aimed shot, the first hit deals an additional 1d4 damage for every 3 points of success up to Xd4.
       </p>
       <p>
-        <b>Concussive (X)</b>: When you strike someone with this weapon, they make a standard T test with a basic penalty of X.
+        <b>Concussive (X)</b>: When you strike someone with this weapon, they make a standard E test with a basic penalty of X.
         On failure they are stunned for a round, and following rounds for every additional 3 points of failure (starting at -4).
         If they took more than their S score in damage, they are knocked prone.
       </p>
