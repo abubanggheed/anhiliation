@@ -21,6 +21,11 @@ class RootNav extends Component {
               <Button color="link">Char Input</Button>
             </Link>
           </NavItem>
+          <NavItem>
+            <Link to="/dice">
+              <Button color="link">Dice</Button>
+            </Link>
+          </NavItem>
         </Nav>
       </Navbar>
     </>

@@ -89,7 +89,7 @@ export const tier1Talents = [
   new Talent(// 8|17
     'Gun Fu',
     'You may reload your ranged weapon while using it as a melee weapon',
-    'You may gain up to a half action worth or reloading on a round where your use your ranged weapon as a melee weapon.',
+    'You may gain up to a half action worth of reloading on a round where your use your ranged weapon as a melee weapon.',
     [characteristics[0], aptitudes[3]],
     1,
     [[coveringGround], [enterTheImprovised]]
@@ -124,7 +124,7 @@ export const tier1Talents = [
   ),
   new Talent(// 13|22
     'Lent Shot',
-    'Shot into another melee when engaged in your own',
+    'Shoot into another melee when engaged in your own',
     'You may shoot outside of your current melee without conceding your ability to react to your melee opponent\'s attacks.',
     [characteristics[0], aptitudes[3]],
     1,

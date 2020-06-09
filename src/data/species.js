@@ -28,7 +28,7 @@ let gylDescription = 'Gyl typically inhabit islands, coasts, and lakes. They are
   + 'and leading a largely aquatic lifestyle. Gyl have a greater upper body strength '
   + 'than other humanoids, which helps with the constant swimming. However, their '
   + 'bodies are known to be somewhat fragile.'
-let kavrenDescription = ' Kavren inhabit places of high altitude, and are known traveling around the world in'
+let kavrenDescription = ' Kavren inhabit places of high altitude, and are known traveling around the world in '
   + 'balloon fleets. They have flaps of skin, that when extended, act as a hang glider, '
   + 'though they cannot fly without gear. This is made possible due to their light frame, '
   + 'but a low mass body isn\'t good in a fight.'
@@ -40,7 +40,7 @@ let mechDescription = 'Mechaniform are the only non-humanoid that can be sentien
 export const species = [
   new Species('Reln', characteristics[0], characteristics[4], 'Ambidextrous', relnDescription),
   new Species('Uven', characteristics[4], characteristics[5], 'Night Fighter', uvenDescription),
-  new Species('Gyl', characteristics[1], characteristics[2], 'Gyl may hold their breath for T minutes', gylDescription),
+  new Species('Gyl', characteristics[1], characteristics[2], 'Gyl may hold their breath for E minutes', gylDescription),
   new Species('Kavren', characteristics[3], characteristics[1], 'Catfall', kavrenDescription),
   new Species('Sentient Mechaniform', characteristics[6], characteristics[7], 'Resistance (radiation)', mechDescription, aptitudes[0])
 ]

@@ -13,7 +13,7 @@ export default props => {
     {props.pars.armor && <>
       <p>
         Armor fulfills 3 essential needs.
-        First and foremost, it provides armor protection (AP) which is the most common form of absorption and thus will keep your wound from going down too fast.
+        First and foremost, it provides armor protection (AP) which is the most common form of absorption and thus will keep your wounds from going down too fast.
         Secondly, it provides holsters to store weapons, grenades, and ammunition that they can be toted around with you as you explore on foot.
         Thirdly, they are a place to install important gear, such as energy shields, spells, and more.
         Armor that does well in all three categories is both rare and expensive.
@@ -30,7 +30,7 @@ export default props => {
       <p><b>AP</b>: Armor Protection. Adds directly to your absorption.</p>
       <p><b>Armor Special Abilities</b></p>
       <p>
-        <b>Rigid</b>: The armor's rigid and heavy structure restrict movement in extremely close quarters.
+        <b>Rigid</b>: The armor's rigid and heavy structure restricts movement in extremely close quarters.
         You get a general disadvantage on all tests involving grappling and mosh pits, including the test to evade the grapple attempt.
       </p>
       <p>
@@ -61,10 +61,10 @@ export default props => {
         <b>Powered (X)</b>: Increase your strength score by X.
       </p>
       <p>
-        <b>Isolated</b>: The damage dealt to you by energy weapons is halved.
+        <b>Insolated</b>: The damage dealt to you by energy weapons is halved.
       </p>
       <p>
-        <b>Encapsulating</b>: You face are hidden behind a thick visor.
+        <b>Encapsulating</b>: You face is hidden behind a thick visor.
         You act more on sensors than your senses.
         This serves to mentally remove you from the action.
         You gain a general advantage on tests to resist pinning, but a general disadvantage on personal initiative tests.
@@ -132,7 +132,7 @@ export default props => {
         If you do, double your penetration for this attack.
       </p>
       <p>
-        <b>Toxic (X)</b>: When you score at least 1 hit against a target, they make a standard E test with a basic penalty of X.
+        <b>Toxic (X)</b>: When you score at least 1 hit that deals damage against a target, they make a standard E test with a basic penalty of X.
         For each point of failure, they take 1d4 toxic damage that ignores absorption.
         If they survive the encounter, they continue to suffer from narrative toxic effects until treated.
       </p>
@@ -170,9 +170,7 @@ export default props => {
       </p>
       <p>
         <b>Hands</b>: Hands. The number of hands required to use this weapon.
-        A small melee weapon takes 1 hand, whereas a large melee weapon takes 2.
-        A one handed melee weapon adds your half S score to damage rolls.
-        A two handed melee weapon adds your S score.
+        A small ranged weapon takes 1 hand, whereas a large ranged weapon takes 2.
       </p>
       <p>
         <b>Pen</b>: Penetration. When calculating damage, first reduce your opponent's absorption by the penetration of your weapon down to a minimum of 0.
@@ -206,7 +204,7 @@ export default props => {
         When doing an aimed shot, the first hit deals an additional 1d4 damage for every 3 points of success up to Xd4.
       </p>
       <p>
-        <b>Concussive (X)</b>: When you strike someone with this weapon, they make a standard E test with a basic penalty of X.
+        <b>Concussive (X)</b>: When you hit someone with this weapon, they make a standard E test with a basic penalty of X.
         On failure they are stunned for a round, and following rounds for every additional 3 points of failure (starting at -4).
         If they took more than their S score in damage, they are knocked prone.
       </p>
@@ -215,7 +213,7 @@ export default props => {
         If they fail, they catch on fire.
       </p>
       <p>
-        <b>Toxic (X)</b>: When you score at least 1 hit against a target, they make a standard E test with a basic penalty of X.
+        <b>Toxic (X)</b>: When you score at least 1 hit that deals damage against a target, they make a standard E test with a basic penalty of X.
         For each point of failure, they take 1d4 toxic damage that ignores absorption.
         If they survive the encounter, they continue to suffer from narrative toxic effects until treated.
       </p>
