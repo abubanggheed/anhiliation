@@ -1,10 +1,11 @@
 
 import { characteristics } from '../../data/characteristic'
 const initialState = {
-
+  physFatigue: '0',
+  menFatigue: '0'
 }
 characteristics.forEach(char => {
-  initialState[char.name] = 0
+  initialState[char.name] = '0'
 })
 
 export default (state = initialState, action) => {

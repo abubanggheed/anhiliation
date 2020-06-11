@@ -20,6 +20,20 @@ export default props => {
             onChange={props.changeStat(char.name)}
           />
         </div>)}
+        <div>
+          <b>Physical Fatigue</b>:{' '}<input
+          type="number"
+          value={props.stats.physFatigue}
+          onChange={props.changeStat('physFatigue')}
+          />
+        </div>
+        <div>
+          <b>Mental Fatigue</b>:{' '}<input
+          type="number"
+          value={props.stats.menFatigue}
+          onChange={props.changeStat('menFatigue')}
+          />
+        </div>
       </div>
     </Container>
   </>

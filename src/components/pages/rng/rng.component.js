@@ -6,7 +6,6 @@ export default props => {
   return <>
     <Container>
       <h2>Generic RNG</h2>
-      {JSON.stringify(props)}
     </Container>
   </>
 }

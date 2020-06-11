@@ -6,6 +6,7 @@ import rootSaga from '../sagas'
 import rulesParReducer from './rules-par.reducer'
 import rulesAssetDesc from './rules-ref.reducer'
 import statsReducer from './stats.reducer'
+import diceReducer from './dice.reducer'
 
 const sagaMiddleware = createSagaMiddleware()
 
@@ -13,7 +14,8 @@ const store = createStore(
   combineReducers({
     rulesParReducer,
     rulesAssetDesc,
-    statsReducer
+    statsReducer,
+    diceReducer
   }),
   applyMiddleware(
     ...(process.env.NODE_ENV === "development" ? [sagaMiddleware, logger] : [sagaMiddleware])
