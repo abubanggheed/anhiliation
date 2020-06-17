@@ -1,17 +1,106 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import DamageComponent from './damagerolls.component'
+import { characteristics } from '../../../data/characteristic'
+import { damageRoll } from '../../../util/damage-roll'
 
 const Damagerolls = props => {
 
+  const rollDice = () => {
+    let { dice, atts, basic, pen, numberOfRolls } = props.values
+    let attScores = atts.map(att => (
+      Math.floor(props.stats[characteristics[att.charInd].name] * att.weight)
+    ))
+    let result = damageRoll(dice, attScores, basic, pen, numberOfRolls)
+    props.dispatch({
+      type: 'SET_RESULT',
+      source: 'damage',
+      payload: result
+    })
+  }
+
+  const changeByValue = key => event => {
+    props.dispatch({
+      type: 'SET_TITEM',
+      source: 'damage',
+      key,
+      payload: event.target.value
+    })
+  }
+
+  const changeAdv = (key, min = 0) => event => {
+    let val = event.target.value
+    if (val < min) val = min
+    props.dispatch({
+      type: 'SET_TITEM',
+      source: 'damage',
+      key,
+      payload: val
+    });
+  };
+
+  const addModifier = () => {
+    props.dispatch({
+      type: 'ADD_TO_LIST',
+      source: 'damage',
+      list: 'atts',
+      payload: {
+        charInd: 1,
+        weight: '0.5'
+      }
+    })
+  }
+
+  const addDmgDie = () => {
+    props.dispatch({
+      type: 'ADD_TO_LIST',
+      source: 'damage',
+      list: 'dice',
+      payload: {
+        max: '10',
+        number: '1'
+      }
+    })
+  }
+
+  const removeItem = (list, index) => () => {
+    props.dispatch({
+      type: 'REMOVE_FROM_LIST',
+      source: 'damage',
+      list,
+      index
+    })
+  }
+
+  const changeListValue = (list, index, key, min) => event => {
+    let value = event.target.value
+    props.dispatch({
+      type: 'SET_KEY_IN_LIST',
+      source: 'damage',
+      list,
+      index,
+      key,
+      payload: (min !== undefined && value < min) ? min : value
+    })
+  }
+
   return <>
     <DamageComponent
-      stats={props.stats}
+      chars={characteristics}
+      values={props.values}
+      rollDice={rollDice}
+      changeByValue={changeByValue}
+      changeAdv={changeAdv}
+      addModifier={addModifier}
+      addDmgDie={addDmgDie}
+      removeItem={removeItem}
+      changeListValue={changeListValue}
     />
   </>
 }
 
 
-export default connect(({ statsReducer }) => ({
-  stats: statsReducer
+export default connect(({ statsReducer, diceReducer }) => ({
+  stats: statsReducer,
+  values: diceReducer.damage
 }))(Damagerolls)

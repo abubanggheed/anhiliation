@@ -166,20 +166,23 @@ export default props => {
         Do yourself a favor and bring one of these to a fight.
       </p>
       <p>
-        <b>Dam</b>: Base dice damage.
+        <b>Dam</b>: Damage provided by weapon.
       </p>
       <p>
         <b>Hands</b>: Hands. The number of hands required to use this weapon.
         A small ranged weapon takes 1 hand, whereas a large ranged weapon takes 2.
       </p>
       <p>
-        <b>Pen</b>: Penetration. When calculating damage, first reduce your opponent's absorption by the penetration of your weapon down to a minimum of 0.
+        <b>Pen</b>: Penetration provided by weapon.
       </p>
       <p>
         <b>Class</b>: Indicates the training required to wield this weapon effectively.
       </p>
       <p>
         <b>Type</b>: Indicates the type of damage this weapon deals.
+      </p>
+      <p>
+        <b>Amo</b>: Indicates the type of ammunition the weapon consumes.
       </p>
       <p>
         <b>RoF</b>: Rate of fire.
@@ -226,7 +229,7 @@ export default props => {
         <b>Indirect</b>: The flight path of this weapon follows a parabolic arch, and so ignores most cover.
       </p>
       <p>
-        <b>Blast (X)</b>: When this weapon hits it's target, it explodes of an area with a radius of X meters.
+        <b>Cone</b>: This weapon fires in a cone shape. Although the shooter can only aim at 1 target, other people in the affected area get hit.
       </p>
       <p>
         <b>Scatter</b>: When this weapon misses, the bullets hit a location a number of meters away equal to the final score in a random direction.
@@ -248,6 +251,71 @@ export default props => {
       </p>
       <p>
         Please note that the Flame, Toxic, and Radioactive property are more likely to come from ammunition instead of the weapon itself.
+      </p>
+    </>}
+    {makeHeader('amo', 'Ammunition')}
+    {props.pars.amo && <>
+      <p>
+        Damage, penetration, and abilities for ranged weapon are split between the weapon and the ammunition.
+        Each of these add together to give you the full killing force of your money's worth.
+    </p>
+      <p>
+        <b>Type</b>: The type of ammunition. For small rounds fire, this could be light pellets, medium pellets,
+      heavy pellets, light rounds, medium rounds, heavy rounds, jumbo rounds, batteries, fluids, grenades, shells or rockets.
+      For giant cannons and turrets and exotic firearms the shells are usually specialized to that exact weapon.
+    </p>
+      <p>
+        <b>Dam</b>: Damage provided by ammunition.
+      </p>
+      <p>
+        <b>Pen</b>: Penetration. When calculating damage, first reduce your opponent's absorption by the penetration of your weapon down to a minimum of 0.
+      </p>
+      <p><b>Special Abilities</b></p>
+      <p>
+        <b>Blast (X)</b>: When this weapon hits it's target, it explodes of an area with a radius of X meters.
+      </p>
+      <p>
+        <b>Concussive (X)</b>: When you hit someone with this weapon, they make a standard E test with a basic penalty of X.
+        On failure they are stunned for a round, and following rounds for every additional 3 points of failure (starting at -4).
+        If they took more than their S score in damage, they are knocked prone.
+      </p>
+      <p>
+        <b>Flame</b>: When you score at least 1 hit against a target, they make a standard Ref test.
+        If they fail, they catch on fire.
+      </p>
+      <p>
+        <b>Toxic (X)</b>: When you score at least 1 hit that deals damage against a target, they make a standard E test with a basic penalty of X.
+        For each point of failure, they take 1d4 toxic damage that ignores absorption.
+        If they survive the encounter, they continue to suffer from narrative toxic effects until treated.
+      </p>
+      <p>
+        <b>Radioactive (X)</b>: When you score at least 1 hit against a target, they make a standard E test with a basic penalty of X.
+        For each point of failure, they take 1d4 radiation damage that ignores absorption.
+        If they survive the encounter, they continue to suffer from the effects of radiation sickness until treated.
+      </p>
+      <p>
+        <b>Indirect</b>: The flight path of this weapon follows a parabolic arch, and so ignores most cover.
+      </p>
+      <p>
+        <b>Cone</b>: This weapon fires in a cone shape. Although the shooter can only aim at 1 target, other people in the affected area get hit.
+      </p>
+      <p>
+        <b>Scatter</b>: When this weapon misses, the bullets hit a location a number of meters away equal to the final score in a random direction.
+      </p>
+      <p>
+        <b>Inaccurate</b>: There is no bonus derived from aiming this weapon.
+      </p>
+      <p>
+        <b>Smoke (X)</b>: When this weapon lands, it creates a cloud of smoke of an X meter radius.
+      </p>
+      <p>
+        <b>Snare (X)</b>: When you hit someone with this weapon, they must make a standard Ref test with a basic penalty of X.
+        If they fail, they are ensnared.
+        They may escape with a follow up standard S or Ref test applying the same penalty.
+        Until then, they are considered helpless.
+      </p>
+      <p>
+        <b>Unreliable</b>: This weapon jams on the second lowest attack role.
       </p>
     </>}
   </>

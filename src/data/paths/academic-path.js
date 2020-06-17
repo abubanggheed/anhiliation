@@ -27,6 +27,7 @@ export const academicPath = [
     skills[16],
     nameAddOn(talents[5], ' (Mind Control)'),
     prereqAddOn(skills[20], 2, ' (Humanities)'),
+    nameAddOn(skills[20], ' (Geology)'),
     nameAddOn(talents[6], ' x2'),
     prereqAddOn(skills[24]),
     skills[27],

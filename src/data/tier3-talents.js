@@ -22,7 +22,7 @@ const goodGuyWithAGun = new Talent(
 const unarmedMaster = new Talent(
   'Unarmed Master',
   'Your unarmed combat gains perks',
-  'Your unarmed damage is now 1d10, and you may parry any melee weapon when unarmed. When doing so, you are deflecting your opponents arms, not the actual weapons.',
+  'Your unarmed damage is now 3d6, and you may parry any melee weapon when unarmed. When doing so, you are deflecting your opponents arms, not the actual weapons.',
   [characteristics[0], aptitudes[3], aptitudes[2]],
   3,
   [[tier1Talents[25]]]

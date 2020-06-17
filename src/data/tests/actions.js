@@ -181,7 +181,7 @@ export const combatActions = [
   false
   ),
   new Action('Full Auto Fire',
-  'Hold down the trigger and unload ammunition into an opponent of your choice.',
+  'Hold down the trigger and unload ammunition into an opponent of your choice. This is similar to single shot, except on success, you may hit your target with an additional bullet fired for every 2 points of success.',
   'Half',
   'Attack',
   characteristics[0],
@@ -289,7 +289,7 @@ export const combatActions = [
   false
   ),
   new Action('Semi Auto Burst',
-  'Fire a burst of bullets at your opponent.',
+  'Fire a burst of bullets at your opponent. This is similar to single shot, except on success, you may hit your target with an additional bullet fired for every 3 points of success.',
   'Half',
   'Attack',
   characteristics[0],
