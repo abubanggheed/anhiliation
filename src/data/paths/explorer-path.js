@@ -49,6 +49,7 @@ export const explorerPath = [
     prereqAddOn(skills[17], 4, ' (Surface)'),
     talents[4],
     talents[26],
+    talents[81],
     skills[22],
     prereqAddOn(skills[26], 4)
   ],

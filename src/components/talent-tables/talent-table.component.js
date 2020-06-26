@@ -14,7 +14,7 @@ export default props => {
         </tr>
       </thead>
       <tbody>
-        {props.talents.map(talent => <tr key={talent.name} onClick={props.setDesc(talent)}>
+        {[...props.talents].sort((a, b) => (a.name < b.name ? -1 : 1)).map(talent => <tr key={talent.name} onClick={props.setDesc(talent)}>
           <td>{talent.name}</td>
           <td>{talent.printApts()}</td>
           <td>{talent.printPrereqs()}</td>

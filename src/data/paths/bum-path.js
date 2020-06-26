@@ -50,6 +50,7 @@ export const bumPath = [
     talents[36],
     talents[12],
     prereqAddOn(skills[17], 2, ' (Any)'),
+    talents[81],
     talents[29],
     talents[32]
   ],

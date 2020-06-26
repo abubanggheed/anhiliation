@@ -157,7 +157,7 @@ export const tier1Talents = [
   new Talent(// 17|26
     'Refocus',
     'Reactions and half moves do not undo your aim bonus',
-    'You can retain an aim bonus through making a reaction or half move. Other kinds of movements still disrupt your aim bonus. With this talent, you can complete an aim action over the course of 2 turns while doing 1 or 2 half moves.',
+    'You can retain an aim bonus through making a reaction, half move, or change of target. Other kinds of movements still disrupt your aim bonus. With this talent, you can complete an aim action over the course of 2 turns while doing 1 or 2 half moves.',
     [characteristics[0], aptitudes[3]],
     1,
     []
@@ -221,8 +221,8 @@ export const tier1Talents = [
   ),
   new Talent(// 26|35
     'Unhinged',
-    'Gain bonus to intimidate and blather from insanity points',
-    'Whenever you make an intimidate or blather test, you gain a basic bonus of 1 for every 10 insanity score you have.',
+    'Gain bonus to intimidate and filibuster from insanity points',
+    'Whenever you make an intimidate or filibuster test, you gain a basic bonus of 1 for every 10 insanity score you have.',
     [characteristics[7], aptitudes[8]],
     1,
     []

@@ -94,6 +94,7 @@ export const agentPath = [
     talents[72],
     prereqAddOn(skills[15]),
     talents[23],
+    talents[81],
     prereqAddOn(skills[23]),
     prereqAddOn(skills[25]),
     talents[57]

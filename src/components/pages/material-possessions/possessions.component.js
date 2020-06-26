@@ -32,6 +32,7 @@ export default props => {
       <p>
         <b>Rigid</b>: The armor's rigid and heavy structure restricts movement in extremely close quarters.
         You get a general disadvantage on all tests involving grappling and mosh pits, including the test to evade the grapple attempt.
+        You also get this general disadvantage on grappling like tests such as the test to resist snare.
       </p>
       <p>
         <b>Volatile (AdB, C)</b>: The armor is a dangerous model that risks explosions on intensive fire.
@@ -42,7 +43,7 @@ export default props => {
         <b>Shield Volatile</b>: Same as volatile, but is only in effect when an energy shield is equipped.
       </p>
       <p>
-        <b>Super Charged</b>: Shields equipped to this armor recharge at double the rate.
+        <b>Super Charged</b>: Shields equipped to this armor have double the recharge.
       </p>
       <p>
         <b>Extra Battery</b>: Shields equipped to this armor have twice the capacity.
@@ -61,7 +62,7 @@ export default props => {
         <b>Powered (X)</b>: Increase your strength score by X.
       </p>
       <p>
-        <b>Insolated</b>: The damage dealt to you by energy weapons is halved.
+        <b>Insulated</b>: The damage dealt to you by energy weapons is halved.
       </p>
       <p>
         <b>Encapsulating</b>: You face is hidden behind a thick visor.
@@ -73,7 +74,7 @@ export default props => {
         <b>Kavren Boosters</b>: A Kavren wearing this armor is able to fly.
       </p>
       <p>
-        <b>Heavy</b>: You cannot swim while wearing this armor.
+        <b>Heavy</b>: You cannot swim, glide or fly while wearing this armor.
       </p>
     </>}
     {makeHeader('melee', 'Melee Weapons')}
@@ -287,6 +288,7 @@ export default props => {
         <b>Toxic (X)</b>: When you score at least 1 hit that deals damage against a target, they make a standard E test with a basic penalty of X.
         For each point of failure, they take 1d4 toxic damage that ignores absorption.
         If they survive the encounter, they continue to suffer from narrative toxic effects until treated.
+        Acids and toxins are mechanically equivalent even though they are completely different things.
       </p>
       <p>
         <b>Radioactive (X)</b>: When you score at least 1 hit against a target, they make a standard E test with a basic penalty of X.
@@ -300,7 +302,9 @@ export default props => {
         <b>Cone</b>: This weapon fires in a cone shape. Although the shooter can only aim at 1 target, other people in the affected area get hit.
       </p>
       <p>
-        <b>Scatter</b>: When this weapon misses, the bullets hit a location a number of meters away equal to the final score in a random direction.
+        <b>Dispenser</b>: This ammunition has a capsule like structure for fluids. You may fill it with any fluid, or sufficiently small solid.
+        If the filling is also ammunition, the bullet gains the special abilities of the fuild. If that special ability is an x ability, the rounds get half x rounded up.
+        Light ammunition get 1 less x, and heavy ammunition get up to 1 more x. Usually, you can fill 8 dispenser rounds per shot of fluid.
       </p>
       <p>
         <b>Inaccurate</b>: There is no bonus derived from aiming this weapon.
@@ -316,6 +320,9 @@ export default props => {
       </p>
       <p>
         <b>Unreliable</b>: This weapon jams on the second lowest attack role.
+      </p>
+      <p>
+        <b>Convert(t)</b>: This weapon using this ammo converts its damage type to t.
       </p>
     </>}
   </>

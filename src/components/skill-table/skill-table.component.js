@@ -12,7 +12,7 @@ export default props => {
         </tr>
       </thead>
       <tbody>
-        {props.skills.map(skill => <tr key={skill.name} onClick={props.setDesc(skill)}>
+        {[...props.skills].sort((a, b) => (a.name < b.name ? -1 : 1)).map(skill => <tr key={skill.name} onClick={props.setDesc(skill)}>
           <td>{skill.name}</td><td>{skill.printApts()}</td><td>{skill.type}</td>
         </tr>)}
       </tbody>

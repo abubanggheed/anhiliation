@@ -39,7 +39,7 @@ export const skills = [
     'Basic'
   ),
   new Skill(//3
-    'Blather',
+    'Filibuster',
     'The art of oral misdirection',
     [characteristics[7], aptitudes[8]],
     'Basic'

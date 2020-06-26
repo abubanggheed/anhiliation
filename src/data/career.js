@@ -17,7 +17,7 @@ export class Career {
 export const careers = [
   new Career('Academic', aptitudes[5], aptitudes[4], 'Carouse'),
   new Career('Agent', aptitudes[3], aptitudes[4], 'Interrogation'),
-  new Career('Bum', aptitudes[8], aptitudes[6], 'Blather'),
+  new Career('Bum', aptitudes[8], aptitudes[6], 'Filibuster'),
   new Career('Celebrity', aptitudes[8], aptitudes[3], 'Perform'),
   new Career('Explorer', aptitudes[2], aptitudes[6], 'Charm'),
   new Career('Goon', aptitudes[1], aptitudes[2], 'Weapon Proficiency'),

@@ -193,5 +193,13 @@ export const tier3Talents = [
     [characteristics[0], aptitudes[1]],
     3,
     [[tier1Talents[2]]]
+  ),
+  new Talent(// 23|81
+    'Reporting Live',
+    'Lower difficulty of resistance tests',
+    'Whenever you roll a test to resist an effect, i.e. fear, toxic, concussive, lower the difficulty of that test by one step.',
+    [characteristics[2], characteristics[6], aptitudes[2]],
+    3,
+    [[{...tier0Talents[5], name: tier0Talents[5].name + ' (x3)'}]]
   )
 ]
