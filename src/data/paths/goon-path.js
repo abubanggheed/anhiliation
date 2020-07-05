@@ -1,95 +1,97 @@
 
 import { skills } from '../skill'
-import { talents } from '../all-talents'
+import { tier0, tier1, tier2, tier3 } from '../all-talents'
 import { nameAddOn, prereqAddOn } from '../../util/skillmaker'
 
 export const goonPath = [
   [//0
     skills[1],
     skills[4],
-    talents[23],
+    tier1[14],
     skills[19],
-    talents[28],
-    talents[30],
-    nameAddOn(talents[8], ' (Infantry)'),
-    nameAddOn(talents[8], ' (Pistol)')
+    tier1[19],
+    tier1[21],
+    nameAddOn(tier0[8], ' (Infantry)'),
+    nameAddOn(tier0[8], ' (Pistol)')
   ],
   [//1
-    talents[0],
+    tier0[0],
     skills[2],
-    talents[9],
-    talents[10],
+    tier1[0],
+    tier1[1],
     skills[12],
-    nameAddOn(talents[5], ' (Fear)'),
-    talents[29],
-    nameAddOn(talents[8], ' (Melee)'),
-    nameAddOn(talents[8], ' (Turret)')
+    nameAddOn(tier0[5], ' (Fear)'),
+    tier1[20],
+    nameAddOn(tier0[8], ' (Melee)'),
+    nameAddOn(tier0[8], ' (Turret)')
   ],
   [//2
     prereqAddOn(skills[1]),
     nameAddOn(skills[8], ' (Creatures)'),
-    talents[14],
-    talents[15],
-    talents[7],
+    tier1[5],
+    tier1[6],
+    tier0[7],
+    tier1[17],
     skills[26],
-    nameAddOn(talents[8], ' (Heavy)'),
-    nameAddOn(talents[8], ' (Artillery)'),
-    nameAddOn(talents[8], ' (Unarmed)')
+    nameAddOn(tier0[8], ' (Heavy)'),
+    nameAddOn(tier0[8], ' (Artillery)'),
+    nameAddOn(tier0[8], ' (Unarmed)')
   ],
   [//3
     prereqAddOn(skills[1], 4),
-    talents[1],
+    tier0[1],
     skills[6],
     nameAddOn(skills[8], ' (War)'),
-    talents[11],
-    talents[18],
-    talents[47],
-    talents[19],
-    talents[56]
+    tier1[2],
+    tier1[9],
+    tier2[11],
+    tier1[10],
+    tier2[20]
   ],
   [//4
     prereqAddOn(skills[4]),
-    talents[64],
-    talents[24],
-    nameAddOn(talents[5], ' (Mind Control)'),
+    tier3[6],
+    tier1[15],
+    nameAddOn(tier0[5], ' (Mind Control)'),
     prereqAddOn(skills[19]),
-    talents[57],
-    talents[34]
+    tier2[21],
+    tier1[25]
   ],
   [//5
     prereqAddOn(skills[2]),
-    talents[37],
-    talents[40],
-    talents[13],
+    tier2[1],
+    tier2[4],
+    tier1[4],
     prereqAddOn(skills[12]),
-    talents[69],
-    talents[22],
-    talents[52]
+    tier3[11],
+    tier1[13],
+    tier2[16],
+    tier2[22],
   ],
   [//6
-    talents[36],
+    tier2[0],
     prereqAddOn(skills[6]),
     prereqAddOn(skills[8], 2, ' (War)'),
-    talents[59],
-    talents[41],
-    talents[48],
-    talents[50]
+    tier3[1],
+    tier2[5],
+    tier2[12],
+    tier2[14]
   ],
   [//7
     prereqAddOn(skills[4], 4),
-    talents[66],
+    tier3[8],
     prereqAddOn(skills[12], 4),
-    talents[46],
-    talents[71],
-    talents[32],
-    talents[79]
+    tier2[10],
+    tier3[13],
+    tier1[23],
+    tier3[21]
   ],
   [//8
-    talents[38],
+    tier2[2],
     prereqAddOn(skills[8], 4, ' (War)'),
-    talents[60],
-    talents[65],
+    tier3[2],
+    tier3[7],
     prereqAddOn(skills[19], 4),
-    talents[75]
+    tier3[17]
   ]
 ]

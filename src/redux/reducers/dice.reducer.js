@@ -21,7 +21,14 @@ const initialState = {
     pen: '0',
     numberOfRolls: '1'
   },
-  rng: {},
+  rng: {
+    dice: [{
+      max: '100',
+      number: '1'
+    }],
+    offset: '0',
+    numberOfRolls: '1'
+  },
   history: {
     saved: []
   }

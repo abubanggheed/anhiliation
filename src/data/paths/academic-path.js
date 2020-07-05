@@ -1,6 +1,6 @@
 
 import { skills } from '../skill'
-import { talents } from '../all-talents'
+import { tier0, tier1, tier2, tier3 } from '../all-talents'
 import { nameAddOn, prereqAddOn } from '../../util/skillmaker'
 
 export const academicPath = [
@@ -15,7 +15,7 @@ export const academicPath = [
     nameAddOn(skills[20], ' (Ecology)'),
     nameAddOn(skills[20], ' (Magic Theory)'),
     nameAddOn(skills[20], ' (Humanities)'),
-    talents[6],
+    tier0[6],
     skills[24]
   ],
   [//1
@@ -25,10 +25,10 @@ export const academicPath = [
     prereqAddOn(skills[14]),
     skills[15],
     skills[16],
-    nameAddOn(talents[5], ' (Mind Control)'),
+    nameAddOn(tier0[5], ' (Mind Control)'),
     prereqAddOn(skills[20], 2, ' (Humanities)'),
     nameAddOn(skills[20], ' (Geology)'),
-    nameAddOn(talents[6], ' x2'),
+    nameAddOn(tier0[6], ' x2'),
     prereqAddOn(skills[24]),
     skills[27],
     nameAddOn(skills[28], ' (any)'),
@@ -38,22 +38,22 @@ export const academicPath = [
     prereqAddOn(skills[20], 2, ' (Magic Theory)'),
     prereqAddOn(skills[20], 2, ' (Geology)'),
     skills[22],
-    nameAddOn(talents[6], ' x2'),
-    talents[31],
+    nameAddOn(tier0[6], ' x2'),
+    tier1[22],
     prereqAddOn(skills[28], 2, ' (any)'),
-    nameAddOn(talents[8], ' (Pistol)')
+    nameAddOn(tier0[8], ' (Pistol)')
   ],
   [//3
     skills[5],
     prereqAddOn(skills[8], 4, ' (History)'),
-    talents[62],
+    tier3[4],
     prereqAddOn(skills[15]),
-    nameAddOn(talents[5], ' (Feedback)'),
+    nameAddOn(tier0[5], ' (Feedback)'),
     prereqAddOn(skills[20], 4, ' (Magic Theory)'),
     prereqAddOn(skills[20], 2, ' (Chemistry)'),
     nameAddOn(skills[20], ' (Markets)'),
-    talents[6],
-    nameAddOn(talents[31], ' x3')
+    tier0[6],
+    nameAddOn(tier1[22], ' x3')
   ],
   [//4
     prereqAddOn(skills[8], 4, ' (Geography)'),
@@ -62,37 +62,37 @@ export const academicPath = [
     prereqAddOn(skills[14], 4),
     prereqAddOn(skills[16]),
     prereqAddOn(skills[20], 2, ' (Ecology)'),
-    talents[6],
+    tier0[6],
     prereqAddOn(skills[24], 4)
   ],
   [//5
     prereqAddOn(skills[8], 4, ' (Religion)'),
-    talents[28],
-    talents[29],
+    tier1[19],
+    tier1[20],
     prereqAddOn(skills[27]),
-    nameAddOn(talents[31], ' x2'),
+    nameAddOn(tier1[22], ' x2'),
     prereqAddOn(skills[28], 4, ' (any)')
   ],
   [//6
     prereqAddOn(skills[8], 4, ' (Folklore)'),
     prereqAddOn(skills[15], 4),
-    talents[39],
+    tier2[3],
     prereqAddOn(skills[20], 4, ' (Humanities)'),
     prereqAddOn(skills[22])
   ],
   [//7
     prereqAddOn(skills[13], 4),
-    talents[49],
+    tier2[13],
     prereqAddOn(skills[16], 4),
-    talents[33],
-    talents[77],
+    tier1[24],
+    tier3[19],
     prereqAddOn(skills[20], 4, ' (Ecology)'),
     prereqAddOn(skills[22], 4)
   ],
   [//8
-    talents[45],
-    talents[74],
-    talents[56],
+    tier2[9],
+    tier3[16],
+    tier2[20],
     prereqAddOn(skills[27], 4)
   ]
 ]

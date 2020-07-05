@@ -1,50 +1,50 @@
 
 import { skills } from '../skill'
-import { talents } from '../all-talents'
+import { tier0, tier1, tier2, tier3 } from '../all-talents'
 import { nameAddOn, prereqAddOn } from '../../util/skillmaker'
 
 export const celebrityPath = [
   [//0
-    talents[0],
-    talents[2],
+    tier0[0],
+    tier0[2],
     skills[4],
     skills[5],
     nameAddOn(skills[8], ' (Geography)'),
     nameAddOn(skills[18], ' (1st)'),
     nameAddOn(skills[18], ' (2nd)'),
     skills[27],
-    nameAddOn(talents[31], ' x10')
+    nameAddOn(tier1[22], ' x10')
   ],
   [//1
-    talents[3],
+    tier0[3],
     prereqAddOn(skills[5]),
     nameAddOn(skills[8], ' (Folklore)'),
     prereqAddOn(skills[18], 2, ' (1st)'),
     nameAddOn(skills[20], ' (Humanities)'),
     nameAddOn(skills[28], ' (Any)'),
-    nameAddOn(talents[8], ' (Unarmed)')
+    nameAddOn(tier0[8], ' (Unarmed)')
   ],
   [//2
     skills[0],
     skills[1],
     prereqAddOn(skills[18], 2, ' (2nd)'),
-    talents[24],
-    nameAddOn(talents[5], ' (Fear)'),
+    tier1[15],
+    nameAddOn(tier0[5], ' (Fear)'),
     skills[19],
-    talents[29],
-    nameAddOn(talents[8], ' (Pistol)')    
+    tier1[20],
+    nameAddOn(tier0[8], ' (Pistol)')    
   ],
   [//3
     skills[2],
     prereqAddOn(skills[4]),
-    talents[11],
+    tier1[2],
     prereqAddOn(skills[18], 4, ' (1st)'),
-    talents[32],
-    nameAddOn(talents[8], ' (Melee)')
+    tier1[23],
+    nameAddOn(tier0[8], ' (Melee)')
   ],
   [//4
     prereqAddOn(skills[5], 4),
-    talents[13],
+    tier1[4],
     prereqAddOn(skills[18], 4, ' (2nd)'),
     skills[24],
     prereqAddOn(skills[27])
@@ -52,33 +52,33 @@ export const celebrityPath = [
   [//5
     prereqAddOn(skills[0]),
     prereqAddOn(skills[1]),
-    talents[45],
-    talents[52],
-    talents[28],
+    tier2[9],
+    tier2[16],
+    tier1[19],
     prereqAddOn(skills[24])
   ],
   [//6
     prereqAddOn(skills[0], 4),
     prereqAddOn(skills[4], 4),
-    talents[9],
-    talents[42],
-    talents[68],
-    talents[23],
-    talents[25],
+    tier1[0],
+    tier1[6],
+    tier3[10],
+    tier1[14],
+    tier1[16],
     prereqAddOn(skills[19]),
-    talents[57]
+    tier2[21]
   ],
   [//7
     prereqAddOn(skills[1], 4),
-    talents[41],
-    talents[16],
-    talents[48]
+    tier2[5],
+    tier1[7],
+    tier2[12]
   ],
   [//8
-    talents[40],
+    tier1[4],
     prereqAddOn(skills[19], 4),
-    talents[65],
-    talents[76],
+    tier3[7],
+    tier3[18],
     prereqAddOn(skills[24], 4)
   ]
 ]

@@ -17,3 +17,8 @@ export const talents = [
   ...tier2Talents,
   ...tier3Talents
 ]
+
+export const tier0 = tier0Talents
+export const tier1 = tier1Talents
+export const tier2 = tier2Talents
+export const tier3 = tier3Talents

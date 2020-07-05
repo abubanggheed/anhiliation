@@ -178,5 +178,13 @@ export const tier2Talents = [
     [characteristics[0], aptitudes[1]],
     2,
     []
+  ),
+  new Talent(// 22
+    'Snake Eyes',
+    'Increase dice damage from accurate shots',
+    'The extra dice damage from accurate weapon fire is increased from 1d4 to 1d6.',
+    [characteristics[5], aptitudes[3]],
+    2,
+    [[tier1Talents[17]]]
   )
 ]

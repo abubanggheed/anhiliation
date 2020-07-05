@@ -81,7 +81,7 @@ export const tier3Talents = [
     []
   ),
   new Talent(// 7|65
-    'Immortal',
+    'Why I Won\'t Die',
     'You have double wounds',
     'You have double your normal maximum wounds.',
     [characteristics[2], aptitudes[2]],
@@ -201,5 +201,13 @@ export const tier3Talents = [
     [characteristics[2], characteristics[6], aptitudes[2]],
     3,
     [[{...tier0Talents[5], name: tier0Talents[5].name + ' (x3)'}]]
+  ),
+  new Talent(// 24
+    'Hammered',
+    'Roll more damage dice on all out attack',
+    'Whenever you succeed an all out attack roll an additional 1dX of damage for every 2 points of success where X is your S.',
+    [characteristics[1], aptitudes[1]],
+    3,
+    [[tier1Talents[6]]]
   )
 ]

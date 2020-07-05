@@ -1,6 +1,6 @@
 
 import { skills } from '../skill'
-import { talents } from '../all-talents'
+import { tier0, tier1, tier2, tier3 } from '../all-talents'
 import { nameAddOn, prereqAddOn } from '../../util/skillmaker'
 
 export const prospectorPath = [
@@ -10,52 +10,52 @@ export const prospectorPath = [
     prereqAddOn(skills[8], 2, ' (Geography)'),
     nameAddOn(skills[17], ' (Surface)'),
     nameAddOn(skills[17], ' (Sea)'),
-    nameAddOn(talents[5], ' (Radiation)'),
-    nameAddOn(talents[5], ' (Toxic)'),
+    nameAddOn(tier0[5], ' (Radiation)'),
+    nameAddOn(tier0[5], ' (Toxic)'),
     nameAddOn(skills[20], ' (Geology)'),
     nameAddOn(skills[20], ' (Ecology)'),
     nameAddOn(skills[28], ' (Mining)'),
     nameAddOn(skills[28], ' (Wrangling)'),
-    nameAddOn(talents[8], ' (Infantry)')
+    nameAddOn(tier0[8], ' (Infantry)')
   ],
   [//1
     skills[2],
-    talents[9],
+    tier1[0],
     prereqAddOn(skills[7]),
     nameAddOn(skills[8], ' (Creatures)'),
-    talents[23],
-    nameAddOn(talents[5], ' (Exposure)'),
+    tier1[14],
+    nameAddOn(tier0[5], ' (Exposure)'),
     skills[19],
     prereqAddOn(skills[20], 2, ' (Geology)'),
     prereqAddOn(skills[20], 2, ' (Ecology)'),
     nameAddOn(skills[20], ' (Chemistry)'),
-    talents[29],
+    tier1[20],
     skills[26],
-    nameAddOn(talents[8], ' (Melee)'),
-    nameAddOn(talents[8], ' (Pistol)')
+    nameAddOn(tier0[8], ' (Melee)'),
+    nameAddOn(tier0[8], ' (Pistol)')
   ],
   [//2
     skills[1],
-    talents[1],
+    tier0[1],
     prereqAddOn(skills[8], 2, ' (Creatures)'),
-    talents[10],
-    talents[18],
+    tier1[1],
+    tier1[9],
     skills[15],
     prereqAddOn(skills[17], 2, ' (Surface)'),
     prereqAddOn(skills[17], 2, ' (Sea)'),
     skills[21],
-    talents[28],
+    tier1[19],
     prereqAddOn(skills[28], 2, ' (Mining)'),
-    nameAddOn(talents[8], ' (Turret)')
+    nameAddOn(tier0[8], ' (Turret)')
   ],
   [//3
     skills[5],
-    talents[11],
+    tier1[2],
     skills[9],
-    talents[13],
+    tier1[4],
     skills[16],
     nameAddOn(skills[17], ' (Subterranean)'),
-    talents[19],
+    tier1[10],
     prereqAddOn(skills[20], 2, ' (Chemistry)'),
     skills[22],
     skills[24],
@@ -64,7 +64,7 @@ export const prospectorPath = [
   [//4
     prereqAddOn(skills[2]),
     prereqAddOn(skills[7], 4),
-    talents[44],
+    tier2[8],
     prereqAddOn(skills[19]),
     prereqAddOn(skills[20], 4, ' (Geology)'),
     prereqAddOn(skills[20], 4, ' (Ecology)')
@@ -72,33 +72,33 @@ export const prospectorPath = [
   [//5
     prereqAddOn(skills[1]),
     prereqAddOn(skills[8], 4, ' (Geography)'),
-    talents[47],
+    tier2[11],
     prereqAddOn(skills[15]),
-    talents[52],
-    talents[24],
+    tier2[16],
+    tier1[15],
     prereqAddOn(skills[26]),
     prereqAddOn(skills[28], 4, ' (Wrangling)')
   ],
   [//6
     prereqAddOn(skills[8], 4, ' (Creatures)'),
-    talents[59],
-    talents[49],
+    tier3[1],
+    tier2[13],
     prereqAddOn(skills[16]),
-    talents[57],
+    tier2[21],
     prereqAddOn(skills[28], 4, ' (Mining)')
   ],
   [//7
-    talents[51],
-    talents[55],
+    tier2[15],
+    tier2[19],
     prereqAddOn(skills[19], 4),
     prereqAddOn(skills[20], 4, ' (Chemistry)'),
-    talents[56]
+    tier2[20]
   ],
   [//8
     prereqAddOn(skills[1], 4),
-    talents[62],
-    talents[70],
+    tier3[4],
+    tier3[12],
     prereqAddOn(skills[15], 4),
-    talents[76]
+    tier3[18]
   ]
 ]

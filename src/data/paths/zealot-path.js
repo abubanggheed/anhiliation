@@ -1,84 +1,85 @@
 
 import { skills } from '../skill'
-import { talents } from '../all-talents'
+import { tier0, tier1, tier2, tier3 } from '../all-talents'
 import { nameAddOn, prereqAddOn } from '../../util/skillmaker'
 
 export const zealotPath = [
   [//0
     skills[6],
     skills[12],
-    talents[46],
-    talents[15],
-    nameAddOn(talents[5], ' (Fear)'),
-    nameAddOn(talents[5], ' (Mind Control)'),
-    talents[28],
-    nameAddOn(talents[8], ' (Improvised)'),
-    nameAddOn(talents[8], ' (Melee)'),
-    nameAddOn(talents[8], ' (Infantry)')
+    tier2[10],
+    tier1[6],
+    nameAddOn(tier0[5], ' (Fear)'),
+    nameAddOn(tier0[5], ' (Mind Control)'),
+    tier1[19],
+    nameAddOn(tier0[8], ' (Improvised)'),
+    nameAddOn(tier0[8], ' (Melee)'),
+    nameAddOn(tier0[8], ' (Infantry)')
   ],
   [//1
     nameAddOn(skills[8], ' (Religion)'),
     skills[11],
-    nameAddOn(talents[5], ' (Starvation)'),
+    nameAddOn(tier0[5], ' (Starvation)'),
     skills[21],
     skills[24],
-    talents[35],
-    nameAddOn(talents[8], ' (Pistol)')
+    tier1[26],
+    nameAddOn(tier0[8], ' (Pistol)')
   ],
   [//2
     prereqAddOn(skills[6]),
-    talents[38],
+    tier2[2],
     nameAddOn(skills[8], ' (Creatures)'),
     nameAddOn(skills[8], ' (History)'),
-    talents[11],
-    nameAddOn(talents[5], ' (Radiation)'),
-    nameAddOn(talents[5], ' (Exposure)'),
-    talents[29],
-    nameAddOn(talents[8], ' (Artillery)')
+    tier1[2],
+    nameAddOn(tier0[5], ' (Radiation)'),
+    nameAddOn(tier0[5], ' (Exposure)'),
+    tier1[20],
+    nameAddOn(tier0[8], ' (Artillery)')
   ],
   [//3
-    talents[37],
+    tier2[1],
     prereqAddOn(skills[8], 2, ' (Religion)'),
-    talents[40],
-    talents[41],
-    talents[64],
+    tier2[4],
+    tier2[5],
+    tier3[6],
     prereqAddOn(skills[12]),
     skills[19]
   ],
   [//4
-    talents[36],
-    talents[39],
+    tier2[0],
+    tier2[3],
     prereqAddOn(skills[11]),
-    talents[20],
-    talents[47],
+    tier1[11],
+    tier2[11],
     prereqAddOn(skills[24]),
-    talents[57]
+    tier2[21]
   ],
   [//5
     prereqAddOn(skills[6], 4),
     prereqAddOn(skills[8], 4, ' (Religion)'),
-    talents[43],
-    talents[69],
-    talents[52],
-    talents[24],
+    tier2[7],
+    tier3[11],
+    tier2[16],
+    tier1[15],
     prereqAddOn(skills[21])
   ],
   [//6
-    talents[60],
+    tier3[2],
     prereqAddOn(skills[12], 4),
-    talents[50],
-    talents[74],
+    tier2[14],
+    tier3[16],
     prereqAddOn(skills[24], 4),
-    talents[34]
+    tier1[25]
   ],
   [//7
-    talents[66],
+    tier3[8],
     prereqAddOn(skills[11], 4),
-    talents[80]
+    tier3[22],
+    tier3[24]
   ],
   [//8
-    talents[71],
-    talents[75],
-    talents[79]
+    tier3[13],
+    tier3[17],
+    tier3[21]
   ]
 ]

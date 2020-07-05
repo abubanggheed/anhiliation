@@ -1,6 +1,6 @@
 
 import { skills } from '../skill'
-import { talents } from '../all-talents'
+import { tier0, tier1, tier2, tier3 } from '../all-talents'
 import { nameAddOn, prereqAddOn } from '../../util/skillmaker'
 
 export const explorerPath = [
@@ -10,36 +10,36 @@ export const explorerPath = [
     nameAddOn(skills[8], ' (Creatures)'),
     nameAddOn(skills[17], ' (Surface)'),
     nameAddOn(skills[17], ' (Sea)'),
-    nameAddOn(talents[5], ' (Exposure)'),
+    nameAddOn(tier0[5], ' (Exposure)'),
     skills[19],
     skills[26],
-    nameAddOn(talents[8], ' (Infantry)')
+    nameAddOn(tier0[8], ' (Infantry)')
   ],
   [//1
     skills[2],
-    talents[44],
+    tier2[8],
     prereqAddOn(skills[17], 2, ' (Surface)'),
     nameAddOn(skills[17], ' (Subterranean)'),
-    talents[19],
-    talents[23],
-    nameAddOn(talents[5], ' (Toxic)'),
-    nameAddOn(talents[5], ' (Radiation)'),
+    tier1[10],
+    tier1[14],
+    nameAddOn(tier0[5], ' (Toxic)'),
+    nameAddOn(tier0[5], ' (Radiation)'),
     prereqAddOn(skills[19]),
     nameAddOn(skills[20], ' (Geology)'),
-    talents[29],
+    tier1[20],
     prereqAddOn(skills[26]),
-    nameAddOn(talents[8], ' (Pistol)'),
-    nameAddOn(talents[8], ' (Melee)')
+    nameAddOn(tier0[8], ' (Pistol)'),
+    nameAddOn(tier0[8], ' (Melee)')
   ],
   [//2
     prereqAddOn(skills[1]),
-    talents[9],
+    tier1[0],
     skills[5],
     prereqAddOn(skills[8], 2, ' (Creatures)'),
-    talents[18],
+    tier1[9],
     prereqAddOn(skills[17], 2, ' (Sea)'),
-    talents[24],
-    talents[28],
+    tier1[15],
+    tier1[19],
     nameAddOn(skills[20], ' (Ecology)'),
     skills[25]
   ],
@@ -47,26 +47,27 @@ export const explorerPath = [
     prereqAddOn(skills[2]),
     skills[16],
     prereqAddOn(skills[17], 4, ' (Surface)'),
-    talents[4],
-    talents[26],
-    talents[81],
+    tier0[4],
+    tier1[17],
+    tier3[23],
     skills[22],
     prereqAddOn(skills[26], 4)
   ],
   [//4
     prereqAddOn(skills[8], 2, ' (Geography)'),
-    talents[10],
+    tier1[1],
     prereqAddOn(skills[17], 2, ' (Subterranean)'),
-    talents[55],
+    tier2[19],
     prereqAddOn(skills[19], 4),
-    talents[56],
-    talents[32],
+    tier2[22],
+    tier2[20],
+    tier1[23],
   ],
   [//5
     prereqAddOn(skills[1], 4),
-    talents[22],
+    tier1[13],
     prereqAddOn(skills[17], 2, ' (Sea)'),
-    talents[52],
+    tier2[16],
     prereqAddOn(skills[20], 2, ' (Geology)')
   ],
   [//6
@@ -79,12 +80,12 @@ export const explorerPath = [
   ],
   [//7
     prereqAddOn(skills[8], 4, ' (Creatures)'),
-    talents[72],
-    talents[76],
-    talents[57]
+    tier3[14],
+    tier3[18],
+    tier2[21]
   ],
   [//8
-    talents[64],
+    tier3[6],
     prereqAddOn(skills[20], 4, ' (Geology)'),
     prereqAddOn(skills[20], 4, ' (Ecology)'),
     prereqAddOn(skills[25], 4)
