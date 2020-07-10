@@ -7,7 +7,7 @@ export default props => {
 
   const { type, asset } = props
 
-  return <>
+  return <div className="description">
     {type ? <Card>
       {asset.name && <CardHeader>
         <div onClick={() => setOpen(!open)}><h4><Button color={open ? 'secondary' : 'info'}>{asset.name}</Button></h4></div>
@@ -76,5 +76,5 @@ export default props => {
     </Card> : <h5>
         Click on items to see descriptions
       </h5>}
-  </>
+  </div>
 }

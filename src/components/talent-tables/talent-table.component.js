@@ -14,7 +14,10 @@ export default props => {
         </tr>
       </thead>
       <tbody>
-        {[...props.talents].sort((a, b) => (a.name < b.name ? -1 : 1)).map(talent => <tr key={talent.name} onClick={props.setDesc(talent)}>
+        {[...props.talents].sort((a, b) => (a.name < b.name ? -1 : 1)).map(talent => <tr key={talent.name}
+          onClick={props.setDesc(talent)}
+          className="clickable"
+        >
           <td>{talent.name}</td>
           <td>{talent.printApts()}</td>
           <td>{talent.printPrereqs()}</td>

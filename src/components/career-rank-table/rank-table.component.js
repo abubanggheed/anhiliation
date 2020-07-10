@@ -16,7 +16,7 @@ export default props => {
       <tbody>
         {props.rank.map((asset, index) => <tr key={index} onClick={props.setDesc(
           asset, asset.tier === undefined ? 'skill' : 'talent'
-        )}>
+        )} className="clickable">
           <td>{asset.name}</td>
           <td>{asset.printApts()}</td>
           <td>{asset.printPrereqs ? asset.printPrereqs() : ''}</td>

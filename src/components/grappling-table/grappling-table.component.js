@@ -16,7 +16,9 @@ export default props => {
         </tr>
       </thead>
       <tbody>
-        {props.actions.map(action => <tr key={action.name} onClick={props.setDesc(action)}>
+        {props.actions.map(action => <tr key={action.name} onClick={props.setDesc(action)}
+          className="clickable"
+        >
           <td>{action.name}</td>
           <td>{action.char ? action.char.abvr : '-'}</td>
           <td>{action.role}</td>
