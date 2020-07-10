@@ -8,3 +8,8 @@
   position: fixed;
   top: 20%;
 }
+
+.scrollable {
+  overflow-y: auto;
+  height: 25rem;
+}
