@@ -4,6 +4,7 @@ import CharComponent from './characteristic.component'
 import { tests } from '../../../data/test'
 import { characteristics } from '../../../data/characteristic'
 import { characteristicTest } from '../../../util/characteristic-test'
+import { genRandom } from '../../../util/gen-random'
 
 const Dice = props => {
   const changeByValue = key => event => {
@@ -23,6 +24,19 @@ const Dice = props => {
       source: 'characteristic',
       key,
       payload: val
+    });
+  }
+
+  const save = () => {
+    props.dispatch({
+      type: 'ADD_TO_LIST',
+      source: 'history',
+      list: 'saved',
+      payload: {
+        type: 'characteristic',
+        values: { ...props.values },
+        color: `rgb(${genRandom(255)}, ${genRandom(255)}, ${genRandom(255)})`
+      }
     });
   }
 
@@ -53,6 +67,7 @@ const Dice = props => {
       changeByValue={changeByValue}
       changeAdv={changeAdv}
       makeRoll={makeRoll}
+      save={save}
     />
   </>
 }

@@ -27,11 +27,15 @@ export default props => {
       <Row>
         <Col>
           <br />
-          <Button onClick={props.addRngDie}>Add Die</Button>
+          <Button block={true} size="md" onClick={props.addRngDie}>Add Die</Button>
         </Col>
         <Col>
           <br />
-          <Button color="success" onClick={props.rollDice}>Roll</Button>
+          <Button color="success" block={true} size="md" onClick={props.rollDice}>Roll</Button>
+        </Col>
+        <Col>
+          <br />
+          <Button color="primary" block={true} size="md" onClick={props.save}>Save</Button>
         </Col>
       </Row>
       <Row>

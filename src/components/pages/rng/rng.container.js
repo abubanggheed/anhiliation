@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import RNGComponent from './rng.component'
 import { rollRng } from '../../../util/rng-roll'
+import { genRandom } from '../../../util/gen-random'
 
 const Rng = props => {
 
@@ -68,6 +69,19 @@ const Rng = props => {
     })
   }
 
+  const save = () => {
+    props.dispatch({
+      type: 'ADD_TO_LIST',
+      source: 'history',
+      list: 'saved',
+      payload: {
+        type: 'rng',
+        values: { ...props.values },
+        color: `rgb(${genRandom(255)}, ${genRandom(255)}, ${genRandom(255)})`
+      }
+    });
+  }
+
   return <>
     <RNGComponent
       values={props.values}
@@ -77,6 +91,7 @@ const Rng = props => {
       removeItem={removeItem}
       changeListValue={changeListValue}
       rollDice={rollDice}
+      save={save}
     />
   </>
 }

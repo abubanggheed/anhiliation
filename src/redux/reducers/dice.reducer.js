@@ -83,6 +83,13 @@ export default (state = initialState, action) => {
           ]
         }
       }
+    case 'SET_ALL':
+      return {
+        ...state,
+        [action.source]: {
+          ...action.payload
+        }
+      }
     default:
       return state
   }

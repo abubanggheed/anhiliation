@@ -31,9 +31,15 @@ export default props => {
             onChange={props.changeAdv('numberOfRolls', 1)}
           />
         </Col>
+      </Row>
+      <Row>
         <Col>
-          <br/>
-          <Button color="success" onClick={props.rollDice}>Roll</Button>
+          <br />
+          <Button color="success" block={true} size="md" onClick={props.rollDice}>Roll</Button>
+        </Col>
+        <Col>
+          <br />
+          <Button color="primary" block={true} size="md" onClick={props.save}>Save</Button>
         </Col>
       </Row>
       <Row>

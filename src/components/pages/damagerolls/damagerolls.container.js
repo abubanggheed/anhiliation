@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import DamageComponent from './damagerolls.component'
 import { characteristics } from '../../../data/characteristic'
 import { damageRoll } from '../../../util/damage-roll'
+import { genRandom } from '../../../util/gen-random'
 
 const Damagerolls = props => {
 
@@ -84,6 +85,19 @@ const Damagerolls = props => {
     })
   }
 
+  const save = () => {
+    props.dispatch({
+      type: 'ADD_TO_LIST',
+      source: 'history',
+      list: 'saved',
+      payload: {
+        type: 'damage',
+        values: { ...props.values },
+        color: `rgb(${genRandom(255)}, ${genRandom(255)}, ${genRandom(255)})`
+      }
+    });
+  }
+
   return <>
     <DamageComponent
       chars={characteristics}
@@ -95,6 +109,7 @@ const Damagerolls = props => {
       addDmgDie={addDmgDie}
       removeItem={removeItem}
       changeListValue={changeListValue}
+      save={save}
     />
   </>
 }

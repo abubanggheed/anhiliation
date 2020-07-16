@@ -39,7 +39,7 @@ export const tier1Talents = [
   new Talent(// 0|9
     'Cavalry',
     'Attack while riding on something',
-    'While zipping around on some sort of mount or vehicle as the driver, you may make basic ranged attacks and charge melee attacks but may not reload. You may only do so with improvised, melee, and pistol type weapons.',
+    'While zipping around on some sort of mount or vehicle as the driver, you may make basic ranged attacks and charge melee attacks but may not reload. You may only do so with improvised, melee, and pistol type weapons. If you can fly, this talent allows you to make strafing ranged attacks and melee charge attacks while flying. Any kind of ranged attack can be a strafing ranged attack.',
     [characteristics[3], aptitudes[1]],
     1,
     []

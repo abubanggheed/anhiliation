@@ -5,6 +5,7 @@ import DiceNav from '../navs/dicenav.component'
 import Characteristic from '../../pages/characteristic/characteristic.container'
 import Damage from '../../pages/damagerolls/damagerolls.container'
 import Rng from '../../pages/rng/rng.container'
+import SavedRolls from '../../saved-rolls/saved-rolls-container'
 
 class DiceRouterComponent extends Component {
 
@@ -31,6 +32,7 @@ class DiceRouterComponent extends Component {
             </Switch>
           </Col>
           <Col xs="3">
+            <SavedRolls />
           </Col>
         </Row>
       </Container>

@@ -98,11 +98,15 @@ export default props => {
         </Col>
         <Col>
           <p></p>
+          <Button color="primary" block={true} size="lg" onClick={props.save}>Save</Button>
+        </Col>
+        <Col>
+          <p></p>
           <Button color="success" block={true} size="lg" onClick={props.makeRoll}>Roll</Button>
         </Col>
       </Row>
       <Row>
-        <TestResult/>
+        <TestResult />
       </Row>
     </Container>
   </>

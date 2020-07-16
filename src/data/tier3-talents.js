@@ -82,8 +82,8 @@ export const tier3Talents = [
   ),
   new Talent(// 7|65
     'Why I Won\'t Die',
-    'You have double wounds',
-    'You have double your normal maximum wounds.',
+    'You have many more wounds',
+    'Your total number of wounds is calculated as if your were 5 ranks higher than your current rank.',
     [characteristics[2], aptitudes[2]],
     3,
     []
