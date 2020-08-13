@@ -95,3 +95,15 @@ export const goonPath = [
     tier3[17]
   ]
 ]
+
+export const goonRanks = [
+  'Meat Shield',
+  'Parking Lot Security Officer',
+  'Bouncer',
+  'Bargain Muscle',
+  'Career Soldier',
+  'Enforcer',
+  'VIP Bodyguard',
+  'Exterminator',
+  'Real Live Action Hero'
+]

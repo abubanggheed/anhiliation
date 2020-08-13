@@ -115,3 +115,15 @@ export const hooliganPath = [
     tier2[20]
   ]
 ]
+
+export const hooliganRanks = [
+  'Purse Snatcher',
+  'Petty Thief',
+  'Alleyway Mugger',
+  'Wilderness Bandit',
+  'Bounty',
+  'Disorder Conductor',
+  'Heist Leader',
+  'Crime Pariah',
+  'Public Enemy'
+]

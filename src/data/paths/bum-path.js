@@ -69,6 +69,7 @@ export const bumPath = [
     tier3[24]
   ],
   [//7
+    tier3[25],
     tier2[1],
     tier3[3],
     prereqAddOn(skills[10], 4)
@@ -79,4 +80,16 @@ export const bumPath = [
     tier2[16],
     prereqAddOn(skills[17], 4, ' (Any)'),
   ]
+]
+
+export const bumRanks = [
+  'Faceless Statistic',
+  'Serf',
+  'Failure',
+  'Tourist Deterent',
+  'Societal Embarasment',
+  'Cautionary Tale for Children',
+  'Enlightened',
+  'Philosophical Icon',
+  'Messiah'
 ]

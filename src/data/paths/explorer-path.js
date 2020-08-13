@@ -91,3 +91,15 @@ export const explorerPath = [
     prereqAddOn(skills[25], 4)
   ]
 ]
+
+export const explorerRanks = [
+  'Trap Decoy',
+  'Tour Guide',
+  'Hitchhiker',
+  'Park Ranger',
+  'Field Cartographer',
+  'Wilderness Rescuer',
+  'Pathfinder',
+  'Tomb Raider',
+  'Grand Adventurer'
+]

@@ -1,13 +1,13 @@
-import { academicPath } from './academic-path'
-import { agentPath } from './agent-path'
-import { bumPath } from './bum-path'
-import { celebrityPath } from './celebrity-path'
-import { explorerPath } from './explorer-path'
-import { goonPath } from './goon-path'
-import { hooliganPath } from './hooligan-path'
-import { lobbyistPath } from './lobbyist-path'
-import { prospectorPath } from './prospector-path'
-import { zealotPath } from './zealot-path'
+import { academicPath, academicRanks } from './academic-path'
+import { agentPath, agentRanks } from './agent-path'
+import { bumPath, bumRanks } from './bum-path'
+import { celebrityPath, celebrityRanks } from './celebrity-path'
+import { explorerPath, explorerRanks } from './explorer-path'
+import { goonPath, goonRanks } from './goon-path'
+import { hooliganPath, hooliganRanks } from './hooligan-path'
+import { lobbyistPath, lobbyistRanks } from './lobbyist-path'
+import { prospectorPath, prospectorRanks } from './prospector-path'
+import { zealotPath, zealotRanks } from './zealot-path'
 
 export const universalPath = [
   '',
@@ -36,4 +36,17 @@ export const careerPaths = [
   lobbyistPath,
   prospectorPath,
   zealotPath
+]
+
+export const careerRanks = [
+  academicRanks,
+  agentRanks,
+  bumRanks,
+  celebrityRanks,
+  explorerRanks,
+  goonRanks,
+  hooliganRanks,
+  lobbyistRanks,
+  prospectorRanks,
+  zealotRanks
 ]

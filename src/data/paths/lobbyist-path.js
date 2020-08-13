@@ -71,3 +71,15 @@ export const lobbyistPath = [
     prereqAddOn(skills[20], 4, ' (Crime)')
   ]
 ]
+
+export const lobbyistRanks = [
+  'Reschedualed Appointment',
+  'Grocery Sales Representative',
+  'Opinionated Blogger',
+  'News Columnist',
+  'Private Attourney',
+  'Local Official',
+  'Mercenary Orator',
+  'Royal Counsoler',
+  'Supreme Sophist'
+]

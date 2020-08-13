@@ -102,3 +102,15 @@ export const prospectorPath = [
     tier3[18]
   ]
 ]
+
+export const prospectorRanks = [
+  'Person with Ideas',
+  'Pioneer',
+  'Snake Oil Dealer',
+  'Entrepreneur',
+  'Poacher',
+  'Franchise Owner',
+  'Tax Evader',
+  'Business Mogal',
+  'Captain of Industry'
+]

@@ -70,6 +70,7 @@ export const celebrityPath = [
   ],
   [//7
     prereqAddOn(skills[1], 4),
+    tier3[25],
     tier2[5],
     tier1[7],
     tier2[12]
@@ -81,4 +82,16 @@ export const celebrityPath = [
     tier3[18],
     prereqAddOn(skills[24], 4)
   ]
+]
+
+export const celebrityRanks = [
+  'News Story',
+  'Meme',
+  'Nostalgic Callback',
+  'Local Attraction',
+  'Fan Club Idol',
+  'Product Placement Opportunity',
+  'Superstar',
+  'Worldwide Phenomenon',
+  'Living Legend'
 ]

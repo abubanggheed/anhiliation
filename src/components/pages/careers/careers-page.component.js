@@ -12,7 +12,7 @@ export default props => {
       {props.pars[career.name] && <>
         <p>{props.descriptions[i]}</p>
         {props.paths[i].map((rank, j) => <div key={j}>
-          <p><b>Rank {j}</b></p>
+          <p><b>Rank {j} -- {props.ranks[i][j]}</b></p>
           <RankTable rank={rank} />
         </div>)}
       </>}

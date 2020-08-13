@@ -78,8 +78,21 @@ export const zealotPath = [
     tier3[24]
   ],
   [//8
+    tier3[25],
     tier3[13],
     tier3[17],
     tier3[21]
   ]
+]
+
+export const zealotRanks = [
+  'Sacrifice',
+  'Homeless Doomsayer',
+  'Neonate',
+  'Brochure Dispenser',
+  'Public Ranter',
+  'Inquisitor',
+  'Mob General',
+  'Cult Leader',
+  'Prophet'
 ]

@@ -209,5 +209,13 @@ export const tier3Talents = [
     [characteristics[1], aptitudes[1]],
     3,
     [[tier1Talents[6]]]
+  ),
+  new Talent(// 25
+    'Bugs Bats and Beyond',
+    'Increase your insanity cap',
+    'You avoid terminal insanity until you reach 200 insanity. Your disorders continue to increase in severity and number for every 20 insanity beyond 80.',
+    [characteristics[6], aptitudes[2]],
+    3,
+    [[{ name: '90 insanity' }]]
   )
 ]

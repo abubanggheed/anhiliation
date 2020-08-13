@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import CareersComponent from './careers-page.component'
 
-import { careerPaths, universalPath } from '../../../data/paths/universal-path'
+import { careerPaths, careerRanks, universalPath } from '../../../data/paths/universal-path'
 import { careers } from '../../../data/career'
 
 const CareersPage = props => {
@@ -31,6 +31,7 @@ const CareersPage = props => {
     <CareersComponent
       careers={careers}
       paths={careerPaths}
+      ranks={careerRanks}
       descriptions={pathDescriptions}
       uPath={universalPath}
       pars={props.paragraphs}

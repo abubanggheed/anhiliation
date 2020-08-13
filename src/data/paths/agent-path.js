@@ -121,3 +121,15 @@ export const agentPath = [
     tier3[20]
   ]
 ]
+
+export const agentRanks = [
+  'Unsuspecting Decoy',
+  'Spare Asset',
+  'Hostage Negotiator',
+  'Long Term Infiltrator',
+  'Sabetour',
+  'Assassin',
+  'Coup Coordinator',
+  'Special Agent',
+  '<Redacted>'
+]

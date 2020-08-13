@@ -96,3 +96,15 @@ export const academicPath = [
     prereqAddOn(skills[27], 4)
   ]
 ]
+
+export const academicRanks = [
+  'Data Entry Associate',
+  'Intern',
+  'Unrecognized Lab Employee',
+  'Junior Article Editor',
+  'Published Author',
+  'Community College Professor',
+  'Research Lead',
+  'Thesis Advisor',
+  'Giant of Knowledge'
+]
