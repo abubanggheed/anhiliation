@@ -46,6 +46,12 @@ export default props => {
           {asset.timing && <p>
             <b>Timing</b>: {asset.timing}
           </p>}
+          {['skill', 'talent'].includes(type) &&<p>
+            <b>Cost</b>: {(asset.tier === undefined ? props.skillCosts :
+            props.talentCosts[`tier${asset.tier}`])[asset.apts.reduce((aptCount, apt) => (
+            aptCount + (props.apts[apt.name] ? 1 : 0)
+          ), 0)]}
+          </p>}
           {['skill', 'combat', 'grappling', 'moshing'].includes(type) && <p>
             <b>Description</b>: {asset.desc}
           </p>}

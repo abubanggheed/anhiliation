@@ -11,6 +11,7 @@ export default props => {
           <th>Aptitudes</th>
           <th>Prerequisites</th>
           <th>Tier</th>
+          <th>Cost</th>
         </tr>
       </thead>
       <tbody>
@@ -21,6 +22,10 @@ export default props => {
           <td>{asset.printApts()}</td>
           <td>{asset.printPrereqs ? asset.printPrereqs() : ''}</td>
           <td>{(asset.tier === undefined) ? 'Skill' : asset.tier}</td>
+          <td>{(asset.tier === undefined ? props.skillCosts :
+            props.talentCosts[`tier${asset.tier}`])[asset.apts.reduce((aptCount, apt) => (
+            aptCount + (props.apts[apt.name] ? 1 : 0)
+          ), 0)]}</td>
         </tr>)}
       </tbody>
     </Table>

@@ -1,6 +1,8 @@
 import React from 'react'
 import RankTableComponent from './rank-table.component'
 import { connect } from 'react-redux'
+import { talentCosts } from '../../data/all-talents'
+import { skillCosts } from '../../data/skill'
 
 const RankTable = props => {
 
@@ -16,8 +18,13 @@ const RankTable = props => {
     <RankTableComponent
       rank={props.rank}
       setDesc={setDesc}
+      talentCosts={talentCosts}
+      skillCosts={skillCosts}
+      apts={props.aptitudes}
     />
   </>
 }
 
-export default connect()(RankTable)
+export default connect(({ statsReducer }) => ({
+  aptitudes: statsReducer.aptitudes
+}))(RankTable)

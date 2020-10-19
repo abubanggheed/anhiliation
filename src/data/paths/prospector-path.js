@@ -1,7 +1,8 @@
 
 import { skills } from '../skill'
 import { tier0, tier1, tier2, tier3 } from '../all-talents'
-import { nameAddOn, prereqAddOn } from '../../util/skillmaker'
+import { nameAddOn, prereqAddOn, aptAddOn } from '../../util/skillmaker'
+import { characteristics } from '../characteristic'
 
 export const prospectorPath = [
   [//0
@@ -10,8 +11,8 @@ export const prospectorPath = [
     prereqAddOn(skills[8], 2, ' (Geography)'),
     nameAddOn(skills[17], ' (Surface)'),
     nameAddOn(skills[17], ' (Sea)'),
-    nameAddOn(tier0[5], ' (Radiation)'),
-    nameAddOn(tier0[5], ' (Toxic)'),
+    nameAddOn(aptAddOn(tier0[5], characteristics[2]), ' (Radiation)'),
+    nameAddOn(aptAddOn(tier0[5], characteristics[2]), ' (Toxic)'),
     nameAddOn(skills[20], ' (Geology)'),
     nameAddOn(skills[20], ' (Ecology)'),
     nameAddOn(skills[28], ' (Mining)'),
@@ -24,7 +25,7 @@ export const prospectorPath = [
     prereqAddOn(skills[7]),
     nameAddOn(skills[8], ' (Creatures)'),
     tier1[14],
-    nameAddOn(tier0[5], ' (Exposure)'),
+    nameAddOn(aptAddOn(tier0[5], characteristics[2]), ' (Exposure)'),
     skills[19],
     prereqAddOn(skills[20], 2, ' (Geology)'),
     prereqAddOn(skills[20], 2, ' (Ecology)'),

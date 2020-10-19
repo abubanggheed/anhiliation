@@ -1,6 +1,6 @@
 import React from 'react'
 import TalentTable from '../talent-table.component'
-import { tier0Talents } from '../../../data/tier0-talents'
+import { tier0Talents, tier0Costs } from '../../../data/tier0-talents'
 import { connect } from 'react-redux'
 
 const Tier0Table = props => {
@@ -17,8 +17,12 @@ const Tier0Table = props => {
     <TalentTable
       talents={tier0Talents}
       setDesc={setDesc}
+      apts={props.aptitudes}
+      costs={tier0Costs}
     />
   </>
 }
 
-export default connect()(Tier0Table)
+export default connect(({ statsReducer }) => ({
+  aptitudes: statsReducer.aptitudes
+}))(Tier0Table)

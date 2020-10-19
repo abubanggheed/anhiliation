@@ -1,7 +1,8 @@
 
 import { skills } from '../skill'
 import { tier0, tier1, tier2, tier3 } from '../all-talents'
-import { nameAddOn, prereqAddOn } from '../../util/skillmaker'
+import { nameAddOn, prereqAddOn, aptAddOn } from '../../util/skillmaker'
+import { characteristics } from '../characteristic'
 
 export const zealotPath = [
   [//0
@@ -9,8 +10,8 @@ export const zealotPath = [
     skills[12],
     tier2[10],
     tier1[6],
-    nameAddOn(tier0[5], ' (Fear)'),
-    nameAddOn(tier0[5], ' (Mind Control)'),
+    nameAddOn(aptAddOn(tier0[5], characteristics[6]), ' (Fear)'),
+    nameAddOn(aptAddOn(tier0[5], characteristics[6]), ' (Mind Control)'),
     tier1[19],
     nameAddOn(tier0[8], ' (Improvised)'),
     nameAddOn(tier0[8], ' (Melee)'),
@@ -19,7 +20,7 @@ export const zealotPath = [
   [//1
     nameAddOn(skills[8], ' (Religion)'),
     skills[11],
-    nameAddOn(tier0[5], ' (Starvation)'),
+    nameAddOn(aptAddOn(tier0[5], characteristics[2]), ' (Starvation)'),
     skills[21],
     skills[24],
     tier1[26],
@@ -31,8 +32,8 @@ export const zealotPath = [
     nameAddOn(skills[8], ' (Creatures)'),
     nameAddOn(skills[8], ' (History)'),
     tier1[2],
-    nameAddOn(tier0[5], ' (Radiation)'),
-    nameAddOn(tier0[5], ' (Exposure)'),
+    nameAddOn(aptAddOn(tier0[5], characteristics[6]), ' (Radiation)'),
+    nameAddOn(aptAddOn(tier0[5], characteristics[6]), ' (Exposure)'),
     tier1[20],
     nameAddOn(tier0[8], ' (Artillery)')
   ],

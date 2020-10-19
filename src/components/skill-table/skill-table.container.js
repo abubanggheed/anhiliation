@@ -2,7 +2,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import SkillComponent from './skill-table.component'
-import { skills } from '../../data/skill'
+import { skills, skillCosts } from '../../data/skill'
 
 const SkillContainer = props => {
 
@@ -18,8 +18,12 @@ const SkillContainer = props => {
     <SkillComponent
       skills={skills}
       setDesc={setDesc}
+      apts={props.aptitudes}
+      costs={skillCosts}
     />
   </>
 }
 
-export default connect()(SkillContainer)
+export default connect(({ statsReducer }) => ({
+  aptitudes: statsReducer.aptitudes
+}))(SkillContainer)

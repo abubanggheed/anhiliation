@@ -10,3 +10,8 @@ export const prereqAddOn = (skill, level = 2, addOn = '') => ({
   name: skill.name + addOn + ` + ${level}`,
   printPrereqs: () => skill.name + addOn + (level - 2 ? ` + ${level - 2}` : '')
 })
+
+export const aptAddOn = (asset, ...newApts) => ({
+  ...asset,
+  apts: [...asset.apts, ...newApts]
+})
