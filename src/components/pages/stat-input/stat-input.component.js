@@ -5,7 +5,7 @@ const fibCache = {}
 const fibTotalCache = {}
 
 const fibonacci = num => (
-  !(+num > 0) ? 0 : +num === 1 ? 1 :
+  !(+num > 0) ? 0 : +num === 1 ? 1 : num >= 1000 ? Infinity :
     fibCache[`${num}`] || (
       fibCache[`${num}`] = fibonacci(num - 1) + fibonacci(num - 2),
       fibCache[`${num}`]
@@ -13,7 +13,7 @@ const fibonacci = num => (
 )
 
 const fibonacciTotal = num => (
-  !(+num > 0) ? 0 :
+  !(+num > 0) ? 0 : num >= 1000 ? Infinity :
     fibTotalCache[`${num}`] || (
       fibTotalCache[`${num}`] = fibonacci(num) + fibonacciTotal(num - 1),
       fibTotalCache[`${num}`]
