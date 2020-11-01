@@ -75,5 +75,5 @@ const Dice = props => {
 
 export default connect(({ statsReducer, diceReducer }) => ({
   values: diceReducer.characteristic,
-  stats: statsReducer
+  stats: statsReducer.stats
 }))(Dice)

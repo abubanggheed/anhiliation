@@ -116,6 +116,6 @@ const Damagerolls = props => {
 
 
 export default connect(({ statsReducer, diceReducer }) => ({
-  stats: statsReducer,
+  stats: statsReducer.stats,
   values: diceReducer.damage
 }))(Damagerolls)
