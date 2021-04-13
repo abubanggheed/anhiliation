@@ -6,8 +6,9 @@ const initialState = {
     advantages: '0',
     disadvantages: '0',
     centerings: '0',
-    charMultiplier: '1',
-    fatMultiplier: '1',
+    trained: true,
+    fatIgnore: '0',
+    exDice: '0',
     basic: '0',
     numberOfRolls: '1'
   },

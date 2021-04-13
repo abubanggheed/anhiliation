@@ -9,6 +9,17 @@ export default props => {
       <h2>Characteristic Test</h2>
       <Row>
         <Col>
+          <Label check>
+            <Input type="checkbox" id="trainedSelect"
+              checked={props.values.trained}
+              onChange={props.changeByChecked('trained')}>
+            </Input>{' '}
+            Trained
+          </Label>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
           <Label for="charSelect">Characteristic</Label>
           <Input type="select" id="charSelect"
             value={props.values.charInd}
@@ -16,15 +27,6 @@ export default props => {
             {props.chars.map((char, i) => <option key={char.name} value={i}>
               {char.name}
             </option>)}
-          </Input>
-        </Col>
-        <Col>
-          <Label for="charMultSelect">Char Multiplier</Label>
-          <Input type="select" id="charMultSelect"
-            value={props.values.charMultiplier}
-            onChange={props.changeByValue('charMultiplier')}>
-            <option value={1}>1</option>
-            <option value={0.5}>0.5</option>
           </Input>
         </Col>
         <Col>
@@ -45,6 +47,13 @@ export default props => {
             <option value={'h'}>High</option>
             <option value={'s'}>Standard</option>
             <option value={'l'}>Low</option>
+          </Input>
+        </Col>
+        <Col>
+          <Label for="exDice">Extra Dice</Label>
+          <Input type="number" id="exDice"
+            value={props.values.exDice}
+            onChange={props.changeByValue('exDice')}>
           </Input>
         </Col>
       </Row>
@@ -71,13 +80,11 @@ export default props => {
           />
         </Col>
         <Col>
-          <Label for="fatigueMult">Fatigue Multiplier</Label>
-          <Input type="select" id="fatigueMult"
-            value={props.values.fatMultiplier}
-            onChange={props.changeByValue('fatMultiplier')}
+          <Label for="ignoredFatigue">Ignored Fatigue</Label>
+          <Input type="number" id="ignoredFatigue"
+            value={props.values.fatIgnore}
+            onChange={props.changeByValue('fatIgnore')}
           >
-            <option value={1}>1</option>
-            <option value={0}>0</option>
           </Input>
         </Col>
       </Row>

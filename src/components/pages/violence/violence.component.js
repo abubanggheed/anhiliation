@@ -227,7 +227,7 @@ export default props => {
         The difficulty of this test depends on the facilities and tools available.
       </p>
       <p>
-        <b>Healing Wounds</b>: Normally, your wounds recover at a rate of 1 per day.
+        <b>Healing Wounds</b>: Normally, your wounds recover at a rate of rank per day.
       </p>
       <p>
         <b>Healing Critical Damage</b>: Critical damage heals at a rate of 1 per every 2 weeks.

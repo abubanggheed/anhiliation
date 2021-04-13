@@ -175,7 +175,7 @@ export const tier3Talents = [
     'You ignore all negative effects of insanity or from gaining insanity with the exception of terminal insanity.',
     [characteristics[6], aptitudes[2]],
     3,
-    [[{ ...tier1Talents[22], name: tier1Talents[22].name + ' (x10)'}]]
+    [[{ ...tier1Talents[22], name: tier1Talents[22].name + ' (x5)'}]]
   ),
   unarmedMaster,// 20|78
   new Talent(// 21|79

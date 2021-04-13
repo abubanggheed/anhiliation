@@ -27,6 +27,15 @@ const Dice = props => {
     });
   }
 
+  const changeByChecked = key => event => {
+    props.dispatch({
+      type: 'SET_TITEM',
+      source: 'characteristic',
+      key,
+      payload: event.target.checked
+    })
+  }
+
   const save = () => {
     props.dispatch({
       type: 'ADD_TO_LIST',
@@ -42,15 +51,18 @@ const Dice = props => {
 
   const makeRoll = () => {
     let { diffInd, variance, charInd, basic, advantages, disadvantages, centerings,
-      charMultiplier, fatMultiplier, numberOfRolls } = props.values
+      trained, fatIgnore, exDice, numberOfRolls } = props.values
     let charValue = props.stats[characteristics[charInd].name]
-    let fatige = [
+    let fatigue = [
       'Accuracy', 'Strength', 'Endurance', 'Reflexes'
     ].includes(characteristics[charInd].name) ?
       props.stats.physFatigue : props.stats.menFatigue
+    fatigue = Math.max(0, fatigue - fatIgnore)
+    let charMultiplier = trained ? 1 : 0.5
     let rollResult = characteristicTest(tests[diffInd], variance,
       charValue, basic, advantages, disadvantages, centerings,
-      charMultiplier, fatMultiplier, fatige, numberOfRolls, characteristics[charInd].name
+      charMultiplier, fatigue, numberOfRolls, characteristics[charInd].name,
+      Math.floor(+exDice)
     )
     props.dispatch({
       type: 'SET_RESULT',
@@ -65,6 +77,7 @@ const Dice = props => {
       tests={tests}
       values={props.values}
       changeByValue={changeByValue}
+      changeByChecked={changeByChecked}
       changeAdv={changeAdv}
       makeRoll={makeRoll}
       save={save}
