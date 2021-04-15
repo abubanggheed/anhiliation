@@ -205,7 +205,11 @@ export default props => {
       </p>
       <p>
         <b>Accurate (X)</b>: An aim action with this weapon decreases the difficulty of your next attack with it by 2 levels instead of 1.
-        When doing an aimed shot, the first hit deals an additional 1d4 damage for every 3 points of success up to Xd4.
+        When doing an aimed single shot, the hit deals an additional 1d4 damage for every 3 points of success up to Xd4.
+      </p>
+      <p>
+        <b>Focus</b>: This weapon gains multiple hits by focusing a continuous beam or stream against your target. You cannot do suppressive
+        fire with this weapon, but may gain the extra damage from Accurate on semi auto and full auto attacks.
       </p>
       <p>
         <b>Concussive (X)</b>: When you hit someone with this weapon, they make a standard E test with a basic penalty of X.

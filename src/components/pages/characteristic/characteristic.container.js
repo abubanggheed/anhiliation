@@ -51,14 +51,14 @@ const Dice = props => {
 
   const makeRoll = () => {
     let { diffInd, variance, charInd, basic, advantages, disadvantages, centerings,
-      trained, fatIgnore, exDice, numberOfRolls } = props.values
+      untrained, fatIgnore, exDice, numberOfRolls } = props.values
     let charValue = props.stats[characteristics[charInd].name]
     let fatigue = [
       'Accuracy', 'Strength', 'Endurance', 'Reflexes'
     ].includes(characteristics[charInd].name) ?
       props.stats.physFatigue : props.stats.menFatigue
     fatigue = Math.max(0, fatigue - fatIgnore)
-    let charMultiplier = trained ? 1 : 0.5
+    let charMultiplier = untrained ? 0.5 : 1
     let rollResult = characteristicTest(tests[diffInd], variance,
       charValue, basic, advantages, disadvantages, centerings,
       charMultiplier, fatigue, numberOfRolls, characteristics[charInd].name,

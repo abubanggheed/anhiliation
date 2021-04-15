@@ -11,10 +11,10 @@ export default props => {
         <Col>
           <Label check>
             <Input type="checkbox" id="trainedSelect"
-              checked={props.values.trained}
-              onChange={props.changeByChecked('trained')}>
+              checked={props.values.untrained}
+              onChange={props.changeByChecked('untrained')}>
             </Input>{' '}
-            Trained
+            Untrained
           </Label>
         </Col>
       </Row>

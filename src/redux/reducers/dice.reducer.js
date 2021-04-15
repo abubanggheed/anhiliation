@@ -6,7 +6,7 @@ const initialState = {
     advantages: '0',
     disadvantages: '0',
     centerings: '0',
-    trained: true,
+    untrained: false,
     fatIgnore: '0',
     exDice: '0',
     basic: '0',

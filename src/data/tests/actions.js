@@ -182,7 +182,7 @@ export const combatActions = [
   ),
   new Action('Full Auto Fire',
   'Hold down the trigger and unload ammunition into an opponent of your choice. This is similar to single shot, except on success, you may hit your target with an additional bullet fired for every 2 points of success.',
-  'Half',
+  'Full',
   'Attack',
   characteristics[0],
   'Common',
