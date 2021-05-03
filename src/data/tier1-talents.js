@@ -190,7 +190,7 @@ export const tier1Talents = [
   new Talent(// 22|31
     'Therapy',
     'Reduce your total insanity by 5',
-    'Reduce your total insanity points by 5. You may take this talent any number of times.',
+    'Reduce your total insanity by 5. You may take this talent any number of times.',
     [characteristics[6], aptitudes[7]],
     1,
     [[{name: '5 Insanity'}]]
