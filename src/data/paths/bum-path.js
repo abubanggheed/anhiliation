@@ -84,7 +84,7 @@ export const bumPath = [
 ]
 
 export const bumRanks = [
-  'Faceless Statistic',
+  'Convienence Store Regular',
   'Serf',
   'Failure',
   'Tourist Deterent',

@@ -117,7 +117,7 @@ export const hooliganPath = [
 ]
 
 export const hooliganRanks = [
-  'Purse Snatcher',
+  'Giver of Shady Looks',
   'Petty Thief',
   'Alleyway Mugger',
   'Wilderness Bandit',

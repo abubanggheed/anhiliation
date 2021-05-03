@@ -71,7 +71,7 @@ export const skills = [
   new Skill(//8
     'Common Lore',
     'Knowledge on matters which are widely accessible. This includes folklore, history, geography, religion, etc. Note: you need specific training in each kind of common lore. You cannot get training in all common lore.',
-    [characteristics[4], aptitudes[0]],
+    [characteristics[4], aptitudes[5]],
     'Variable'
   ),
   new Skill(//9
@@ -191,7 +191,7 @@ export const skills = [
   new Skill(//28
     'Trade',
     'Each trade skill indicates a certain profession. This could include, glass blowing, wrangling, janitorial duty, etc.',
-    [characteristics[4], aptitudes[0]],
+    [characteristics[4], aptitudes[5]],
     'Advanced'
   )
 ]

@@ -98,7 +98,7 @@ export const goonPath = [
 ]
 
 export const goonRanks = [
-  'Meat Shield',
+  'Harmonica Player',
   'Parking Lot Security Officer',
   'Bouncer',
   'Bargain Muscle',

@@ -191,7 +191,7 @@ export const tier1Talents = [
     'Therapy',
     'Reduce your total insanity by 5',
     'Reduce your total insanity points by 5. You may take this talent any number of times.',
-    [characteristics[6], aptitudes[0]],
+    [characteristics[6], aptitudes[7]],
     1,
     [[{name: '5 Insanity'}]]
   ),

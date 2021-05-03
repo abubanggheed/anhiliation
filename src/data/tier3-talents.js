@@ -55,7 +55,7 @@ export const tier3Talents = [
     [[tier1Talents[4]]]
   ),
   new Talent(// 2|60
-    'Crushing Blows',
+    'Crushing Swings',
     'Deal physical exhaustion when you make all out attacks',
     'If one of your all out attacks is not dodged, you may make an opposed hth S test. If you succeed by at least 2, your opponent gains 1 physical exhaustion.',
     [characteristics[1], aptitudes[1]],
@@ -203,7 +203,7 @@ export const tier3Talents = [
     [[{...tier0Talents[5], name: tier0Talents[5].name + ' (x3)'}]]
   ),
   new Talent(// 24
-    'Hammered',
+    'Hammered Blows',
     'Roll more damage dice on all out attack',
     'Whenever you succeed an all out attack roll an additional 1dX of damage for every 2 points of success where X is your S.',
     [characteristics[1], aptitudes[1]],
