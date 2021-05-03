@@ -12,7 +12,7 @@ const coveringGround = new Talent(
   'Covering Ground',
   'May reload while running or charging',
   'While taking a run, full move or charge, you may reload your readied weapon by ½ action worth of reloading.',
-  [characteristics[0], aptitudes[3]],
+  [characteristics[0], aptitudes[6]],
   1,
   []
 )
@@ -50,7 +50,7 @@ export const tier1Talents = [
     'Dirty Fighting',
     'Compromise reactions in brawler hits',
     'Whenever you land an attack made from the brawler talent, exhaust a reaction from your opponent for every 2 successes you have on that attack. If you would exhaust their reactions below 0, they can take no actions the next round.',
-    [characteristics[3], aptitudes[3]],
+    [characteristics[1], aptitudes[3]],
     1,
     [[tier0Talents[1]]]
   ),
@@ -126,7 +126,7 @@ export const tier1Talents = [
     'Lent Shot',
     'Shoot into another melee when engaged in your own',
     'You may shoot outside of your current melee without conceding your ability to react to your melee opponent\'s attacks.',
-    [characteristics[0], aptitudes[3]],
+    [characteristics[5], aptitudes[3]],
     1,
     [[supportFromAffar]]
   ),
@@ -134,7 +134,7 @@ export const tier1Talents = [
     'Overwatch',
     'May use overwatch action',
     'You may use the overwatch action.',
-    [characteristics[0], aptitudes[2]],
+    [characteristics[5], aptitudes[2]],
     1,
     []
   ),

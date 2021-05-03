@@ -46,7 +46,7 @@ export const tier2Talents = [
     'Counter Charge',
     'May counter charge when charged',
     'When someone charges you, you may spend a reaction to immediately make a counter charge, meeting them halfway. Moving out of your current engagement still has the usual consequences.',
-    [characteristics[0], aptitudes[3]],
+    [characteristics[5], aptitudes[3]],
     2,
     [[tier1Talents[2]]]
   ),
@@ -54,7 +54,7 @@ export const tier2Talents = [
     'Discriminant Justice',
     'Counter attack any enemy',
     'When you make a counter attack, you may make a counter attack against any opponent you are in melee with, not just the original attacker. This counter attack must be caused by an enemy\'s attack.',
-    [characteristics[0], aptitudes[3]],
+    [characteristics[5], aptitudes[3]],
     2,
     [[tier1Talents[2]]]
   ),
@@ -62,7 +62,7 @@ export const tier2Talents = [
     'Dual Wield',
     'May use two one handed weapons',
     'You may use two one handed weapons. You may make attacks with both at the same time. This only works with attack actions, not attack reactions.',
-    [characteristics[0], aptitudes[1]],
+    [characteristics[1], aptitudes[1]],
     2,
     []
   ),
@@ -102,7 +102,7 @@ export const tier2Talents = [
     'Leadborn',
     'Use ranged weapons in melee without penalty',
     'You may use infantry weapons in melee as if they were pistol weapons.',
-    [characteristics[0], aptitudes[3]],
+    [characteristics[2], aptitudes[3]],
     2,
     []
   ),

@@ -32,7 +32,7 @@ const leadLove = new Talent(
   'Leadlove',
   'You may use heavy weapons in melee',
   'You may use heavy weapons in melee as if they were pistols.',
-  [characteristics[0], aptitudes[1]],
+  [characteristics[2], aptitudes[1]],
   3,
   [[tier2Talents[11]]]
 )
@@ -42,7 +42,7 @@ export const tier3Talents = [
     'Cap\'n Cappin',
     'Dual wield heavy class weapons',
     'You may dual wield heavy class ranged weapons for ranged attacks. It still takes 2 hands to reload 1 of them.',
-    [characteristics[0], aptitudes[1]],
+    [characteristics[1], aptitudes[1]],
     3,
     [[goodGuyWithAGun]]
   ),
@@ -50,7 +50,7 @@ export const tier3Talents = [
     'Counter Shot',
     'Counter ranged attacks with single shots',
     'After using a dodge on a ranged attack if your opponents attack score was reduced to -3 or less, you may spend an additional reaction to make a single shot attack against that opponent.',
-    [characteristics[0], aptitudes[3]],
+    [characteristics[5], aptitudes[3]],
     3,
     [[tier1Talents[4]]]
   ),
@@ -67,9 +67,9 @@ export const tier3Talents = [
     'Generalist',
     'Are considered trained in all common lores',
     'You are considered trained in every common lore skill. If you are already trained in that lore, you instead gain a +1 basic bonus to it.',
-    [characteristics[4], aptitudes[0]],
+    [characteristics[4], aptitudes[5]],
     3,
-    [[{ ...skills[8], name: skills[8].name + ' (x4)', training: 'Basic' }]]
+    [[{ ...skills[8], name: skills[8].name + ' (x2)', training: 'Basic' }]]
   ),
   goodGuyWithAGun,// 5|63
   new Talent(// 6|64
@@ -92,7 +92,7 @@ export const tier3Talents = [
     'Indiscriminant Justice',
     'Use ranged attacks in mosh pits',
     'You may use ranged attacks in mosh pits as if they were regular melees. This includes your beloved heavy weapons. These are made in place of unarmed or improvised weapon attacks. (They do not deal double damage.) Automatic fire can hit allies.',
-    [characteristics[0], aptitudes[1]],
+    [characteristics[2], aptitudes[1]],
     3,
     [[leadLove], [tier2Talents[14]]]
   ),
@@ -108,7 +108,7 @@ export const tier3Talents = [
     'Latch On',
     'Leap onto a moving mount or vehicle',
     'You may make an acrobatics test to leap onto a moving vehicle or mount. The difficulty depends on the size and speed of your target. If you succeed by at least 3, you do not go prone when latching on. If there is an enemy by where you are leaping, that enemy may spend a reaction to free grapple you.',
-    [characteristics[3], aptitudes[3]],
+    [characteristics[2], aptitudes[3]],
     3,
     [[{ ...skills[19], training: 'Basic' }], [{ ...skills[0], training: 'Expert' }]]
   ),
@@ -149,7 +149,7 @@ export const tier3Talents = [
     'Reckless Abandon',
     'Transfer dice from feedback role to focus role',
     'When making a spell use test, you may roll up to three extra dice for that test. For each die, roll 1 less die on the test to resist feedback. This may result in negative dice.',
-    [characteristics[4], aptitudes[4]],
+    [characteristics[6], aptitudes[4]],
     3,
     [[{ ...skills[24], training: 'Expert' }]]
   ),
@@ -165,7 +165,7 @@ export const tier3Talents = [
     'Slippery Bastard',
     'You gain scale-able reactions',
     'Instead of having a fixed number of reactions per round, you have reactions equal to the average of your Acc and Ref scores rounded up.',
-    [characteristics[0], characteristics[3], aptitudes[2]],
+    [characteristics[3], aptitudes[2]],
     3,
     [[tier2Talents[16]]]
   ),
@@ -190,7 +190,7 @@ export const tier3Talents = [
     'Vengeance',
     'May counter attack when hit',
     'You may make counter attacks after being hit, even when you do not attempt an evasion.',
-    [characteristics[0], aptitudes[1]],
+    [characteristics[2], aptitudes[1]],
     3,
     [[tier1Talents[2]]]
   ),
