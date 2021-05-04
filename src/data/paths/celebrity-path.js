@@ -20,6 +20,7 @@ export const celebrityPath = [
     tier0[3],
     prereqAddOn(skills[5]),
     nameAddOn(skills[8], ' (Folklore)'),
+    skills[9],
     prereqAddOn(skills[18], 2, ' (1st)'),
     tier1[10],
     nameAddOn(skills[20], ' (Humanities)'),
@@ -48,6 +49,7 @@ export const celebrityPath = [
   ],
   [//4
     prereqAddOn(skills[5], 4),
+    prereqAddOn(skills[9]),
     tier1[4],
     prereqAddOn(skills[18], 4, ' (2nd)'),
     skills[24],
@@ -82,6 +84,7 @@ export const celebrityPath = [
   ],
   [//8
     tier3[0],
+    prereqAddOn(skills[9], 4),
     tier1[4],
     prereqAddOn(skills[19], 4),
     tier3[7],

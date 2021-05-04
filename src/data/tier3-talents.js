@@ -154,7 +154,7 @@ export const tier3Talents = [
     [[{ ...skills[24], training: 'Expert' }]]
   ),
   new Talent(// 17|75
-    'Slasher',
+    'The Magic Bullet',
     'Gain half Acc score bonus to damage',
     'You gain a basic bonus of your half Acc score to all your damage rolls.',
     [characteristics[0], aptitudes[1]],

@@ -46,7 +46,7 @@ export default props => {
         If a creature has both types of fear, the combat fear difficulty applies in combat, and requires a fresh test.
       </p>
       <p>
-        <b>Fear and Insanity</b>: Good news. For every 10 insanity you have, reduce all fear difficulties by 1 step.
+        <b>Fear and Insanity</b>: Good news. For every 20 insanity you have, reduce all fear difficulties by 1 step.
       </p>
       <p>
         <b>Snapping Out of It</b>:Remember that you can always take the snap out of it action in combat.
