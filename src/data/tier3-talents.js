@@ -217,5 +217,21 @@ export const tier3Talents = [
     [characteristics[6], aptitudes[2]],
     3,
     [[{ name: '90 insanity' }]]
+  ),
+  new Talent(// 26
+    'Liberal Arts',
+    'Are considered trained in all scholastic lores',
+    'You are considered trained in every scholastic lore skill. If you are already trained in that lore, you instead gain a +1 basic bonus to it.',
+    [characteristics[4], aptitudes[5]],
+    3,
+    [[{ ...skills[20], name: skills[20].name + ' (x3)', training: 'Basic' }]]
+  ),
+  new Talent(// 27
+    'Jack of all Trades',
+    'Are considered trained in all trades',
+    'You are considered trained in every trade skill. If you are already trained in that trade, you instead gain a +1 basic bonus to it.',
+    [characteristics[4], aptitudes[5]],
+    3,
+    [[{ ...skills[28], name: skills[28].name + ' (x2)', training: 'Basic' }]]
   )
 ]

@@ -186,5 +186,13 @@ export const tier2Talents = [
     [characteristics[5], aptitudes[3]],
     2,
     [[tier1Talents[17]]]
+  ),
+  new Talent(// 23
+    'Retcon',
+    'Take back something you just said',
+    'You may amend what you have just said in any conversation with an npm. Using this ability gives 1 mental fatigue. In some situations you may amend a prior statement for more mental fatigue.',
+    [characteristics[7], aptitudes[7]],
+    2,
+    [[{ ...skills[9], training: 'Professional' }], [{ ...skills[14], training: 'Professional' }]]
   )
 ]

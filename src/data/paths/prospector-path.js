@@ -66,6 +66,7 @@ export const prospectorPath = [
     prereqAddOn(skills[2]),
     prereqAddOn(skills[7], 4),
     tier2[8],
+    tier3[27],
     prereqAddOn(skills[19]),
     prereqAddOn(skills[20], 4, ' (Geology)'),
     prereqAddOn(skills[20], 4, ' (Ecology)')
