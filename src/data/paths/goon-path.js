@@ -84,6 +84,7 @@ export const goonPath = [
     prereqAddOn(skills[12], 4),
     tier2[10],
     tier3[13],
+    tier3[28],
     tier1[23],
     tier3[21]
   ],

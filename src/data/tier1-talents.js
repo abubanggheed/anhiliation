@@ -213,7 +213,7 @@ export const tier1Talents = [
   ),
   new Talent(// 25|34
     'Unarmed Fighter',
-    'You fisticuffs do additional damage',
+    'Your fisticuffs do additional damage',
     'Your unarmed attacks now do 2d6 damage.',
     [characteristics[0], aptitudes[1]],
     1,

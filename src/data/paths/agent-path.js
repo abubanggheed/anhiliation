@@ -117,6 +117,7 @@ export const agentPath = [
     tier3[9],
     tier3[16],
     prereqAddOn(skills[21], 4),
+    tier3[28],
     prereqAddOn(skills[23], 4),
     tier2[22],
     prereqAddOn(skills[25], 4),
