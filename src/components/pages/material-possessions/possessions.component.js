@@ -46,7 +46,7 @@ export default props => {
         <b>Super Charged</b>: Shields equipped to this armor have double the recharge.
       </p>
       <p>
-        <b>Extra Battery</b>: Shields equipped to this armor have twice the capacity.
+        <b>Extra Battery</b>: Shields equipped to this armor have + 50% capacity.
       </p>
       <p>
         <b>Conduit</b>: You get a general advantage to all spell use tests for spells attached to this armor, but whenever you use one of these spells, any spell used against you is made with a general advantage until your next turn.

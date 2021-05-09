@@ -106,7 +106,7 @@ export const tier1Talents = [
     'Quick Draw',
     'Draw weapons as a free action',
     'You may draw your weapon as a free action so long as that weapon is a melee, pistol, infantry, or improvised type weapon. (If your plan is to beat down with unarmed damage you do not need to draw your “weapons”.) You may draw a number of weapons freely equal to your half Acc score.',
-    [characteristics[0], aptitudes[3]],
+    [characteristics[3], aptitudes[3]],
     1,
     []
   ),
@@ -215,7 +215,7 @@ export const tier1Talents = [
     'Unarmed Fighter',
     'Your fisticuffs do additional damage',
     'Your unarmed attacks now do 2d6 damage.',
-    [characteristics[0], aptitudes[1]],
+    [characteristics[0], characteristics[1], aptitudes[1]],
     1,
     [[ { ...tier0Talents[8], name: tier0Talents[8].name + ' (Unarmed)'} ]]
   ),

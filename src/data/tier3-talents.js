@@ -14,7 +14,7 @@ const goodGuyWithAGun = new Talent(
   'Good Guy with a Gun',
   'Dual wield infantry class weapons',
   'You may dual wield infantry class ranged weapons for ranged attacks. It still takes 2 hands to reload 1 of them.',
-  [characteristics[0], aptitudes[3]],
+  [characteristics[1], aptitudes[3]],
   3,
   [[tier2Talents[6]], [{ ...tier0Talents[8], name: tier0Talents[8].name + ' (Infantry)'}]]
 )
