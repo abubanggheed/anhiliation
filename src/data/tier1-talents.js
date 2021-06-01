@@ -199,7 +199,7 @@ export const tier1Talents = [
     'The Slip',
     'May exit grapple when losing control of it',
     'If you are in control of grapple and an opponent is about to gain control, you may spend a reaction to exit that grapple.',
-    [characteristics[1], aptitudes[3]],
+    [characteristics[3], aptitudes[3]],
     1,
     []
   ),

@@ -9,9 +9,15 @@ const Damagerolls = props => {
 
   const rollDice = () => {
     let { dice, atts, basic, pen, numberOfRolls } = props.values
-    let attScores = atts.map(att => (
-      Math.floor(props.stats[characteristics[att.charInd].name] * att.weight)
-    ))
+    let attScores = atts.map(att => {
+      let charName = characteristics[att.charInd].name
+      return Math.floor(
+        (
+          props.stats[charName]
+          - props.stats[['Accuracy', 'Strength', 'Endurance', 'Reflexes'].includes(charName) ? 'physFatigue' : 'menFatigue']
+        ) * att.weight
+      )
+    })
     let result = damageRoll(dice, attScores, basic, pen, numberOfRolls)
     props.dispatch({
       type: 'SET_RESULT',

@@ -217,7 +217,7 @@ export default props => {
         If they took more than their S score in damage, they are knocked prone.
       </p>
       <p>
-        <b>Flame</b>: When you score at least 1 hit against a target, they make a standard Ref test.
+        <b>Flame</b>: When you score at least 1 hit against a target, they make a personal initiative test (exposure).
         If they fail, they catch on fire.
       </p>
       <p>
@@ -246,13 +246,13 @@ export default props => {
         <b>Smoke (X)</b>: When this weapon lands, it creates a cloud of smoke of an X meter radius.
       </p>
       <p>
-        <b>Snare (X)</b>: When you hit someone with this weapon, they must make a standard Ref test with a basic penalty of X.
+        <b>Snare (X)</b>: When you hit someone with this weapon, they must make a personal initiative test with a basic penalty of X.
         If they fail, they are ensnared.
         They may escape with a follow up standard S or Ref test applying the same penalty.
         Until then, they are considered helpless.
       </p>
       <p>
-        <b>Unreliable</b>: This weapon jams on the second lowest attack role.
+        <b>Unreliable</b>: This weapon can jam on any type of ranged attack.
       </p>
       <p>
         Please note that the Flame, Toxic, and Radioactive property are more likely to come from ammunition instead of the weapon itself.
@@ -278,6 +278,7 @@ export default props => {
       <p><b>Special Abilities</b></p>
       <p>
         <b>Blast (X)</b>: When this weapon hits it's target, it explodes of an area with a radius of X meters.
+        Anyone hit by a blast weapon must make a standard acrobatics test with a basic penalty of X or be knocked prone.
       </p>
       <p>
         <b>Concussive (X)</b>: When you hit someone with this weapon, they make a standard E test with a basic penalty of X.
@@ -285,7 +286,7 @@ export default props => {
         If they took more than their S score in damage, they are knocked prone.
       </p>
       <p>
-        <b>Flame</b>: When you score at least 1 hit against a target, they make a standard Ref test.
+        <b>Flame</b>: When you score at least 1 hit against a target, they make a personal initiative test (exposure).
         If they fail, they catch on fire.
       </p>
       <p>
@@ -317,7 +318,7 @@ export default props => {
         <b>Smoke (X)</b>: When this weapon lands, it creates a cloud of smoke of an X meter radius.
       </p>
       <p>
-        <b>Snare (X)</b>: When you hit someone with this weapon, they must make a standard Ref test with a basic penalty of X.
+        <b>Snare (X)</b>: When you hit someone with this weapon, they must make a personal initiative test with a basic penalty of X.
         If they fail, they are ensnared.
         They may escape with a follow up standard S or Ref test applying the same penalty.
         Until then, they are considered helpless.

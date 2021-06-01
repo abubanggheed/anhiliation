@@ -181,7 +181,7 @@ export const combatActions = [
   false
   ),
   new Action('Full Auto Fire',
-  'Hold down the trigger and unload ammunition into an opponent of your choice. This is similar to single shot, except on success, you may hit your target with an additional bullet fired for every 2 points of success.',
+  'Hold down the trigger and unload ammunition into an opponent of your choice. This is similar to single shot, except on success, you may hit your target with an additional bullet fired for every 2 points of success. Weapons on full auto have a 5% chance of jamming.',
   'Full',
   'Attack',
   characteristics[0],
@@ -343,7 +343,7 @@ export const combatActions = [
   false
   ),
   new Action('Suppressing Fire',
-  'Send full auto fire in a direction of your choice. Opponents in that area must make a standard willpower test or become pinned. For every enemy affected, you may make the Brutal attack role to attempt to hit them with 1 bullet. If you have hit an enemy for every bullet you fired, stop making these attacks.',
+  'Send full auto fire in a direction of your choice. Opponents in that area must make a standard willpower test or become pinned. For every enemy affected, you may make the Brutal attack role to attempt to hit them with 1 bullet. If you have hit an enemy for every bullet you fired, stop making these attacks. Suppresive fire incurs a 5% change of jamming.',
   'Continuous',
   'Attack',
   characteristics[0],

@@ -71,7 +71,6 @@ export const celebrityPath = [
     tier1[6],
     tier3[10],
     tier1[14],
-    tier1[16],
     prereqAddOn(skills[19]),
     tier2[21]
   ],
