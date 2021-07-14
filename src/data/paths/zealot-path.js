@@ -49,6 +49,7 @@ export const zealotPath = [
   [//4
     tier2[0],
     tier2[3],
+    tier2[24],
     prereqAddOn(skills[11]),
     tier1[11],
     tier2[11],

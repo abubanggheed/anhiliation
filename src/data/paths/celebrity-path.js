@@ -51,6 +51,7 @@ export const celebrityPath = [
     prereqAddOn(skills[5], 4),
     prereqAddOn(skills[9]),
     tier1[4],
+    tier2[24],
     prereqAddOn(skills[18], 4, ' (2nd)'),
     skills[24],
     prereqAddOn(skills[27])

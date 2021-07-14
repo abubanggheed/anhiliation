@@ -51,6 +51,7 @@ export const goonPath = [
   ],
   [//4
     prereqAddOn(skills[4]),
+    tier2[24],
     tier3[6],
     tier1[15],
     nameAddOn(aptAddOn(tier0[5], characteristics[6]), ' (Mind Control)'),
@@ -67,6 +68,7 @@ export const goonPath = [
     tier3[11],
     tier1[13],
     tier2[16],
+    tier2[25],
     tier2[22],
   ],
   [//6

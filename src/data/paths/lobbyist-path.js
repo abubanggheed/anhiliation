@@ -47,6 +47,7 @@ export const lobbyistPath = [
   [//4
     prereqAddOn(skills[4], 4),
     skills[6],
+    tier2[24],
     prereqAddOn(skills[13]),
     prereqAddOn(skills[20], 2, ' (Crime)'),
     prereqAddOn(skills[21], 4),

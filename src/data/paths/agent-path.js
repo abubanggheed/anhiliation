@@ -56,6 +56,7 @@ export const agentPath = [
     skills[12],
     prereqAddOn(skills[21]),
     prereqAddOn(skills[22], 4),
+    tier2[25],
     tier0[6],
     tier1[16],
     nameAddOn(tier0[8], ' (Improvised)')
@@ -67,6 +68,7 @@ export const agentPath = [
     tier1[2],
     tier1[4],
     tier2[6],
+    tier2[24],
     prereqAddOn(skills[11]),
     tier3[12],
     tier2[16],

@@ -50,6 +50,7 @@ export const bumPath = [
   [//4
     tier2[0],
     tier1[3],
+    tier2[24],
     prereqAddOn(skills[17], 2, ' (Any)'),
     tier3[23],
     tier1[20],
@@ -66,6 +67,7 @@ export const bumPath = [
     prereqAddOn(skills[5]),
     tier2[8],
     tier2[18],
+    tier2[25],
     prereqAddOn(skills[28], 2, ' (Any)'),
     tier3[24]
   ],

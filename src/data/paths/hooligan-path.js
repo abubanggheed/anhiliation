@@ -64,11 +64,13 @@ export const hooliganPath = [
     prereqAddOn(skills[4]),
     tier1[0],
     tier3[3],
+    tier2[24],
     tier2[14],
     tier2[16],
     tier1[15],
     tier2[18],
     prereqAddOn(skills[19]),
+    tier2[25],
     tier2[21],
     prereqAddOn(skills[28], 2, ' (Any)')
   ],

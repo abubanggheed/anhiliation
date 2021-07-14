@@ -117,7 +117,7 @@ export default props => {
         Your opponent gains a general disadvantage on all reaction tests to avoid attacks made with this weapon.
       </p>
       <p>
-        <b>Concussive (X)</b>: When you strike someone with this weapon, they make a standard E test with a basic penalty of X.
+        <b>Concussive (X)</b>: When you strike someone with this weapon, they make a standard E test (force) with a basic penalty of X.
         On failure they are stunned for a round, and following rounds for every additional 3 points of failure (starting at -4).
         If they took more than their S score in damage, they are knocked prone.
       </p>
@@ -212,7 +212,7 @@ export default props => {
         fire with this weapon, but may gain the extra damage from Accurate on semi auto and full auto attacks.
       </p>
       <p>
-        <b>Concussive (X)</b>: When you hit someone with this weapon, they make a standard E test with a basic penalty of X.
+        <b>Concussive (X)</b>: When you hit someone with this weapon, they make a standard E test (force) with a basic penalty of X.
         On failure they are stunned for a round, and following rounds for every additional 3 points of failure (starting at -4).
         If they took more than their S score in damage, they are knocked prone.
       </p>
@@ -278,10 +278,10 @@ export default props => {
       <p><b>Special Abilities</b></p>
       <p>
         <b>Blast (X)</b>: When this weapon hits it's target, it explodes of an area with a radius of X meters.
-        Anyone hit by a blast weapon must make a standard acrobatics test with a basic penalty of X or be knocked prone.
+        Anyone hit by a blast weapon must make a standard acrobatics test (force) with a basic penalty of X or be knocked prone.
       </p>
       <p>
-        <b>Concussive (X)</b>: When you hit someone with this weapon, they make a standard E test with a basic penalty of X.
+        <b>Concussive (X)</b>: When you hit someone with this weapon, they make a standard E test (force) with a basic penalty of X.
         On failure they are stunned for a round, and following rounds for every additional 3 points of failure (starting at -4).
         If they took more than their S score in damage, they are knocked prone.
       </p>

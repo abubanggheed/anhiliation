@@ -65,6 +65,7 @@ export const prospectorPath = [
   [//4
     prereqAddOn(skills[2]),
     prereqAddOn(skills[7], 4),
+    tier2[24],
     tier2[8],
     tier3[27],
     prereqAddOn(skills[19]),
@@ -94,6 +95,7 @@ export const prospectorPath = [
     tier2[19],
     prereqAddOn(skills[19], 4),
     prereqAddOn(skills[20], 4, ' (Chemistry)'),
+    tier2[25],
     tier2[20]
   ],
   [//8
