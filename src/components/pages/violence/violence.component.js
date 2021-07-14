@@ -22,7 +22,7 @@ export default props => {
         This creates a few causality problems, but no one has noticed yet.
       </p>
       <p>
-        <b>Personal Initiative</b>: A personal initiative role is a standard Reflexes test.
+        <b>Personal Initiative</b>: A personal initiative role is an untrained standard Reflexes test.
         This is a test that reflects the twitchiness of your parallel nervous system and is rolled on occasion.
       </p>
       <p>
