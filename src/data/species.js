@@ -1,6 +1,7 @@
 import { characteristics } from './characteristic'
 import { aptitudes } from './aptitude'
 import { Asset } from './models'
+import { talents } from './all-talents'
 
 export class Species {
 
@@ -38,9 +39,9 @@ let mechDescription = 'Mechaniform are the only non-humanoid that can be sentien
 
 
 export const species = [
-  new Species('Reln', characteristics[0], characteristics[4], 'Ambidextrous', relnDescription),
-  new Species('Uven', characteristics[4], characteristics[5], 'Night Fighter', uvenDescription),
-  new Species('Gyl', characteristics[1], characteristics[2], 'Gyl may hold their breath for E minutes', gylDescription),
-  new Species('Kavren', characteristics[3], characteristics[1], 'Catfall', kavrenDescription),
+  new Species('Reln', characteristics[0], characteristics[4], talents[0][0], relnDescription),
+  new Species('Uven', characteristics[4], characteristics[5], talents[0][4], uvenDescription),
+  new Species('Gyl', characteristics[1], characteristics[2], talents[4][0], gylDescription),
+  new Species('Kavren', characteristics[3], characteristics[1], talents[0][3], kavrenDescription),
   new Species('Sentient Mechaniform', characteristics[6], characteristics[7], 'Resistance (radiation)', mechDescription, aptitudes[0])
 ]

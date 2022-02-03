@@ -195,7 +195,7 @@ export const tier2Talents = [
     2,
     [[{ ...skills[9], training: 'Professional' }], [{ ...skills[14], training: 'Professional' }]]
   ),
-  new Talent(//24
+  new Talent(// 24
     'Flashback',
     'Return to a past conversation',
     'You may return to a conversation from the past that you remember to fill out a detail or make a request that you neglected. This can lead to whipping out a special requisition you\'ve been saving, but you may only get one item per session this way.',
@@ -203,10 +203,10 @@ export const tier2Talents = [
     2,
     []
   ),
-  new Talent(//25
+  new Talent(// 25
     'Size Up',
     'See the characteristics of npcs',
-    'You may make a standard scrutiny test to obtain the characteristic scores of npcs. On success, you see the S score. Then for every 2 points of success you see in this order, E, Per, K, Ref, Int, Acc, Will. A harder test is made for npcs that are not humaniod.',
+    'You may make a standard scrutiny test to obtain the characteristic scores of npcs. On success, you see the S score. Then for every 2 points of success you see in this order: E, Per, K, Ref, Int, Acc, Will. A harder test is made for npcs that are not humaniod.',
     [characteristics[5], aptitudes[7]],
     2,
     [[skills[21]]]

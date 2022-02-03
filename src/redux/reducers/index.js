@@ -7,6 +7,7 @@ import rulesParReducer from './rules-par.reducer'
 import rulesAssetDesc from './rules-ref.reducer'
 import statsReducer from './stats.reducer'
 import diceReducer from './dice.reducer'
+import sheetBasicReducer from './sheet-basic.reducer'
 
 const sagaMiddleware = createSagaMiddleware()
 
@@ -15,7 +16,8 @@ const store = createStore(
     rulesParReducer,
     rulesAssetDesc,
     statsReducer,
-    diceReducer
+    diceReducer,
+    sheetBasicReducer
   }),
   applyMiddleware(
     ...(process.env.NODE_ENV === "development" ? [sagaMiddleware, logger] : [sagaMiddleware])

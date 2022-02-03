@@ -33,6 +33,7 @@ export const goonPath = [
     tier1[6],
     tier0[7],
     tier1[17],
+    nameAddOn(aptAddOn(tier0[5], characteristics[6]), ' (Force)'),
     skills[26],
     nameAddOn(tier0[8], ' (Heavy)'),
     nameAddOn(tier0[8], ' (Artillery)'),

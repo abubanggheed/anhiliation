@@ -44,6 +44,7 @@ export const zealotPath = [
     tier2[5],
     tier3[6],
     prereqAddOn(skills[12]),
+    nameAddOn(aptAddOn(tier0[5], characteristics[6]), ' (Force)'),
     skills[19]
   ],
   [//4

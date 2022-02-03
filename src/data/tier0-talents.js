@@ -49,7 +49,7 @@ export const tier0Talents = [
   new Talent(// 5|5
     'Resistance',
     'Gain a bonus on resisting ill effects',
-    'You gain a +2 basic bonus on tests to resist negative effect from a specific hazard. You may take this talent any number of times, each time for a different hazard. The common hazards are: fear, mind control, feedback, toxin, radiation, exposure, concussive, and starvation. The relevant characteristic aptitude is E or Will depending whether the hazard inflicts physical or mental trauma.',
+    'You gain a +2 basic bonus on tests to resist negative effect from a specific hazard. You may take this talent any number of times, each time for a different hazard. The common hazards are: fear, mind control, feedback, toxin, radiation, exposure, force, and starvation. The relevant characteristic aptitude is E or Will depending whether the hazard inflicts physical or mental trauma.',
     [aptitudes[2]],
     0,
     [],
