@@ -46,6 +46,24 @@ const counterShot = new Talent(
   [[tier1Talents[4]]]
 )
 
+const liberalArts = new Talent(
+  'Liberal Arts',
+  'Are considered trained in all scholastic lores',
+  'You are considered trained in every scholastic lore skill. If you are already trained in that lore, you instead gain a +1 basic bonus to it.',
+  [characteristics[4], aptitudes[5]],
+  3,
+  [[{ ...skills[20], name: skills[20].name + ' (x3)', training: 'Basic' }]]
+)
+
+const onlyCountsAsOne = new Talent(
+  'Only Counts as One',
+  'Double up on amo enhancements',
+  'You may make 2 tests for 2 different enhancers in a compound, i.e. flame and radioactive and apply both to the same compound. Increase the difficulty of these tests by 1 step while doing this.',
+  [characteristics[4], aptitudes[5]],
+  3,
+  [[{ ...skills[20], name: skills[20].name + ' (Chemistry)', training: 'Expert' }], [liberalArts]]
+)
+
 export const tier3Talents = [
   new Talent(// 0
     'Cap\'n Cappin',
@@ -220,14 +238,7 @@ export const tier3Talents = [
     3,
     [[{ name: '90 insanity' }]]
   ),
-  new Talent(// 26
-    'Liberal Arts',
-    'Are considered trained in all scholastic lores',
-    'You are considered trained in every scholastic lore skill. If you are already trained in that lore, you instead gain a +1 basic bonus to it.',
-    [characteristics[4], aptitudes[5]],
-    3,
-    [[{ ...skills[20], name: skills[20].name + ' (x3)', training: 'Basic' }]]
-  ),
+  liberalArts,//26
   new Talent(// 27
     'Jack of all Trades',
     'Are considered trained in all trades',
@@ -243,5 +254,14 @@ export const tier3Talents = [
     [characteristics[5], aptitudes[2]],
     3,
     [[counterShot]]
+  ),
+  onlyCountsAsOne,//29
+  new Talent(//30
+    'Still Only Counts As One',
+    'All of the special effects in your amo',
+    'You may make any number of tests for that many different enhancers in a compound, i.e. flame, radioactive, toxic, and snare and apply them all to the same compound. Increase the difficulty of these tests by 1 step for every effect beyond the first while doing this.',
+    [characteristics[5], aptitudes[2]],
+    3,
+    [[onlyCountsAsOne]]
   )
 ]

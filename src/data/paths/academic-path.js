@@ -87,6 +87,7 @@ export const academicPath = [
     prereqAddOn(skills[13], 4),
     tier2[13],
     prereqAddOn(skills[16], 4),
+    tier3[29],
     tier1[24],
     tier3[19],
     prereqAddOn(skills[20], 4, ' (Ecology)'),
@@ -95,6 +96,7 @@ export const academicPath = [
   [//8
     tier2[9],
     tier3[16],
+    tier3[30],
     tier2[20],
     prereqAddOn(skills[27], 4)
   ]

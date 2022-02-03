@@ -180,7 +180,7 @@ export const tier2Talents = [
     []
   ),
   new Talent(// 22
-    'Snake Eyes',
+    'I See You',
     'Increase dice damage from accurate shots',
     'The extra dice damage from accurate weapon fire is increased from 1d4 to 1d6.',
     [characteristics[5], aptitudes[3]],
