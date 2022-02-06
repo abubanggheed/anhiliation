@@ -56,7 +56,7 @@ const liberalArts = new Talent(
 )
 
 const onlyCountsAsOne = new Talent(
-  'Only Counts as One',
+  'Diabolical Brew',
   'Double up on amo enhancements',
   'You may make 2 tests for 2 different enhancers in a compound, i.e. flame and radioactive and apply both to the same compound. Increase the difficulty of these tests by 1 step while doing this.',
   [characteristics[4], aptitudes[5]],

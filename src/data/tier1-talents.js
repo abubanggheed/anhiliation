@@ -204,9 +204,9 @@ export const tier1Talents = [
     []
   ),
   new Talent(// 24|33
-    'Tracer',
-    'Determine identity of other software users',
-    'Whenever you make opposed security tests, if you succeed with a result of at least 3, you may gain information about your opponent. The amount of information gained increases based on your success.',
+    'Spontaneous Deathtrap',
+    'May throw any explosive as if it were a grenade',
+    'You may use any explosive device as if it were a grenade, although it may be harder to throw.',
     [characteristics[4], aptitudes[4]],
     1,
     [[{ ...skills[22], training: 'Basic' }]]

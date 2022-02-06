@@ -72,7 +72,8 @@ export const explorerPath = [
     prereqAddOn(skills[17], 2, ' (Sea)'),
     tier2[16],
     prereqAddOn(skills[20], 2, ' (Geology)'),
-    tier2[25]
+    tier2[25],
+    tier1[24]
   ],
   [//6
     prereqAddOn(skills[2], 4),
