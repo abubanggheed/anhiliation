@@ -153,6 +153,9 @@ export default props => {
         Increase the difficulty of any evasion test you take unless you abandon the grapple.
       </p>
       <p>
+      <b>Irradiated (x)</b>: At the start of your team's turn, you make a standard E test to resist radiation with a basic penalty of x capped by your E score. On failure, you lose 1 health. On success, reduce x by 1. If you would reduce it below 0, instead remove this condition. Repeate this process for every 3x you started with.
+      </p>
+      <p>
         <b>Jammed</b>: You weapon is stuck and cannot fire until you unjam it.
         When making a ranged attack, if you roll all 1s, make a dice roll of opposite variance and difficulty, and if you also get all 1s on that, your weapon jams.
       </p>
@@ -165,7 +168,7 @@ export default props => {
         <b>Obscured Vision</b>: Increase the difficulty of all melee attacks and evasions by 1 step and the difficulty of all ranged attacks by 2 steps.
       </p>
       <p>
-        <b>On Fire</b>: Each turn you take 1d12 damage that ignores absorption.
+        <b>On Fire</b>: Each turn you take 1d4 damage that ignores absorption.
       </p>
       <p>
         <b>Pinned</b>: Increase the difficulty of all (grapple) actions that you take by 1 step.
@@ -176,10 +179,13 @@ export default props => {
         If you are not in cover, your turn must be dedicated to seeking cover.
       </p>
       <p>
+        <b>Poisoned (x)</b>: At the start of your team's turn, you make a standard E test to resist Posioned with a basic penalty of x capped by your E score. On failure, you lose 1 health. On success, reduce x by 1. If you would reduce it below 0, instead remove this condition. Repeate this process for every 3x you started with.
+      </p>
+      <p>
         <b>Prone</b>: Decrease the difficulty of all melee attacks or grapple actions made against you by 1 step.
       </p>
       <p>
-        <b>Stunned</b>: You loose a half action every round until you are no longer stunned.
+        <b>Stunned</b>: You lose a half action every round until you are no longer stunned.
       </p>
       <p>
         <Button color="link" onClick={props.toggleParagraph('ranges')}>Range</Button>: The closer you are to a target, the easier it is to hit them. At a certain point, it is far more feasible to switch to the bayonet:
@@ -207,8 +213,22 @@ export default props => {
     {makeHeader('damage', 'Damage')}
     {props.pars.damage && <>
       <p>
-        <b>Taking a Hit</b>: For each hit, after considering absorption and penetration, the damage is taken from your wounds.
+        <b>Taking a Hit</b>: Each time you suffer one or more hits from an attack, your effective absorption is your total absorption - the penetration of the attack with a minimum of 0.
+        The total damage accross all hits acts first against your effective absorption, then, after exceeding that absorption, deals 1 would in damage.
+        This repeats, acting against your effective absorption again until all damage is accounted for.
         If you reach 0 wounds, you become incapacitated and all further damage, including from that hit turns into critical damage.
+        <br />
+        Example: You are wearing armor AP 5 and are sitting behind 2 cover. You are hit by 3 bullets from an attack dealing a total of 28 damage with 4 penetration.
+        Your effective absorption is 3. You lose 7 wounds in total.
+      </p>
+      <p>
+        <b>Shields</b>: Shields have a number charges and a deflection score. When taking an attack, the shield will intercept hits until all charges are depleated. For the sake
+        of quick calculation, the damage is considered evenly spread across the hits, rounded down after total damage taken is calculated.
+        The shield can only reduce up to it's deflection score per hit, so a powerful attack will not by fully intercepted.
+        <br />
+        Example: You are wearing armor AP 6 and step on a mine dealing 83 damage in 4 hits with a penetration of 4. Your effect absorption is 2, but are wearing a
+        shield with 3 charges and a deflection score of 20. The average damage per hit is 20.75, meaning that it deals .75 damage from the first 3 hits for a total of 2.25 damage.
+        The fourth hit deals 20.75 totaling 23. This means you lose 7 wounds from the attack.
       </p>
       <p>
         <b>Critical Damage</b>: If you exceed more than twice your E score in critical damage you die.
@@ -227,7 +247,11 @@ export default props => {
         The difficulty of this test depends on the facilities and tools available.
       </p>
       <p>
-        <b>Healing Wounds</b>: Normally, your wounds recover at a rate of rank per day.
+        <b>Shield Recharge</b>: At the start of your teams turn, your equipt shield gains a number of charges equal to its recharge score up to its capacity.
+        If the recharge is 0, the shield charges so slowly, it only recovers between fights.
+      </p>
+      <p>
+        <b>Healing Wounds</b>: Normally, your wounds recover at a rate of rank / 4 per day rounded up.
       </p>
       <p>
         <b>Healing Critical Damage</b>: Critical damage heals at a rate of 1 per every 2 weeks.

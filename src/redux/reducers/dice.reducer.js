@@ -30,6 +30,14 @@ const initialState = {
     offset: '0',
     numberOfRolls: '1'
   },
+  takeDamage: {
+    damage: '0',
+    pen: '0',
+    hits: '1',
+    abs: '0',
+    charges: '0',
+    deflection: '0'
+  },
   history: {
     saved: []
   }

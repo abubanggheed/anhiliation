@@ -221,14 +221,12 @@ export default props => {
         If they fail, they catch on fire.
       </p>
       <p>
-        <b>Toxic (X)</b>: When you score at least 1 hit that deals damage against a target, they make a standard E test with a basic penalty of X.
-        For each point of failure, they take 1d4 toxic damage that ignores absorption.
-        If they survive the encounter, they continue to suffer from narrative toxic effects until treated.
+        <b>Toxic (X)</b>: For Each hit you score that deals at least 1 hit damage against a target, they make a standard E test to resist toxic with a basic penalty of X.
+        On failure, the target gains Poisoned (Y) where Y is their failure score.
       </p>
       <p>
-        <b>Radioactive (X)</b>: When you score at least 1 hit against a target, they make a standard E test with a basic penalty of X.
-        For each point of failure, they take 1d4 radiation damage that ignores absorption.
-        If they survive the encounter, they continue to suffer from the effects of radiation sickness until treated.
+        <b>Radioactive (X)</b>: For Each hit you score that deals at least 1 hit damage against a target, they make a standard E test to resist radiation with a basic penalty of X.
+        On failure, the target gains Irradiated (Y) where Y is their failure score.
       </p>
       <p>
         <b>Indirect</b>: The flight path of this weapon follows a parabolic arch, and so ignores most cover.
@@ -263,12 +261,12 @@ export default props => {
       <p>
         Damage, penetration, and abilities for ranged weapon are split between the weapon and the ammunition.
         Each of these add together to give you the full killing force of your money's worth.
-    </p>
+      </p>
       <p>
         <b>Type</b>: The type of ammunition. For small rounds fire, this could be light pellets, medium pellets,
-      heavy pellets, light rounds, medium rounds, heavy rounds, jumbo rounds, batteries, fluids, grenades, shells or rockets.
-      For giant cannons and turrets and exotic firearms the shells are usually specialized to that exact weapon.
-    </p>
+        heavy pellets, light rounds, medium rounds, heavy rounds, jumbo rounds, batteries, fluids, grenades, shells or rockets.
+        For giant cannons and turrets and exotic firearms the shells are usually specialized to that exact weapon.
+      </p>
       <p>
         <b>Dam</b>: Damage provided by ammunition.
       </p>
@@ -279,6 +277,8 @@ export default props => {
       <p>
         <b>Blast (X)</b>: When this weapon hits it's target, it explodes of an area with a radius of X meters.
         Anyone hit by a blast weapon must make a standard acrobatics test (force) with a basic penalty of X or be knocked prone.
+        This attack hits a target in the center of the explosion X times. A target Y meters away from the center of the blast is instead
+        hit X - Y times.
       </p>
       <p>
         <b>Concussive (X)</b>: When you hit someone with this weapon, they make a standard E test (force) with a basic penalty of X.
@@ -290,15 +290,12 @@ export default props => {
         If they fail, they catch on fire.
       </p>
       <p>
-        <b>Toxic (X)</b>: When you score at least 1 hit that deals damage against a target, they make a standard E test with a basic penalty of X.
-        For each point of failure, they take 1d4 toxic damage that ignores absorption.
-        If they survive the encounter, they continue to suffer from narrative toxic effects until treated.
-        Acids and toxins are mechanically equivalent even though they are completely different things.
+        <b>Toxic (X)</b>: For Each hit you score that deals at least 1 hit damage against a target, they make a standard E test to resist toxic with a basic penalty of X.
+        On failure, the target gains Poisoned (Y) where Y is their failure score.
       </p>
       <p>
-        <b>Radioactive (X)</b>: When you score at least 1 hit against a target, they make a standard E test with a basic penalty of X.
-        For each point of failure, they take 1d4 radiation damage that ignores absorption.
-        If they survive the encounter, they continue to suffer from the effects of radiation sickness until treated.
+        <b>Radioactive (X)</b>: For Each hit you score that deals at least 1 hit damage against a target, they make a standard E test to resist radiation with a basic penalty of X.
+        On failure, the target gains Irradiated (Y) where Y is their failure score.
       </p>
       <p>
         <b>Indirect</b>: The flight path of this weapon follows a parabolic arch, and so ignores most cover.

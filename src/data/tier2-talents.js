@@ -125,7 +125,7 @@ export const tier2Talents = [
   new Talent(// 14
     'Master of the Pit',
     'Gain massive bonuses when fighting in a mosh pit',
-    'When fighting in a mosh pit, your unarmed and improvised attacks deal double damage and you may make any kind of mosh action and ignore other penalties from being outnumber. You may perform 2 of these actions per round.',
+    'When fighting in a mosh pit, your unarmed and improvised attacks deal double damage and you may make any kind of mosh action and ignore other penalties from being outnumbered. You may also perform most pit actions in melee',
     [characteristics[1], aptitudes[3]],
     2,
     [[tier1Talents[25]]]

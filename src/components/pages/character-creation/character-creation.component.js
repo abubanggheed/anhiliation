@@ -135,7 +135,7 @@ export default props => {
         At any point your rank is the amount of exp spent / 100 rounded down.
     </p>
       <p>
-        Wounds: at any given point your wounds are Endurance * (Rank + 5).
+        Wounds: at any given point your total wounds are Endurance + Rank.
     </p>
       <p>
         Insanity: (I) tracks your state of mental degradation.

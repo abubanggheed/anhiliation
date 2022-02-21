@@ -93,7 +93,7 @@ export const lobbyistPath = [
 
 export const lobbyistRanks = [
   'Reschedualed Appointment',
-  'Grocery Sales Representative',
+  'Junior Sales Representative',
   'Opinionated Blogger',
   'News Columnist',
   'Private Attourney',

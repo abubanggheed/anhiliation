@@ -14,7 +14,8 @@ const SavedRolls = props => {
     props.history.push({
       characteristic: '/dice',
       damage: '/dice/damage',
-      rng: '/dice/rng'
+      rng: '/dice/rng',
+      takeDamage: '/dice/takedamage'
     }[item.type])
   }
 

@@ -103,7 +103,7 @@ export const tier3Talents = [
   new Talent(// 7
     'Why I Won\'t Die',
     'You have many more wounds',
-    'Your total number of wounds is calculated as if your were 5 ranks higher than your current rank.',
+    'You gain 1 additional wound for each point of Endurance you have.',
     [characteristics[2], aptitudes[2]],
     3,
     []

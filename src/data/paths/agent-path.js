@@ -137,5 +137,5 @@ export const agentRanks = [
   'Assassin',
   'Coup Coordinator',
   'Special Agent',
-  '<Redacted>'
+  'The One'
 ]

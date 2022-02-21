@@ -99,7 +99,7 @@ export const explorerPath = [
 ]
 
 export const explorerRanks = [
-  'Trap Decoy',
+  'Golf Course Lawn Mower',
   'Tour Guide',
   'Hitchhiker',
   'Park Ranger',

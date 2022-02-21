@@ -98,7 +98,7 @@ export const celebrityRanks = [
   'Meme',
   'Nostalgic Callback',
   'Local Attraction',
-  'Fan Club Idol',
+  'Social Media Influencer',
   'Product Placement Opportunity',
   'Superstar',
   'Worldwide Phenomenon',

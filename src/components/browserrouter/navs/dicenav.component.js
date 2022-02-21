@@ -25,6 +25,11 @@ class DiceNav extends Component {
               <Button color="link">Generic RNG</Button>
             </Link>
           </NavItem>
+          <NavItem>
+            <Link to={`${path}/takedamage`}>
+              <Button color="link">Take Hits</Button>
+            </Link>
+          </NavItem>
         </Nav>
       </Navbar>
     </>
