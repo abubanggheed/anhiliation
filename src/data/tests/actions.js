@@ -1,6 +1,6 @@
 
 import { Asset, Test } from '../models'
-import { characteristics } from '../characteristic'
+import { charMap } from '../characteristic'
 
 export class Action {
   constructor(name, desc, timing, type, char, difficulty, variance, talentRequired) {
@@ -22,7 +22,7 @@ export const combatActions = [
   'Attempt to acquire an improvised weapon from your immediate surroundings. Obtaining a one handed improvised weapon takes a half action, a two handed weapon takes a full action. The difficulty of this test is often fairly low, but depends on your surroundings. A failure on this test usually means you cant find a weapon by you, but do spot one a short distance away.',
   'Varies',
   'Misc',
-  characteristics[5],
+  charMap.K,
   'Varies',
   'High',
   false
@@ -31,7 +31,7 @@ export const combatActions = [
   'Make a melee attack that is far more likely to get a good score against your opponent. However, you forfeit your ability to make reactions until your next turn.',
   'Full',
   'Attack',
-  characteristics[0],
+  charMap.R,
   'Common',
   'High',
   false
@@ -40,7 +40,7 @@ export const combatActions = [
   'If an opponent you are engaged in melee with moves away from you, you may spend a reaction to make this melee attack against them using whatever weapon you have on hand.',
   'Reaction',
   'Attack',
-  characteristics[0],
+  charMap.R,
   'Difficult',
   'Standard',
   false
@@ -67,7 +67,7 @@ export const combatActions = [
   'When the conditions are met, you may make this free unarmed attack against your opponent. If your opponent also has brawler, this is a hth opposed test instead. This attack cannot be evaded.',
   'Free',
   'Attack',
-  characteristics[0],
+  charMap.R,
   'Standard',
   'Standard',
   true
@@ -76,7 +76,7 @@ export const combatActions = [
   'Move up to 3 times your base movement speed towards an opponent. You count as charging that opponent. If you can reach them, you make the attack against them that round. You must be at least 3 meters away in order to begin a charge at a character. However, you may charge a closely gathered group of opponents and choose which one you attack when you actually get there. If an opponent is running away, you may instead move 6 times your base movement speed to run them down.',
   'Full',
   'Attack/Move',
-  characteristics[0],
+  charMap.A,
   'Challenging',
   'Standard',
   false
@@ -85,7 +85,7 @@ export const combatActions = [
   'If your parry reduced an opponent\'s melee attack to a score of -2 or less, you may spend a reaction to make this attack. Counter attacks may not be counter attacked.',
   'Reaction',
   'Attack',
-  characteristics[0],
+  charMap.R,
   'Standard',
   'Standard',
   true
@@ -103,7 +103,7 @@ export const combatActions = [
   'After dodging a ranged attack, if you are holding a weapon capable of single shot attacks, you may spend a reaction to make this attack, firing one bullet.',
   'Reaction',
   'Attack',
-  characteristics[0],
+  charMap.A,
   'Standard',
   'Standard',
   true
@@ -127,20 +127,20 @@ export const combatActions = [
   false
   ),
   new Action('Dive for Cover',
-  'Dive up to your base movement speed meters away to any available cover. The attack you are trying to avoid still hits you, but the cover you found applies to that attack. You may use this reaction to avoid blasts altogether even if there is no cover around.',
+  'Make a R test. On success, move up to success meters to place yourself behind available cover. The attack you are trying to avoid still hits you, but the cover you found applies to that attack. You may use this reaction to avoid blasts altogether even if there is no cover around. If you move more than your base movement speed this way, this action takes you prone.',
   'Reaction',
   'Move',
-  characteristics[3],
-  'Challenging',
+  charMap.R,
+  'Standard',
   'Standard',
   false
   ),
   new Action('Dodge',
-  'This is an evasion. Duck and weave to avoid being hit. As an evasion, you may use this skill to oppose any attack made against you as an nf test.',
+  'This is an evasion. Duck and weave to avoid being hit. As an evasion, you may use this skill to oppose any melee attack or ranged attack involving a slow moving projectile made against you as an nf test.',
   'Reaction',
   'Move',
-  characteristics[3],
-  'Standard',
+  charMap.R,
+  'Difficult',
   'Standard',
   false
   ),
@@ -175,7 +175,7 @@ export const combatActions = [
   'Put out the fire on yourself or someone next to you.',
   'Full',
   'Misc',
-  characteristics[3],
+  charMap.R,
   'Standard',
   'Standard',
   false
@@ -184,7 +184,7 @@ export const combatActions = [
   'Hold down the trigger and unload ammunition into an opponent of your choice. This is similar to single shot, except on success, you may hit your target with an additional bullet fired for every 2 points of success. Weapons on full auto have a 5% chance of jamming.',
   'Full',
   'Attack',
-  characteristics[0],
+  charMap.A,
   'Common',
   'Standard',
   false
@@ -202,7 +202,7 @@ export const combatActions = [
   'Attempt to grapple an opponent. This may be evaded like a normal attempt. If you succeed, you enter grapple with them in control of that grapple. You may not grapple opponents that are much larger than you are.',
   'Half',
   'Attack',
-  characteristics[0],
+  charMap.R,
   'Standard',
   'Standard',
   false
@@ -220,7 +220,7 @@ export const combatActions = [
   'Make an acrobatics test to leap onto and cling to a vehicle that is passing by. The difficulty of this test depends on the size and speed of your target. If you succeed by at least 3, you do not go prone when latching on. If there is an enemy by where you are leaping, that enemy may spend a reaction to free grapple you.',
   'Full',
   'Move',
-  characteristics[3],
+  charMap.R,
   'Varies',
   'Low',
   true
@@ -229,7 +229,7 @@ export const combatActions = [
   'You may take this action after making a melee attack, even on failure. Make an acrobatics test. If you succeed, you may leap back a number of meters equal to your base movement speed.',
   'Free',
   'Move',
-  characteristics[3],
+  charMap.R,
   'Standard',
   'Standard',
   true
@@ -238,7 +238,7 @@ export const combatActions = [
   'This is an evasion. When an opponent aims for the mount on which you ride you may oppose that attack with a nf ride test. The difficulty of the ride test depends on the size and speed of your mount. If they are aiming for you, you may use either a mounted dodge or a normal dodge.',
   'Reaction',
   'Move',
-  characteristics[3],
+  charMap.R,
   'Difficult',
   'Standard',
   false
@@ -247,7 +247,7 @@ export const combatActions = [
   'Both you and your opponent make charge attacks against each other. To determine which charge attack happens first, you each make a personal initiative roll, and whoever has the higher result has their charge attack happen first. Mutual charges happen when you charge an opponent that has been charging you, or through counter charges.',
   'Full',
   'Attack/Move',
-  characteristics[0],
+  charMap.A,
   'Challenging',
   'Standard',
   false
@@ -256,7 +256,7 @@ export const combatActions = [
   'Specify a direction. The next time an enemy appears, or emerges from cover in that direction (including to make an attack) you first make this attack against them. Overwatch attacks cannot be fully automatic fire.',
   'Full',
   'Attack',
-  characteristics[0],
+  charMap.A,
   'Difficult',
   'High',
   true
@@ -265,7 +265,7 @@ export const combatActions = [
   'This is an evasion. Intercept an attack mid swing. As an evasion, you may use this skill to oppose any melee attack made against you as an nf test.',
   'Reaction',
   'Misc',
-  characteristics[0],
+  charMap.R,
   'Standard',
   'Standard',
   false
@@ -292,7 +292,7 @@ export const combatActions = [
   'Fire a burst of bullets at your opponent. This is similar to single shot, except on success, you may hit your target with an additional bullet fired for every 3 points of success.',
   'Half',
   'Attack',
-  characteristics[0],
+  charMap.A,
   'Challenging',
   'Standard',
   true
@@ -301,7 +301,7 @@ export const combatActions = [
   'Fire a single bullet at your opponent.',
   'Half',
   'Attack',
-  characteristics[0],
+  charMap.A,
   'Standard',
   'Standard',
   false
@@ -310,7 +310,7 @@ export const combatActions = [
   'Make a willpower test benefiting from Resistance (Fear) to undo most of the effects of a bad fear or pinning test.',
   'Free',
   'Concentration',
-  characteristics[6],
+  charMap.W,
   'Difficult',
   'Low',
   false
@@ -319,7 +319,7 @@ export const combatActions = [
   'Stop a character from dying by using first aid.',
   'Full',
   'Concentration',
-  characteristics[4],
+  charMap.I,
   'Standard',
   'Standard',
   false
@@ -337,7 +337,7 @@ export const combatActions = [
   'Attack an opponent with a melee weapon. Certain talents increase the number of hits you may get.',
   'Half',
   'Attack',
-  characteristics[0],
+  charMap.R,
   'Standard',
   'Standard',
   false
@@ -346,7 +346,7 @@ export const combatActions = [
   'Send full auto fire in a direction of your choice. Opponents in that area must make a standard willpower test or become pinned. For every enemy affected, you may make the Brutal attack role to attempt to hit them with 1 bullet. If you have hit an enemy for every bullet you fired, stop making these attacks. Suppresive fire incurs a 5% change of jamming.',
   'Continuous',
   'Attack',
-  characteristics[0],
+  charMap.A,
   'Brutal',
   'High',
   true
@@ -361,10 +361,10 @@ export const combatActions = [
   false
   ),
   new Action('Throw',
-  'Throw an item at a target of your choosing. This counts as a single shot attack using a range of your S score.',
+  'Throw an item at a target of your choosing. This counts as a single shot attack using a range of your M score.',
   'Half',
   'Attack',
-  characteristics[0],
+  charMap.A,
   'Standard',
   'Standard',
   false
@@ -382,7 +382,7 @@ export const combatActions = [
   'Now we\'re talking. Spice up the battle with some magic. Then suffer the consequences.',
   'Varies',
   'Concentration',
-  characteristics[4],
+  charMap.I,
   'Varies',
   'Varies',
   false

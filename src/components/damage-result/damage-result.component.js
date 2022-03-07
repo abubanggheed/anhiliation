@@ -10,7 +10,7 @@ export default props => {
       <Container>
         <Row>
           <Col>
-            <h3>Results</h3>
+            <h3>Results</h3> {result.ts.toLocaleTimeString()}
           </Col>
           <Col>
             <Row>

@@ -2,7 +2,7 @@
 import { skills } from '../skill'
 import { tier0, tier1, tier2, tier3 } from '../all-talents'
 import { nameAddOn, prereqAddOn, aptAddOn } from '../../util/skillmaker'
-import { characteristics } from '../characteristic'
+import { charMap } from '../characteristic'
 
 export const agentPath = [
   [//0
@@ -36,8 +36,8 @@ export const agentPath = [
     prereqAddOn(skills[9]),
     tier1[15],
     tier1[10],
-    nameAddOn(aptAddOn(tier0[5], characteristics[6]), ' (Feedback)'),
-    nameAddOn(aptAddOn(tier0[5], characteristics[6]), ' (Mind Control)'),
+    nameAddOn(aptAddOn(tier0[5], charMap.W), ' (Feedback)'),
+    nameAddOn(aptAddOn(tier0[5], charMap.W), ' (Mind Control)'),
     tier1[19],
     skills[23],
     tier0[6],

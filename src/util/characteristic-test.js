@@ -46,6 +46,7 @@ export const characteristicTest = (test, variance, char, basic, advantages, disa
       s: 'Standard',
       l: 'Low'
     }[variance],
-    charName
+    charName,
+    ts: new Date()
   }
 }

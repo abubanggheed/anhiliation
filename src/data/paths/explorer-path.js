@@ -2,7 +2,7 @@
 import { skills } from '../skill'
 import { tier0, tier1, tier2, tier3 } from '../all-talents'
 import { nameAddOn, prereqAddOn, aptAddOn } from '../../util/skillmaker'
-import { characteristics } from '../characteristic'
+import { charMap } from '../characteristic'
 
 export const explorerPath = [
   [//0
@@ -11,7 +11,7 @@ export const explorerPath = [
     nameAddOn(skills[8], ' (Creatures)'),
     nameAddOn(skills[17], ' (Surface)'),
     nameAddOn(skills[17], ' (Sea)'),
-    nameAddOn(aptAddOn(tier0[5], characteristics[2]), ' (Exposure)'),
+    nameAddOn(aptAddOn(tier0[5], charMap.M), ' (Exposure)'),
     skills[19],
     skills[26],
     nameAddOn(tier0[8], ' (Infantry)')
@@ -23,8 +23,8 @@ export const explorerPath = [
     nameAddOn(skills[17], ' (Subterranean)'),
     tier1[10],
     tier1[14],
-    nameAddOn(aptAddOn(tier0[5], characteristics[2]), ' (Toxic)'),
-    nameAddOn(aptAddOn(tier0[5], characteristics[2]), ' (Radiation)'),
+    nameAddOn(aptAddOn(tier0[5], charMap.M), ' (Toxic)'),
+    nameAddOn(aptAddOn(tier0[5], charMap.M), ' (Radiation)'),
     prereqAddOn(skills[19]),
     nameAddOn(skills[20], ' (Geology)'),
     tier1[20],

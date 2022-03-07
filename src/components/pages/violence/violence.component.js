@@ -134,7 +134,7 @@ export default props => {
       </p>
       <p>
         <b>Cover</b>: For any ranged attack that goes through your cover, increase your absorption by an amount that depends on the quality of your cover.
-        Reactions that change your position take you out of cover.
+        Attacking, or doing reactions that change your position take you out of cover.
       </p>
       <p>
         <b>Difficult Terrain</b>: Gain some number of general disadvantages on melee attacks and evasions.
@@ -153,7 +153,7 @@ export default props => {
         Increase the difficulty of any evasion test you take unless you abandon the grapple.
       </p>
       <p>
-      <b>Irradiated (x)</b>: At the start of your team's turn, you make a standard E test to resist radiation with a basic penalty of x capped by your E score. On failure, you lose 1 health. On success, reduce x by 1. If you would reduce it below 0, instead remove this condition. Repeate this process for every 3x you started with.
+      <b>Irradiated (x)</b>: At the start of your team's turn, you make a standard M test to resist radiation with a basic penalty of x capped by your M score. On failure, you lose 1 health. On success, reduce x by 1. If you would reduce it below 0, instead remove this condition. Repeate this process for every 3x you started with.
       </p>
       <p>
         <b>Jammed</b>: You weapon is stuck and cannot fire until you unjam it.
@@ -179,10 +179,10 @@ export default props => {
         If you are not in cover, your turn must be dedicated to seeking cover.
       </p>
       <p>
-        <b>Poisoned (x)</b>: At the start of your team's turn, you make a standard E test to resist Posioned with a basic penalty of x capped by your E score. On failure, you lose 1 health. On success, reduce x by 1. If you would reduce it below 0, instead remove this condition. Repeate this process for every 3x you started with.
+        <b>Poisoned (x)</b>: At the start of your team's turn, you make a standard M test to resist Posioned with a basic penalty of x capped by your M score. On failure, you lose 1 health. On success, reduce x by 1. If you would reduce it below 0, instead remove this condition. Repeate this process for every 3x you started with.
       </p>
       <p>
-        <b>Prone</b>: Decrease the difficulty of all melee attacks or grapple actions made against you by 1 step.
+        <b>Prone</b>: Decrease the difficulty of all melee attacks or grapple actions made against you by 1 step. You may not dive for cover and gain a general disadvantage on all dodges.
       </p>
       <p>
         <b>Stunned</b>: You lose a half action every round until you are no longer stunned.
@@ -220,6 +220,8 @@ export default props => {
         <br />
         Example: You are wearing armor AP 5 and are sitting behind 2 cover. You are hit by 3 bullets from an attack dealing a total of 28 damage with 4 penetration.
         Your effective absorption is 3. You lose 7 wounds in total.
+        <br />
+        If your cover is able to deflect a maximum damage hit from an attack, you are considered fully protected from that attack and take no hits.
       </p>
       <p>
         <b>Shields</b>: Shields have a number charges and a deflection score. When taking an attack, the shield will intercept hits until all charges are depleated. For the sake
@@ -231,11 +233,11 @@ export default props => {
         The fourth hit deals 20.75 totaling 23. This means you lose 7 wounds from the attack.
       </p>
       <p>
-        <b>Critical Damage</b>: If you exceed more than twice your E score in critical damage you die.
+        <b>Critical Damage</b>: If you exceed more than twice your M score in critical damage you die.
         This is a special privilege to you and other important people.
         Most will die after running out of wounds.
         For each round where you have critical damage, you take an additional point of critical damage until stabilized.
-        Once stabilized, if you already have more than your E score in critical damage, you must be treated with a follow up extended ER test within a day or die.
+        Once stabilized, if you already have more than your M score in critical damage, you must be treated with a follow up extended ER test within a day or die.
       </p>
       <p>
         <b>Stabilized</b>: Stabilizing an ally is a standard medical test using first aid to stop immanent death.
@@ -261,9 +263,9 @@ export default props => {
         <b>Healing Characteristic Damage</b>: Any characteristic damage normally heals at a rate of 1 per week.
       </p>
       <p>
-        <b>E Damage</b>: Whenever you take E characteristic damage, reduce your max and current wounds by the same number to match your new max wounds.
+        <b>E Damage</b>: Whenever you take M characteristic damage, reduce your max and current wounds by the same number to match your new max wounds.
         If this effect would reduce your current wounds to 0 or less, it stops at 1 wound.
-        You still get a heart attack from having 0 E.
+        You still get a heart attack from having 0 M.
       </p>
     </>}
   </>

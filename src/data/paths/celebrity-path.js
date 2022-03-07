@@ -2,7 +2,7 @@
 import { skills } from '../skill'
 import { tier0, tier1, tier2, tier3 } from '../all-talents'
 import { nameAddOn, prereqAddOn, aptAddOn } from '../../util/skillmaker'
-import { characteristics } from '../characteristic'
+import { charMap } from '../characteristic'
 
 export const celebrityPath = [
   [//0
@@ -33,7 +33,7 @@ export const celebrityPath = [
     tier2[6],
     prereqAddOn(skills[18], 2, ' (2nd)'),
     tier1[15],
-    nameAddOn(aptAddOn(tier0[5], characteristics[6]), ' (Fear)'),
+    nameAddOn(aptAddOn(tier0[5], charMap.W), ' (Fear)'),
     skills[19],
     tier1[20],
     nameAddOn(tier0[8], ' (Pistol)')

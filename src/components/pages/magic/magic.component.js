@@ -36,7 +36,7 @@ export default props => {
           <tr><td>31 - 34</td><td>You laugh with hysteria, attacking the closest target with standard attacks and one general disadvantage to hit. This effect lasts until you snap out of it, or are rendered incapacitated. +1d10 insanity +2 Mental Fatigue</td></tr>
           <tr><td>35 - 39</td><td>You fall prone, weeping, playing, and clawing at your armor for 1d5+1 rounds. Afterwards, you get 2 general disadvantages to all tests until the end of the encounter. +1d10 insanity +2 Mental Fatigue</td></tr>
           <tr><td>40 - 42</td><td>Your mind snaps. You fall unconscious for 1d5 hours, and cannot be roused. +1d10+2 insanity</td></tr>
-          <tr><td>{'> 42'}</td><td>Your heart threatens to stop from the terror. Make a standard endurance test or die. If you live, you fall unconscious for 1d5 hours and cannot be roused. +2d10 insanity</td></tr>
+          <tr><td>{'> 42'}</td><td>Your heart threatens to stop from the terror. Make a standard might test or die. If you live, you fall unconscious for 1d5 hours and cannot be roused. +2d10 insanity</td></tr>
         </tbody>
       </Table>
       <p>

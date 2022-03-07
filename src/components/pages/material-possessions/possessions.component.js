@@ -59,7 +59,7 @@ export default props => {
         This rounds in your (the wearer's) favor.
       </p>
       <p>
-        <b>Powered (X)</b>: Increase your strength score by X.
+        <b>Powered (X)</b>: Increase your might score by X.
       </p>
       <p>
         <b>Insulated</b>: The damage dealt to you by energy weapons is halved.
@@ -94,8 +94,8 @@ export default props => {
       <p>
         <b>Hands</b>: Hands. The number of hands required to use this weapon.
         A small melee weapon takes 1 hand, whereas a large melee weapon takes 2.
-        A one handed melee weapon adds your half S score to damage rolls.
-        A two handed melee weapon adds your S score.
+        A one handed melee weapon adds your half M score to damage rolls.
+        A two handed melee weapon adds your M score.
       </p>
       <p>
         <b>Pen</b>: Penetration. When calculating damage, first reduce your opponent's absorption by the penetration of your weapon down to a minimum of 0.
@@ -117,9 +117,9 @@ export default props => {
         Your opponent gains a general disadvantage on all reaction tests to avoid attacks made with this weapon.
       </p>
       <p>
-        <b>Concussive (X)</b>: When you strike someone with this weapon, they make a standard E test (force) with a basic penalty of X.
+        <b>Concussive (X)</b>: When you strike someone with this weapon, they make a standard M test (force) with a basic penalty of X.
         On failure they are stunned for a round, and following rounds for every additional 3 points of failure (starting at -4).
-        If they took more than their S score in damage, they are knocked prone.
+        If they took more than their M score in damage, they are knocked prone.
       </p>
       <p>
         <b>Cover (X)</b>: You may hide behind this weapon as cover X.
@@ -133,7 +133,7 @@ export default props => {
         If you do, double your penetration for this attack.
       </p>
       <p>
-        <b>Toxic (X)</b>: When you score at least 1 hit that deals damage against a target, they make a standard E test with a basic penalty of X.
+        <b>Toxic (X)</b>: When you score at least 1 hit that deals damage against a target, they make a standard M test with a basic penalty of X.
         For each point of failure, they take 1d4 toxic damage that ignores absorption.
         If they survive the encounter, they continue to suffer from narrative toxic effects until treated.
       </p>
@@ -212,20 +212,20 @@ export default props => {
         fire with this weapon, but may gain the extra damage from Accurate on semi auto and full auto attacks.
       </p>
       <p>
-        <b>Concussive (X)</b>: When you hit someone with this weapon, they make a standard E test (force) with a basic penalty of X.
+        <b>Concussive (X)</b>: When you hit someone with this weapon, they make a standard M test (force) with a basic penalty of X.
         On failure they are stunned for a round, and following rounds for every additional 3 points of failure (starting at -4).
-        If they took more than their S score in damage, they are knocked prone.
+        If they took more than their M score in damage, they are knocked prone.
       </p>
       <p>
         <b>Flame</b>: When you score at least 1 hit against a target, they make a personal initiative test (exposure).
         If they fail, they catch on fire.
       </p>
       <p>
-        <b>Toxic (X)</b>: For Each hit you score that deals at least 1 hit damage against a target, they make a standard E test to resist toxic with a basic penalty of X.
+        <b>Toxic (X)</b>: For Each hit you score that deals at least 1 hit damage against a target, they make a standard M test to resist toxic with a basic penalty of X.
         On failure, the target gains Poisoned (Y) where Y is their failure score.
       </p>
       <p>
-        <b>Radioactive (X)</b>: For Each hit you score that deals at least 1 hit damage against a target, they make a standard E test to resist radiation with a basic penalty of X.
+        <b>Radioactive (X)</b>: For Each hit you score that deals at least 1 hit damage against a target, they make a standard M test to resist radiation with a basic penalty of X.
         On failure, the target gains Irradiated (Y) where Y is their failure score.
       </p>
       <p>
@@ -246,7 +246,7 @@ export default props => {
       <p>
         <b>Snare (X)</b>: When you hit someone with this weapon, they must make a personal initiative test with a basic penalty of X.
         If they fail, they are ensnared.
-        They may escape with a follow up standard S or Ref test applying the same penalty.
+        They may escape with a follow up standard M or Ref test applying the same penalty.
         Until then, they are considered helpless.
       </p>
       <p>
@@ -281,20 +281,20 @@ export default props => {
         hit X - Y times.
       </p>
       <p>
-        <b>Concussive (X)</b>: When you hit someone with this weapon, they make a standard E test (force) with a basic penalty of X.
+        <b>Concussive (X)</b>: When you hit someone with this weapon, they make a standard M test (force) with a basic penalty of X.
         On failure they are stunned for a round, and following rounds for every additional 3 points of failure (starting at -4).
-        If they took more than their S score in damage, they are knocked prone.
+        If they took more than their M score in damage, they are knocked prone.
       </p>
       <p>
         <b>Flame</b>: When you score at least 1 hit against a target, they make a personal initiative test (exposure).
         If they fail, they catch on fire.
       </p>
       <p>
-        <b>Toxic (X)</b>: For Each hit you score that deals at least 1 hit damage against a target, they make a standard E test to resist toxic with a basic penalty of X.
+        <b>Toxic (X)</b>: For Each hit you score that deals at least 1 hit damage against a target, they make a standard M test to resist toxic with a basic penalty of X.
         On failure, the target gains Poisoned (Y) where Y is their failure score.
       </p>
       <p>
-        <b>Radioactive (X)</b>: For Each hit you score that deals at least 1 hit damage against a target, they make a standard E test to resist radiation with a basic penalty of X.
+        <b>Radioactive (X)</b>: For Each hit you score that deals at least 1 hit damage against a target, they make a standard M test to resist radiation with a basic penalty of X.
         On failure, the target gains Irradiated (Y) where Y is their failure score.
       </p>
       <p>
@@ -317,7 +317,7 @@ export default props => {
       <p>
         <b>Snare (X)</b>: When you hit someone with this weapon, they must make a personal initiative test with a basic penalty of X.
         If they fail, they are ensnared.
-        They may escape with a follow up standard S or Ref test applying the same penalty.
+        They may escape with a follow up standard M or Ref test applying the same penalty.
         Until then, they are considered helpless.
       </p>
       <p>

@@ -34,6 +34,7 @@ export const damageRoll = (dice, atts, basic, pen, numberOfRolls) => {
     basic,
     pen,
     atts,
-    totalDamage
+    totalDamage,
+    ts: new Date()
   }
 }

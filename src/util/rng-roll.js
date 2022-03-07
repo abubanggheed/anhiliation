@@ -34,6 +34,7 @@ export const rollRng = (dice, offset, numberOfRolls) => {
   return {
     results,
     dice: dice.reduce((prev, cur) => prev ? prev + ` + ${cur.number}d${cur.max}` : `${cur.number}d${cur.max}`, ''),
-    offset
+    offset,
+    ts: new Date()
   }
 }

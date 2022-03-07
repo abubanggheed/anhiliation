@@ -1,4 +1,4 @@
-import { characteristics } from './characteristic'
+import { charMap } from './characteristic'
 import { aptitudes } from './aptitude'
 import { Asset } from './models'
 import { talents } from './all-talents'
@@ -27,8 +27,8 @@ let uvenDescription = 'Uven spend most of their lives underground. Their diet in
   + 'lack of light and life leaves little use for sharpened senses.'
 let gylDescription = 'Gyl typically inhabit islands, coasts, and lakes. They are comfortable swimming, '
   + 'and leading a largely aquatic lifestyle. Gyl have a greater upper body strength '
-  + 'than other humanoids, which helps with the constant swimming. However, their '
-  + 'bodies are known to be somewhat fragile.'
+  + 'than other humanoids, which helps with the constant swimming. However, living amongst water dwelling '
+  + 'megafauna has imbued more powerful survival instincts than other humanoids.'
 let kavrenDescription = ' Kavren inhabit places of high altitude, and are known traveling around the world in '
   + 'balloon fleets. They have flaps of skin, that when extended, act as a hang glider, '
   + 'though they cannot fly without gear. This is made possible due to their light frame, '
@@ -39,9 +39,9 @@ let mechDescription = 'Mechaniform are the only non-humanoid that can be sentien
 
 
 export const species = [
-  new Species('Reln', characteristics[0], characteristics[4], talents[0][0], relnDescription),
-  new Species('Uven', characteristics[4], characteristics[5], talents[0][4], uvenDescription),
-  new Species('Gyl', characteristics[1], characteristics[2], talents[4][0], gylDescription),
-  new Species('Kavren', characteristics[3], characteristics[1], talents[0][3], kavrenDescription),
-  new Species('Sentient Mechaniform', characteristics[6], characteristics[7], 'Resistance (radiation)', mechDescription, aptitudes[0])
+  new Species('Reln', charMap.A, charMap.I, talents[0][0], relnDescription),
+  new Species('Uven', charMap.I, charMap.K, talents[0][4], uvenDescription),
+  new Species('Gyl', charMap.M, charMap.W, talents[4][0], gylDescription),
+  new Species('Kavren', charMap.R, charMap.M, talents[0][3], kavrenDescription),
+  new Species('Sentient Mechaniform', charMap.W, charMap.P, { name: 'Resistance (radiation)' }, mechDescription, aptitudes[0])
 ]

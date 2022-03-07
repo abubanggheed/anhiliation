@@ -2,7 +2,7 @@
 import { skills } from '../skill'
 import { tier0, tier1, tier2, tier3 } from '../all-talents'
 import { nameAddOn, prereqAddOn, aptAddOn } from '../../util/skillmaker'
-import { characteristics } from '../characteristic'
+import { charMap } from '../characteristic'
 
 export const academicPath = [
   [//0
@@ -26,7 +26,7 @@ export const academicPath = [
     prereqAddOn(skills[14]),
     skills[15],
     skills[16],
-    nameAddOn(aptAddOn(tier0[5], characteristics[6]), ' (Mind Control)'),
+    nameAddOn(aptAddOn(tier0[5], charMap.W), ' (Mind Control)'),
     prereqAddOn(skills[20], 2, ' (Humanities)'),
     nameAddOn(skills[20], ' (Geology)'),
     nameAddOn(tier0[6], ' x2'),
@@ -49,7 +49,7 @@ export const academicPath = [
     prereqAddOn(skills[8], 4, ' (History)'),
     tier3[4],
     prereqAddOn(skills[15]),
-    nameAddOn(aptAddOn(tier0[5], characteristics[6]), ' (Feedback)'),
+    nameAddOn(aptAddOn(tier0[5], charMap.W), ' (Feedback)'),
     prereqAddOn(skills[20], 4, ' (Magic Theory)'),
     prereqAddOn(skills[20], 2, ' (Chemistry)'),
     nameAddOn(skills[20], ' (Markets)'),

@@ -1,6 +1,6 @@
 
 import { skills } from '../skill'
-import { characteristics } from '../characteristic'
+import { charMap } from '../characteristic'
 import { tier0, tier1, tier2, tier3 } from '../all-talents'
 import { nameAddOn, prereqAddOn, aptAddOn } from '../../util/skillmaker'
 
@@ -12,8 +12,8 @@ export const bumPath = [
     tier1[6],
     skills[10],
     tier2[9],
-    nameAddOn(aptAddOn(tier0[5], characteristics[2]), ' (Toxin)'),
-    nameAddOn(aptAddOn(tier0[5], characteristics[2]), ' (Exposure)'),
+    nameAddOn(aptAddOn(tier0[5], charMap.M), ' (Toxin)'),
+    nameAddOn(aptAddOn(tier0[5], charMap.M), ' (Exposure)'),
     skills[26],
     nameAddOn(tier0[8], ' (Improvised)')
   ],
@@ -22,7 +22,7 @@ export const bumPath = [
     tier0[1],
     prereqAddOn(skills[4]),
     nameAddOn(skills[17], ' (Any)'),
-    nameAddOn(aptAddOn(tier0[5], characteristics[2]), ' (Starvation)'),
+    nameAddOn(aptAddOn(tier0[5], charMap.M), ' (Starvation)'),
     tier1[26],
     nameAddOn(tier0[8], ' (Melee)'),
     nameAddOn(tier0[8], ' (Pistol)')

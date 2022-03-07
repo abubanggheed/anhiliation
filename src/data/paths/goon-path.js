@@ -2,7 +2,7 @@
 import { skills } from '../skill'
 import { tier0, tier1, tier2, tier3 } from '../all-talents'
 import { nameAddOn, prereqAddOn, aptAddOn } from '../../util/skillmaker'
-import { characteristics } from '../characteristic'
+import { charMap } from '../characteristic'
 
 export const goonPath = [
   [//0
@@ -21,7 +21,7 @@ export const goonPath = [
     tier1[0],
     tier1[1],
     skills[12],
-    nameAddOn(aptAddOn(tier0[5], characteristics[6]), ' (Fear)'),
+    nameAddOn(aptAddOn(tier0[5], charMap.W), ' (Fear)'),
     tier1[20],
     nameAddOn(tier0[8], ' (Melee)'),
     nameAddOn(tier0[8], ' (Turret)')
@@ -33,7 +33,7 @@ export const goonPath = [
     tier1[6],
     tier0[7],
     tier1[17],
-    nameAddOn(aptAddOn(tier0[5], characteristics[6]), ' (Force)'),
+    nameAddOn(aptAddOn(tier0[5], charMap.W), ' (Force)'),
     skills[26],
     nameAddOn(tier0[8], ' (Heavy)'),
     nameAddOn(tier0[8], ' (Artillery)'),
@@ -55,7 +55,7 @@ export const goonPath = [
     tier2[24],
     tier3[6],
     tier1[15],
-    nameAddOn(aptAddOn(tier0[5], characteristics[6]), ' (Mind Control)'),
+    nameAddOn(aptAddOn(tier0[5], charMap.W), ' (Mind Control)'),
     prereqAddOn(skills[19]),
     tier2[21],
     tier1[25]

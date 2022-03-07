@@ -76,7 +76,7 @@ export default props => {
           <p>{speis.desc}</p>
           <p>Bonus Aptitude: {speis.bApt.name}</p>
           <p>Restricted Aptitude: {speis.rApt.name}{speis.rApt2 && `, ${speis.rApt2.name}`}</p>
-          <p>Bonus Talent: {speis.bTalent}</p>
+          <p>Bonus Talent: {speis.bTalent.name}</p>
         </>}
       </div>)}
     </>}
