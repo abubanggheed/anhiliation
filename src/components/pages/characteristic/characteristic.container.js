@@ -54,7 +54,7 @@ const Dice = props => {
       untrained, fatIgnore, exDice, numberOfRolls } = props.values
     let charValue = props.stats[characteristics[charInd].name]
     let fatigue = [
-      'Accuracy', 'Strength', 'Endurance', 'Reflexes'
+      'Accuracy', 'Might', 'Reflexes'
     ].includes(characteristics[charInd].name) ?
       props.stats.physFatigue : props.stats.menFatigue
     fatigue = Math.max(0, fatigue - fatIgnore)

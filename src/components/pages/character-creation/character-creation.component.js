@@ -103,7 +103,7 @@ export default props => {
         You may consider some ways of being challenged more debilitating than others,
         but that's just your opinion. To explain our learning strengths, we use aptitudes.
         For every characteristic, there is a characteristic aptitude.
-        Someone with the Strength aptitude will have an easier time getting buff.
+        Someone with the Might aptitude will have an easier time getting buff.
         Here are the rest:
       </p>
       {aptitudes.map(apt => <p key={apt.name}>
@@ -135,7 +135,7 @@ export default props => {
         At any point your rank is the amount of exp spent / 100 rounded down.
     </p>
       <p>
-        Wounds: at any given point your total wounds are Endurance + Rank.
+        Wounds: at any given point your total wounds are Might + Rank.
     </p>
       <p>
         Insanity: (I) tracks your state of mental degradation.
@@ -147,7 +147,7 @@ export default props => {
     </p>
       <p>
         Physical Exhaustion: a measure of your physical endurance, sits at 0 unless otherwise noted.
-        Any Strength, Reflexes or Accuracy test will be decrease by your physical exhaustion.
+        Any Might, Reflexes or Accuracy test will be decrease by your physical exhaustion.
     </p>
       <p>
         Reactions: these refresh whenever you get a turn to do something.

@@ -103,7 +103,7 @@ export const tier3Talents = [
   new Talent(// 7
     'Why I Won\'t Die',
     'You have many more wounds',
-    'You gain 1 additional wound for each point of Endurance you have.',
+    'You gain 1 additional wound for each point of Might you have.',
     [charMap.M, aptitudes[2]],
     3,
     []

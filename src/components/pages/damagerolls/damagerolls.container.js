@@ -14,7 +14,7 @@ const Damagerolls = props => {
       return Math.floor(
         (
           props.stats[charName]
-          - props.stats[['Accuracy', 'Strength', 'Endurance', 'Reflexes'].includes(charName) ? 'physFatigue' : 'menFatigue']
+          - props.stats[['Accuracy', 'Might', 'Reflexes'].includes(charName) ? 'physFatigue' : 'menFatigue']
         ) * att.weight
       )
     })
