@@ -19,6 +19,7 @@ export const zealotPath = [
   ],
   [//1
     nameAddOn(skills[8], ' (Religion)'),
+    tier1[27],
     skills[11],
     nameAddOn(aptAddOn(tier0[5], charMap.M), ' (Starvation)'),
     skills[21],

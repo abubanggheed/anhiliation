@@ -40,7 +40,7 @@ const leadLove = new Talent(
 const counterShot = new Talent(
   'Counter Shot',
   'Counter ranged attacks with single shots',
-  'After using a dive for cover on a ranged attack with a success of 6 or higher, you may spend an additional reaction to make a single shot attack against that opponent. This attack is considered to occur while you are diving for cover but your opponent\'s attack lands first.',
+  'After using a dive for cover on a ranged attack with a success of 6 or higher, you may spend an additional reaction to make a single shot attack against that opponent. This attack is considered to occur while you are diving for cover.',
   [charMap.K, aptitudes[3]],
   3,
   [[tier1Talents[4]]]
@@ -161,7 +161,7 @@ export const tier3Talents = [
     'Profound Innocence',
     'Gain advantage to charm and deceive and impose disadvantage to scrutiny',
     'You give off the impression of someone who is a terrible liar, and tries to live honestly as much as possible. Your gain a general advantage on all charm and deceive tests and anyone who make a scrutiny test against you gains a general disadvantage.',
-    [charMap.P, aptitudes[7]],
+    [charMap.P, aptitudes[8]],
     3,
     [[{ ...skills[9], training: 'Expert' }]]
   ),
@@ -263,5 +263,13 @@ export const tier3Talents = [
     [charMap.I, aptitudes[5]],
     3,
     [[diabolicalBrew]]
+  ),
+  new Talent(//31
+  'Counter Storm',
+  'Make any kind of ranged attack durring a counter shot',
+  'Instead of being limited to a single shot for counter shots, you may also unleash automatic and supressing fire with dual wielding.',
+  [charMap.M, aptitudes[3]],
+  3,
+  [[counterShot], [tier1Talents[18]]]
   )
 ]

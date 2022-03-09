@@ -45,6 +45,7 @@ export const goonPath = [
     skills[6],
     nameAddOn(skills[8], ' (War)'),
     tier1[2],
+    tier1[27],
     tier1[9],
     tier2[11],
     tier1[10],
@@ -94,6 +95,7 @@ export const goonPath = [
   [//8
     tier2[2],
     prereqAddOn(skills[8], 4, ' (War)'),
+    tier3[31],
     tier3[2],
     tier3[7],
     prereqAddOn(skills[19], 4),

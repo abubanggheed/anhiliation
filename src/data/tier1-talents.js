@@ -97,8 +97,8 @@ export const tier1Talents = [
   new Talent(// 9|18
     'Hard Target',
     'Increase difficulty to hit you when running',
-    'When you run, charge, counter charge, ride, or dive for cover, increase the difficulty of all ranged attack made against you by one step until your next round.',
-    [charMap.R, aptitudes[2]],
+    'For mysterious reasons, your enemies subconciously don\'t want to shoot you when you\'re out in the open. When you run, charge, counter charge, ride, or dive for cover, increase the difficulty of all ranged attack made against you by one step until your next round.',
+    [charMap.W, aptitudes[8]],
     1,
     []
   ),
@@ -166,7 +166,7 @@ export const tier1Talents = [
     'Rippling Frame',
     'No more need to brace',
     'You automatically count as braced when using your weapons.',
-    [charMap.M, aptitudes[0]],
+    [charMap.M, aptitudes[8]],
     1,
     []
   ),
@@ -224,6 +224,14 @@ export const tier1Talents = [
     'Gain bonus to intimidate and filibuster from insanity points',
     'Whenever you make an intimidate or filibuster test, you gain a basic bonus of 1 for every 10 insanity score you have.',
     [charMap.P, aptitudes[8]],
+    1,
+    []
+  ),
+  new Talent(// 27
+    'Fight or Flight',
+    'May choose between foolish agression and cowardly retreat',
+    'Whenever you would enter a mental state the compels you to flee, you may instead be compelled to attack. Whenever you are compelled to attack you may instead choose to flee. You may do the same with being pinned vs ignoring being shot at.',
+    [charMap.W, aptitudes[7]],
     1,
     []
   )

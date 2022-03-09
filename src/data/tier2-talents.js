@@ -53,7 +53,7 @@ export const tier2Talents = [
   new Talent(// 5
     'Discriminant Justice',
     'Counter attack any enemy',
-    'When you make a counter attack, you may make a counter attack against any opponent you are in melee with, not just the original attacker. This counter attack must be caused by an enemy\'s attack.',
+    'When you make a counter attack, you may make a counter attack against any opponent you are in melee with, not just the original attacker. This counter attack must be caused by an enemy\'s attack. If you make a counter shot, you may shoot at any nearby target.',
     [charMap.K, aptitudes[3]],
     2,
     [[tier1Talents[2]]]
@@ -199,7 +199,7 @@ export const tier2Talents = [
     'Flashback',
     'Return to a past conversation',
     'You may return to a conversation from the past that you remember to fill out a detail or make a request that you neglected. This can lead to whipping out a special requisition you\'ve been saving, but you may only get one item per session this way.',
-    [charMap.P, aptitudes[8]],
+    [charMap.P, aptitudes[7]],
     2,
     []
   ),

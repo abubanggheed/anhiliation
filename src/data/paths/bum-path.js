@@ -31,6 +31,7 @@ export const bumPath = [
     prereqAddOn(skills[4], 4),
     skills[5],
     tier3[2],
+    tier1[27],
     tier3[6],
     tier1[11],
     skills[19],

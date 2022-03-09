@@ -100,7 +100,7 @@ export const combatActions = [
   true
   ),
   new Action('Counter Shot',
-  'After dodging a ranged attack, if you are holding a weapon capable of single shot attacks, you may spend a reaction to make this attack, firing one bullet.',
+  'After using a dive for cover on a ranged attack with a success of 6 or higher, you may spend an additional reaction to make a single shot attack against that opponent. This attack is considered to occur while you are diving for cover.',
   'Reaction',
   'Attack',
   charMap.A,
@@ -127,7 +127,7 @@ export const combatActions = [
   false
   ),
   new Action('Dive for Cover',
-  'Make a R test. On success, move up to success meters to place yourself behind available cover. The attack you are trying to avoid still hits you, but the cover you found applies to that attack. You may use this reaction to avoid blasts altogether even if there is no cover around. If you move more than your base movement speed this way, this action takes you prone.',
+  'Make a R test. On success, move up to success meters to place yourself behind available cover. The attack you are trying to avoid still hits you, but the cover you found applies to that attack. You may use this reaction to avoid blasts altogether even if there is no cover around. If you move more than your base movement speed this way between your turns, this action takes you prone.',
   'Reaction',
   'Move',
   charMap.R,

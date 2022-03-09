@@ -41,25 +41,25 @@ export const skills = [
   new Skill(//3
     'Filibuster',
     'The art of oral misdirection',
-    [charMap.P, aptitudes[8]],
+    [charMap.P, aptitudes[7]],
     'Basic'
   ),
   new Skill(//4
     'Carouse',
     'Use to process and deal with the substances that enter your body. Avoid addiction, win a drinking contest. You may also substitute a carouse test for an might test to resist poisons, toxins, and tranquilizers.',
-    [charMap.M, aptitudes[8]],
+    [charMap.M, aptitudes[6]],
     'Basic'
   ),
   new Skill(//5
     'Charm',
     'Winning the sympathy of others.',
-    [charMap.P, aptitudes[7]],
+    [charMap.P, aptitudes[8]],
     'Basic'
   ),
   new Skill(//6
     'Command',
-    'Taking charge of a situation with pure force of personality.',
-    [charMap.P, aptitudes[8]],
+    'Taking charge of a situation with social dominance.',
+    [charMap.P, aptitudes[7]],
     'Basic'
   ),
   new Skill(//7
@@ -83,7 +83,7 @@ export const skills = [
   new Skill(//10
     'Inquiry',
     'Recovering information from crowds of people. A good inquiry test allows you to discretely recover information from crowds of people.',
-    [charMap.P, aptitudes[7]],
+    [charMap.P, aptitudes[8]],
     'Basic'
   ),
   new Skill(//11
@@ -95,7 +95,7 @@ export const skills = [
   new Skill(//12
     'Intimidate',
     'This is an alternative skill for the socially challenged. Though in some situations it is the most appropriate. (Hint: most people do not like being intimidated.)',
-    [charMap.P, charMap.M, aptitudes[8]],
+    [charMap.M, aptitudes[7]],
     'Basic'
   ),
   new Skill(//13

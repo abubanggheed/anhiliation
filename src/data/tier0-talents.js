@@ -67,7 +67,7 @@ export const tier0Talents = [
     'Subdue',
     'May attack normally in melee while avoiding killing blows',
     'So long as you are using a blunted weapon, you may deal non-lethal damage without taking any penalties.',
-    [charMap.K, aptitudes[1]],
+    [charMap.K, aptitudes[7]],
     0,
     []
   ),

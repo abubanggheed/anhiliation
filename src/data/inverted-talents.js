@@ -17,7 +17,7 @@ export const improvisedFighter = new Talent(
   'Improvised Fighter',
   'Improvised Weapons do more damage and can be used to parry normally',
   'Improvised weapons that you pick up now do 2d8 damage and can parry without penalty.',
-  [charMap.M, charMap.M, aptitudes[1]],
+  [charMap.M, aptitudes[1]],
   1,
   [[{ ...tier0Talents[8], name: tier0Talents[8].name + ' (Improvised)'}]]
 )
