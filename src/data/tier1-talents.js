@@ -40,7 +40,7 @@ export const tier1Talents = [
     'Cavalry',
     'Attack while riding on something',
     'While zipping around on some sort of mount or vehicle as the driver, you may make basic ranged attacks and charge melee attacks but may not reload. You may only do so with improvised, melee, and pistol type weapons. If you can fly, this talent allows you to make strafing ranged attacks and melee charge attacks while flying. Any kind of ranged attack can be a strafing ranged attack.',
-    [charMap.R, aptitudes[1]],
+    [charMap.A, aptitudes[1]],
     1,
     []
   ),
@@ -50,7 +50,7 @@ export const tier1Talents = [
     'Dirty Fighting',
     'Compromise reactions in brawler hits',
     'Whenever you land an attack made from the brawler talent, exhaust a reaction from your opponent for every 2 successes you have on that attack. If you would exhaust their reactions below 0, they can take no actions the next round.',
-    [charMap.M, aptitudes[3]],
+    [charMap.R, aptitudes[0]],
     1,
     [[tier0Talents[1]]]
   ),
@@ -66,7 +66,7 @@ export const tier1Talents = [
     'Dog Pile',
     'May immediately enter other people\'s grapples',
     'When a grapple is initiated successfully, if you within your half reflexes score of meters, you may spend a reaction to dive into the grapple on behalf of either the aggressor or defender. You must role a grapple attempt to join the grapple. If joining on behalf of the aggressor, you enter as an assistor. If joining on behalf of the defender, the aggressor may oppose  with a reaction, but that takes them out of grapple. If so, you would become the aggressor if you manage to grapple them. If they do not react, you enter the grapple as an intervener.',
-    [charMap.R, aptitudes[1]],
+    [charMap.R, aptitudes[0]],
     1,
     []
   ),
@@ -97,7 +97,7 @@ export const tier1Talents = [
   new Talent(// 9|18
     'Hard Target',
     'Increase difficulty to hit you when running',
-    'For mysterious reasons, your enemies subconciously don\'t want to shoot you when you\'re out in the open. When you run, charge, counter charge, ride, or dive for cover, increase the difficulty of all ranged attack made against you by one step until your next round.',
+    'For mysterious reasons, sentient enemies subconciously don\'t want to shoot you when you\'re out in the open. When you run, charge, counter charge, ride, or spend an entire turn out of cover, increase the difficulty of all ranged attack made against you by one step until your next round.',
     [charMap.W, aptitudes[8]],
     1,
     []
@@ -126,7 +126,7 @@ export const tier1Talents = [
     'Lent Shot',
     'Shoot into another melee when engaged in your own',
     'You may shoot outside of your current melee without conceding your ability to react to your melee opponent\'s attacks.',
-    [charMap.K, aptitudes[3]],
+    [charMap.A, aptitudes[3]],
     1,
     [[supportFromAffar]]
   ),
@@ -142,7 +142,7 @@ export const tier1Talents = [
     'Primed',
     'Gain advantage on personal initiative',
     'You gain a general advantage on all personal initiative tests.',
-    [charMap.K, aptitudes[3]],
+    [charMap.R, aptitudes[0]],
     1,
     []
   ),
@@ -158,7 +158,7 @@ export const tier1Talents = [
     'Refocus',
     'Reactions and half moves do not undo your aim bonus',
     'You can retain an aim bonus through making a reaction, half move, or change of target. Other kinds of movements still disrupt your aim bonus. With this talent, you can complete an aim action over the course of 2 turns while doing 1 or 2 half moves.',
-    [charMap.A, aptitudes[3]],
+    [charMap.A, aptitudes[0]],
     1,
     []
   ),
@@ -174,7 +174,7 @@ export const tier1Talents = [
     'Semi Auto',
     'May perform the semi-auto burst attack',
     'You may use the semi-auto burst attack.',
-    [charMap.A, aptitudes[1]],
+    [charMap.A, aptitudes[4]],
     1,
     []
   ),

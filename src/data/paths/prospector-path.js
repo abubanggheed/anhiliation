@@ -40,7 +40,6 @@ export const prospectorPath = [
     tier0[1],
     prereqAddOn(skills[8], 2, ' (Creatures)'),
     tier1[1],
-    tier1[9],
     skills[15],
     prereqAddOn(skills[17], 2, ' (Surface)'),
     prereqAddOn(skills[17], 2, ' (Sea)'),

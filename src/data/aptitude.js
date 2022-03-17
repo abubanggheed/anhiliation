@@ -21,5 +21,5 @@ export const aptitudes = [
   new Aptitude('Knowledge', 'A large available pool of memory devoted to academia.'),//5
   new Aptitude('Ranging', 'Scrounging a living out of less than favorable surroundings.'),//6
   new Aptitude('Empathy', 'A keen awareness of the emotional state of others.'),//7
-  new Aptitude('Hotness', 'Leading the thoughts of others along with the power of good looks.')//8
+  new Aptitude('Hotness', 'The ancient power of looking perdy.')//8
 ]

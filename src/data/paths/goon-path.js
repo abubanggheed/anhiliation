@@ -46,7 +46,6 @@ export const goonPath = [
     nameAddOn(skills[8], ' (War)'),
     tier1[2],
     tier1[27],
-    tier1[9],
     tier2[11],
     tier1[10],
     tier2[20]

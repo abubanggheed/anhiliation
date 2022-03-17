@@ -37,7 +37,6 @@ export const explorerPath = [
     tier1[0],
     skills[5],
     prereqAddOn(skills[8], 2, ' (Creatures)'),
-    tier1[9],
     prereqAddOn(skills[17], 2, ' (Sea)'),
     tier1[15],
     tier1[19],

@@ -14,7 +14,7 @@ export const tier2Talents = [
     'Berserker\'s Balance',
     'React after performing all out attacks',
     'When you make an all out attack, instead of forfeiting your ability to make reactions, you spend 1.',
-    [charMap.M, aptitudes[3]],
+    [charMap.M, aptitudes[0]],
     2,
     [[tier1Talents[20]]]
   ),
@@ -46,7 +46,7 @@ export const tier2Talents = [
     'Counter Charge',
     'May counter charge when charged',
     'When someone charges you, you may spend a reaction to immediately make a counter charge, meeting them halfway. Moving out of your current engagement still has the usual consequences.',
-    [charMap.K, aptitudes[3]],
+    [charMap.A, aptitudes[0]],
     2,
     [[tier1Talents[2]]]
   ),
@@ -54,7 +54,7 @@ export const tier2Talents = [
     'Discriminant Justice',
     'Counter attack any enemy',
     'When you make a counter attack, you may make a counter attack against any opponent you are in melee with, not just the original attacker. This counter attack must be caused by an enemy\'s attack. If you make a counter shot, you may shoot at any nearby target.',
-    [charMap.K, aptitudes[3]],
+    [charMap.K, aptitudes[1]],
     2,
     [[tier1Talents[2]]]
   ),
@@ -86,7 +86,7 @@ export const tier2Talents = [
     'Instant Replay',
     'Force same dice result on physical characteristic test',
     'When you make a physical test such as an attack, counter attack or reaction in combat, you may set your dice result to the same value you got the last time you made that test in that combat. If you do so, you immediately gain 1 physical exhaustion. You may only use this ability once per round.',
-    [charMap.R, aptitudes[3]],
+    [charMap.R, aptitudes[0]],
     2,
     []
   ),
@@ -102,7 +102,7 @@ export const tier2Talents = [
     'Leadborn',
     'Use ranged weapons in melee without penalty',
     'You may use infantry weapons in melee as if they were pistol weapons.',
-    [charMap.A, aptitudes[3]],
+    [charMap.A, aptitudes[4]],
     2,
     []
   ),
@@ -126,7 +126,7 @@ export const tier2Talents = [
     'Master of the Pit',
     'Gain massive bonuses when fighting in a mosh pit',
     'When fighting in a mosh pit, your unarmed and improvised attacks deal double damage and you may make any kind of mosh action and ignore other penalties from being outnumbered. You may also perform most pit actions in melee',
-    [charMap.M, aptitudes[3]],
+    [charMap.M, aptitudes[1]],
     2,
     [[tier1Talents[25]]]
   ),
@@ -183,7 +183,7 @@ export const tier2Talents = [
     'I See You',
     'Increase dice damage from accurate shots',
     'The extra dice damage from accurate weapon fire is increased from 1d4 to 1d6.',
-    [charMap.K, aptitudes[3]],
+    [charMap.A, aptitudes[1]],
     2,
     [[tier1Talents[17]]]
   ),
@@ -210,5 +210,13 @@ export const tier2Talents = [
     [charMap.K, aptitudes[7]],
     2,
     [[skills[21]]]
+  ),
+  new Talent(// 26
+    'Not the Face',
+    'Sentient opponents have trouble attacking you in melee.',
+    'Melee opponents struggle with the idea of messing up your pretty looks. They use the minimum between Will and their normal characteristic when doing counter attacks, brawler attacks, and grappling actions against you. This does not apply if you\'re grappling them.',
+    [charMap.P, aptitudes[8]],
+    2,
+    []
   )
 ]

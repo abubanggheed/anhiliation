@@ -41,7 +41,7 @@ export const skills = [
   new Skill(//3
     'Filibuster',
     'The art of oral misdirection',
-    [charMap.P, aptitudes[7]],
+    [charMap.P, aptitudes[0]],
     'Basic'
   ),
   new Skill(//4
@@ -59,7 +59,7 @@ export const skills = [
   new Skill(//6
     'Command',
     'Taking charge of a situation with social dominance.',
-    [charMap.P, aptitudes[7]],
+    [charMap.P, aptitudes[8]],
     'Basic'
   ),
   new Skill(//7
@@ -89,13 +89,13 @@ export const skills = [
   new Skill(//11
     'Interrogation',
     'Use to coax information out of someone who wants to keep it from you. It is possible to use deceive or charm for this action, however interrogation will always have a better chance of success.',
-    [charMap.I, aptitudes[7]],
+    [charMap.W, aptitudes[7]],
     'Advanced'
   ),
   new Skill(//12
     'Intimidate',
     'This is an alternative skill for the socially challenged. Though in some situations it is the most appropriate. (Hint: most people do not like being intimidated.)',
-    [charMap.M, aptitudes[7]],
+    [charMap.W, aptitudes[7]],
     'Basic'
   ),
   new Skill(//13
@@ -125,7 +125,7 @@ export const skills = [
   new Skill(//17
     'Navigation',
     'This skill is used to track your position, and find options of how to get from point A to point B. Like lore skills, there are several different types of navigations, such as surface navigation, sea navigation, and urban navigation. A good navigation test will let you know the fastest ways, as well as the more discrete ways. It does not take a navigation check to follow a road.',
-    [charMap.I, aptitudes[6]],
+    [charMap.K, aptitudes[6]],
     'Variable'
   ),
   new Skill(//18

@@ -10,7 +10,7 @@ export const tier0Talents = [
     'Ambidextrous',
     'Ignore penalties for using your off hand',
     'You take no penalties for using weapons or other items with your weak hand.',
-    [charMap.A, aptitudes[3], aptitudes[0]],
+    [charMap.A, aptitudes[0]],
     0,
     []
   ),
@@ -75,7 +75,7 @@ export const tier0Talents = [
     'Weapon Proficiency',
     'May use a specific class of weapon without penalties',
     'You are considered trained in a certain class of weapon and may use it without penalty. If you use a weapon without training, the reload time is tripled, and any attack gains 1 general disadvantage. You may take this talent any number of times, once for each class or weapon. The common classes of weapons are: Unarmed, Improvised, Pistol, Melee, Infantry, Heavy, Turret,  Artillery, and Specific. Weapons that are exotic enough such as gun-chaku require their own proficiency.',
-    [charMap.R, charMap.A, aptitudes[1]],
+    [charMap.R, charMap.A, aptitudes[4]],
     0,
     []
   )

@@ -14,7 +14,7 @@ const goodGuyWithAGun = new Talent(
   'Good Guy with a Gun',
   'Dual wield infantry class weapons',
   'You may dual wield infantry class ranged weapons for ranged attacks. It still takes 2 hands to reload 1 of them.',
-  [charMap.M, aptitudes[3]],
+  [charMap.M, aptitudes[1]],
   3,
   [[tier2Talents[6]], [{ ...tier0Talents[8], name: tier0Talents[8].name + ' (Infantry)'}]]
 )
@@ -32,7 +32,7 @@ const leadLove = new Talent(
   'Leadlove',
   'You may use heavy weapons in melee',
   'You may use heavy weapons in melee as if they were pistols.',
-  [charMap.M, aptitudes[1]],
+  [charMap.A, aptitudes[1]],
   3,
   [[tier2Talents[11]]]
 )
@@ -41,7 +41,7 @@ const counterShot = new Talent(
   'Counter Shot',
   'Counter ranged attacks with single shots',
   'After using a dive for cover on a ranged attack with a success of 6 or higher, you may spend an additional reaction to make a single shot attack against that opponent. This attack is considered to occur while you are diving for cover.',
-  [charMap.K, aptitudes[3]],
+  [charMap.A, aptitudes[3]],
   3,
   [[tier1Talents[4]]]
 )
@@ -112,7 +112,7 @@ export const tier3Talents = [
     'Indiscriminant Justice',
     'Use ranged attacks in mosh pits',
     'You may use ranged attacks in mosh pits as if they were regular melees. This includes your beloved heavy weapons. These are made in place of unarmed or improvised weapon attacks. (They do not deal double damage.) Automatic fire can hit allies.',
-    [charMap.M, aptitudes[1]],
+    [charMap.A, aptitudes[1]],
     3,
     [[leadLove], [tier2Talents[14]]]
   ),
@@ -128,7 +128,7 @@ export const tier3Talents = [
     'Latch On',
     'Leap onto a moving mount or vehicle',
     'You may make an acrobatics test to leap onto a moving vehicle or mount. The difficulty depends on the size and speed of your target. If you succeed by at least 3, you do not go prone when latching on. If there is an enemy by where you are leaping, that enemy may spend a reaction to free grapple you.',
-    [charMap.R, aptitudes[3]],
+    [charMap.A, aptitudes[3]],
     3,
     [[{ ...skills[19], training: 'Basic' }], [{ ...skills[0], training: 'Expert' }]]
   ),
@@ -177,7 +177,7 @@ export const tier3Talents = [
     'The Magic Bullet',
     'Gain half Acc score bonus to damage',
     'You gain a basic bonus of your half Acc score to all your damage rolls.',
-    [charMap.A, aptitudes[1]],
+    [charMap.A, aptitudes[4]],
     3,
     []
   ),
@@ -210,7 +210,7 @@ export const tier3Talents = [
     'Vengeance',
     'May counter attack when hit',
     'You may make counter attacks after being hit, even when you do not attempt an evasion. You may also counter shot whenever hit by a ranged attack.',
-    [charMap.M, aptitudes[1]],
+    [charMap.W, aptitudes[1]],
     3,
     [[tier1Talents[2]]]
   ),
@@ -234,7 +234,7 @@ export const tier3Talents = [
     'Bugs Bats and Beyond',
     'Increase your insanity cap',
     'You avoid terminal insanity until you reach 200 insanity. Your disorders continue to increase in severity and number for every 20 insanity beyond 80.',
-    [charMap.W, aptitudes[2]],
+    [charMap.W, aptitudes[0]],
     3,
     [[{ name: '90 insanity' }]]
   ),
@@ -251,7 +251,7 @@ export const tier3Talents = [
     'Short Stop',
     'Intercept grenades midair with bullets',
     'As a reaction to an object traveling through the air, you may make a difficult single shot against the object adjusted by range and size. Succeeding this test allows you to shoot the object mid flight scattering it and potentially causing it to expload. Each point of success on the test allows you to intercept it up to a meter back on its flight path. You can chose to intercept it further along its flight path if that is to your advantage. Using pellets makes it a standard test. The scattering corresponds to the relative momentums of the object and the bullet. (Lasers will not knock it back.)',
-    [charMap.K, aptitudes[2]],
+    [charMap.A, aptitudes[2]],
     3,
     [[counterShot]]
   ),
@@ -268,7 +268,7 @@ export const tier3Talents = [
   'Counter Storm',
   'Make any kind of ranged attack durring a counter shot',
   'Instead of being limited to a single shot for counter shots, you may also unleash automatic and supressing fire with dual wielding.',
-  [charMap.M, aptitudes[3]],
+  [charMap.A, aptitudes[3]],
   3,
   [[counterShot], [tier1Talents[18]]]
   )
