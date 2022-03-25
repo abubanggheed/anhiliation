@@ -171,9 +171,9 @@ export const tier1Talents = [
     []
   ),
   new Talent(// 19|28
-    'Semi Auto',
-    'May perform the semi-auto burst attack',
-    'You may use the semi-auto burst attack.',
+    'Flash Firing',
+    'Gain basic bonus on ranged attacks based on amnunition used',
+    'When making a semi auto burst or full auto fire, including cone fire, you gain a basic bonus of 1 for every unit of ammunition used beyond the first.',
     [charMap.A, aptitudes[4]],
     1,
     []

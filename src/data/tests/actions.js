@@ -185,7 +185,7 @@ export const combatActions = [
   'Full',
   'Attack',
   charMap.A,
-  'Common',
+  'Standard',
   'Standard',
   false
   ),
@@ -289,13 +289,13 @@ export const combatActions = [
   false
   ),
   new Action('Semi Auto Burst',
-  'Fire a burst of bullets at your opponent. This is similar to single shot, except on success, you may hit your target with an additional bullet fired for every 3 points of success.',
+  'Fire a burst of bullets at your opponent. This is similar to single shot, except on success, you may hit your target with an additional shot fired for every 3 points of success.',
   'Half',
   'Attack',
   charMap.A,
-  'Challenging',
   'Standard',
-  true
+  'Standard',
+  false
   ),
   new Action('Single Shot',
   'Fire a single bullet at your opponent.',
