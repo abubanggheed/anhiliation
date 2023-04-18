@@ -122,7 +122,7 @@ export const hooliganRanks = [
   'Giver of Shady Looks',
   'Petty Thief',
   'Alleyway Mugger',
-  'Bethesda Bandit',
+  'Procedurally Generated Bandit',
   'Bounty',
   'Disorder Conductor',
   'Heist Leader',

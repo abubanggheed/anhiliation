@@ -80,7 +80,8 @@ export const explorerPath = [
     prereqAddOn(skills[16]),
     prereqAddOn(skills[17], 4, ' (Subterranean)'),
     prereqAddOn(skills[20], 2, ' (Ecology)'),
-    prereqAddOn(skills[25])
+    prereqAddOn(skills[25]),
+    tier2[27]
   ],
   [//7
     prereqAddOn(skills[8], 4, ' (Creatures)'),

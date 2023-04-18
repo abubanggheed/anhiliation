@@ -87,8 +87,8 @@ export const bumPath = [
 ]
 
 export const bumRanks = [
-  'Convienence Store Regular',
-  'Serf',
+  'Dead End Employee',
+  'Pre-Successful Entrepreneur',
   'Failure',
   'Tourist Deterent',
   'Societal Embarasment',

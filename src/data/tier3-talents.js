@@ -184,7 +184,7 @@ export const tier3Talents = [
   new Talent(// 18
     'Slippery Bastard',
     'You gain scale-able reactions',
-    'Instead of having a fixed number of reactions per round, you have reactions equal to the average of your Acc and Ref scores rounded up.',
+    'Instead of having a fixed number of reactions per round, you have reactions equal to your Ref score.',
     [charMap.R, aptitudes[2]],
     3,
     [[tier2Talents[16]]]

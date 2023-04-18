@@ -46,7 +46,7 @@ export default props => {
         <b>Super Charged</b>: Shields equipped to this armor have double the recharge.
       </p>
       <p>
-        <b>Extra Battery</b>: Shields equipped to this armor have + 50% capacity.
+        <b>Extra Battery</b>: Shields equipped to this armor have + 2 capacity.
       </p>
       <p>
         <b>Conduit</b>: You get a general advantage to all spell use tests for spells attached to this armor, but whenever you use one of these spells, any spell used against you is made with a general advantage until your next turn.
@@ -133,9 +133,8 @@ export default props => {
         If you do, double your penetration for this attack.
       </p>
       <p>
-        <b>Toxic (X)</b>: When you score at least 1 hit that deals damage against a target, they make a standard M test with a basic penalty of X.
-        For each point of failure, they take 1d4 toxic damage that ignores absorption.
-        If they survive the encounter, they continue to suffer from narrative toxic effects until treated.
+        <b>Toxic (X)</b>: For Each hit you score that deals at least 1 damage against a target, they make a standard M test to resist toxic with a basic penalty of X.
+        On failure, the target gains Poisoned (Y) where Y is their failure score.
       </p>
       <p>
         <b>Unbalanced</b>: This weapon was not made for the cut and thrust of prolonged melee.
@@ -221,11 +220,11 @@ export default props => {
         If they fail, they catch on fire.
       </p>
       <p>
-        <b>Toxic (X)</b>: For Each hit you score that deals at least 1 hit damage against a target, they make a standard M test to resist toxic with a basic penalty of X.
+        <b>Toxic (X)</b>: For Each hit you score that deals at least 1 damage against a target, they make a standard M test to resist toxic with a basic penalty of X.
         On failure, the target gains Poisoned (Y) where Y is their failure score.
       </p>
       <p>
-        <b>Radioactive (X)</b>: For Each hit you score that deals at least 1 hit damage against a target, they make a standard M test to resist radiation with a basic penalty of X.
+        <b>Radioactive (X)</b>: For Each hit you score that deals at least 1 damage against a target, they make a standard M test to resist radiation with a basic penalty of X.
         On failure, the target gains Irradiated (Y) where Y is their failure score.
       </p>
       <p>
@@ -290,11 +289,11 @@ export default props => {
         If they fail, they catch on fire.
       </p>
       <p>
-        <b>Toxic (X)</b>: For Each hit you score that deals at least 1 hit damage against a target, they make a standard M test to resist toxic with a basic penalty of X.
+        <b>Toxic (X)</b>: For Each hit you score that deals at least 1 damage against a target, they make a standard M test to resist toxic with a basic penalty of X.
         On failure, the target gains Poisoned (Y) where Y is their failure score.
       </p>
       <p>
-        <b>Radioactive (X)</b>: For Each hit you score that deals at least 1 hit damage against a target, they make a standard M test to resist radiation with a basic penalty of X.
+        <b>Radioactive (X)</b>: For Each hit you score that deals at least 1 damage against a target, they make a standard M test to resist radiation with a basic penalty of X.
         On failure, the target gains Irradiated (Y) where Y is their failure score.
       </p>
       <p>

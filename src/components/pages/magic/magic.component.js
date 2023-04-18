@@ -49,7 +49,7 @@ export default props => {
         <b>Fear and Insanity</b>: Good news. For every 20 insanity you have, reduce all fear difficulties by 1 step.
       </p>
       <p>
-        <b>Snapping Out of It</b>:Remember that you can always take the snap out of it action in combat.
+        <b>Snapping Out of It</b>: Remember that you can always take the snap out of it action in combat.
         This clears any lingering effect of fear or pinning that is troubling you.
         You can attempt this test once per round on your turn.
       </p>

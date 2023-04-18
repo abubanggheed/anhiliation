@@ -31,7 +31,7 @@ export default props => {
       {props.pars.categories && <>
         <p>
           People are a varied lot. Even before training and adventuring,
-          their inherent abilities come in an awe inspiring distribution that can be summarized by eight easy to understand categories.
+          their inherent abilities come in an awe inspiring distribution that can be summarized by seven easy to understand categories.
         </p>
         {characteristics.map(char => <p key={char.name}>
           <b>{char.name}:</b>{` (${char.abvr}) ${char.desc}`}
@@ -43,7 +43,7 @@ export default props => {
           Testing your metal will amount to testing one of these characteristics.
           This amounts to adding your characteristic to a modifier that depends on a dice roll and the general difficulty of the task.
           E.g, a test to shoot an elk can be given as Acc + 2d8 – 16. If you meet 0, you succeed.
-          Thus in that case if your Weapon Skill was 6, you would need to roll a result at least 10 on the 2d8 to make the shot.
+          Thus in that case if your Accuracy was 6, you would need to roll a result at least 10 on the 2d8 to make the shot.
         </p>
         <p>
           Typically, the base modifier for any task will be in the format XdY – X*Y such as 1d20 – 20 or 3d6 – 18.
@@ -63,7 +63,7 @@ export default props => {
           This mapping isn't perfect since the arithmetic doesn't work out for multiple of 2 and 3.
           That said, there are a few important things to note here.
           For one thing, even the impossible are passable with a low characteristic since a high roll will pass regardless.
-          If your characteristic is less than half the difficulty of the test, you will be much more likely to pass a high variance test.
+          If your characteristic is less than half the difficulty of the test, you will be more likely to pass a high variance test.
           If your characteristic exceeds half the difficulty, you will be better off with a lower variance test.
         </p>
       </>}
@@ -75,7 +75,7 @@ export default props => {
         {props.pars[speis.name] && <>
           <p>{speis.desc}</p>
           <p>Bonus Aptitude: {speis.bApt.name}</p>
-          <p>Restricted Aptitude: {speis.rApt.name}{speis.rApt2 && `, ${speis.rApt2.name}`}</p>
+          {/* <p>Restricted Aptitude: {speis.rApt.name}{speis.rApt2 && `, ${speis.rApt2.name}`}</p> */}
           <p>Bonus Talent: {speis.bTalent.name}</p>
         </>}
       </div>)}

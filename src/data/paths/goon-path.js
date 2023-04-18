@@ -71,6 +71,7 @@ export const goonPath = [
     tier1[13],
     tier2[16],
     tier2[25],
+    tier2[27],
   ],
   [//6
     tier2[0],

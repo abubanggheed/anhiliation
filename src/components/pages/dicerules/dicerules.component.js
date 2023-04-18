@@ -32,7 +32,7 @@ export default props => {
         </p>}
       {makeArticle('mdTest', 'Mixed Dice Tests')}
       {props.pars.mdTest && <p>
-        Some tests involve more than one type of die in the roll.
+        It is possible for a test to involve more than one type of die in the roll.
         This would look like 2d6{'&'}1d10 – 22, that is roll 2 d6s and 1 d10 and add the results.
       </p>}
       {makeArticle('gAdvantages', 'General Advantages')}
@@ -73,7 +73,7 @@ export default props => {
           Then a roll of 4 and 5 respectively would equal a total of 5.
 	    </p>
         <p>
-          To make this work wit physical dice without resorting to a lot of re-rolls, all dice in these rules are some multiple of 2, 3, 4, and 5.
+          To make this work with physical dice without resorting to a lot of re-rolls, all dice in these rules are some multiple of 2, 3, 4, and 5.
       </p>
       </>}
     </>}

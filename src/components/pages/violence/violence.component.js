@@ -50,7 +50,7 @@ export default props => {
         <li>Extended: consumes more than a round</li>
       </ul>
       <p>
-        Full and extended actions may be split free across multiple rounds with the understanding that you may need to abort them if the situation changes.
+        Full and extended actions may be split freely across multiple rounds with the understanding that you may need to abort them if the situation changes.
       </p>
       <p>
         <b>Reactions</b>: These represent your ability to respond immediately to events happening on the battlefield such as someone pointing a gun at you, or your friend being grappled.
@@ -157,7 +157,7 @@ export default props => {
       </p>
       <p>
         <b>Jammed</b>: You weapon is stuck and cannot fire until you unjam it.
-        When making a ranged attack, if you roll all 1s, make a dice roll of opposite variance and difficulty, and if you also get all 1s on that, your weapon jams.
+        When making certain ranged attacks, roll a die of some factor of 20. If you roll within the bottom 5%, your weapon jams.
       </p>
       <p>
         <b>Melee</b>: The target you are shooting at is in a melee or worse.
@@ -168,7 +168,7 @@ export default props => {
         <b>Obscured Vision</b>: Increase the difficulty of all melee attacks and evasions by 1 step and the difficulty of all ranged attacks by 2 steps.
       </p>
       <p>
-        <b>On Fire</b>: Each turn you take 1d4 damage that ignores absorption.
+        <b>On Fire</b>: Each turn you take 1 damage that ignores absorption. Large creatures can be on fire in multiple places.
       </p>
       <p>
         <b>Pinned</b>: Increase the difficulty of all (grapple) actions that you take by 1 step.
@@ -228,7 +228,7 @@ export default props => {
         of quick calculation, the damage is considered evenly spread across the hits, rounded down after total damage taken is calculated.
         The shield can only reduce up to it's deflection score per hit, so a powerful attack will not by fully intercepted.
         <br />
-        Example: You are wearing armor AP 6 and step on a mine dealing 83 damage in 4 hits with a penetration of 4. Your effect absorption is 2, but are wearing a
+        Example: You are wearing armor AP 6 and step on a mine dealing 83 damage in 4 hits with a penetration of 4. Your effective absorption is 2, but are wearing a
         shield with 3 charges and a deflection score of 20. The average damage per hit is 20.75, meaning that it deals .75 damage from the first 3 hits for a total of 2.25 damage.
         The fourth hit deals 20.75 totaling 23. This means you lose 7 wounds from the attack.
       </p>
@@ -263,7 +263,7 @@ export default props => {
         <b>Healing Characteristic Damage</b>: Any characteristic damage normally heals at a rate of 1 per week.
       </p>
       <p>
-        <b>E Damage</b>: Whenever you take M characteristic damage, reduce your max and current wounds by the same number to match your new max wounds.
+        <b>M Damage</b>: Whenever you take M characteristic damage, reduce your max and current wounds by the same number to match your new max wounds.
         If this effect would reduce your current wounds to 0 or less, it stops at 1 wound.
         You still get a heart attack from having 0 M.
       </p>

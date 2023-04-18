@@ -127,7 +127,7 @@ export const combatActions = [
   false
   ),
   new Action('Dive for Cover',
-  'Make a R test. On success, move up to success meters to place yourself behind available cover. The attack you are trying to avoid still hits you, but the cover you found applies to that attack. You may use this reaction to avoid blasts altogether even if there is no cover around. If you move more than your base movement speed this way between your turns, this action takes you prone.',
+  'Specify cover less than your half Reflexes score away and make a difficult R test. On success, move up to success meters to place yourself behind available cover. If you are unable to get enough success on the test, you move part of the way there. The attack you are trying to avoid still hits you, but the cover you found applies to that attack. You may use this reaction to avoid blasts altogether even if there is no cover around. If you move more than your base movement speed this way between your turns, this action takes you prone.',
   'Reaction',
   'Move',
   charMap.R,
@@ -253,7 +253,7 @@ export const combatActions = [
   false
   ),
   new Action('Overwatch',
-  'Specify a direction. The next time an enemy appears, or emerges from cover in that direction (including to make an attack) you first make this attack against them. Overwatch attacks cannot be fully automatic fire.',
+  'Specify a direction. The next time an enemy appears, or emerges from cover in that direction (including to make an attack) you first make this attack against them. Overwatch attacks cannot be fully automatic fire. This may be used on an enemy peeking out of cover. If they are attempting to make their own attack, the winner of an opposed personal initiative test gets to fire first. This target counts as being one degree smaller, but on a hit, they do not gain any absorption from their cover.',
   'Full',
   'Attack',
   charMap.A,

@@ -108,12 +108,12 @@ export const prospectorPath = [
 
 export const prospectorRanks = [
   'Crypto Currency Enthusiast',
+  'Startup Pitcher',
   'Pioneer',
-  'Snake Oil Dealer',
-  'Entrepreneur',
   'Poacher',
   'Franchise Owner',
   'Tax Evader',
+  'Economic Assassin',
   'Business Mogal',
   'Captain of Industry'
 ]

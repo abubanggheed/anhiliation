@@ -218,5 +218,13 @@ export const tier2Talents = [
     [charMap.P, aptitudes[8]],
     2,
     []
+  ),
+  new Talent(// 27
+    'Turkey Shoot',
+    'Retain overwatch through multiple shots.',
+    'When using single shots with overwatch, you may perform as many as you want for any additional target that appears. This includes the same enemy peeking out of cover multiple times on their turn. Each additional shot beyond the first costs a reaction.',
+    [charMap.A, aptitudes[2]],
+    2,
+    [[tier1Talents[14]]]
   )
 ]
